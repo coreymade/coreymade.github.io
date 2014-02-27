@@ -1,4 +1,4 @@
-/* line 2, /Users/coreyhaggard/.rvm/gems/ruby-2.0.0-p0/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -338,20 +338,6 @@ dl {
     /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/mixins/_flash.scss */
     .success a:hover, #flash_success a:hover {
       color: black; }
-
-/* line 3, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/homepage.scss */
-.logo {
-  width: 178px;
-  margin: 0 auto;
-  margin-top: 200px; }
-
-/* line 9, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/homepage.scss */
-.about-us {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 28px;
-  color: #222;
-  margin-top: 40px;
-  text-align: center; }
 
 /* line 28, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
 body {
