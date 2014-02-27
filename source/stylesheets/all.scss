@@ -1,0 +1,542 @@
+@import "bourbon/bourbon";
+
+// Neat Settings -- uncomment if using Neat
+///////////////////////////////////////////////////////////////////////////////
+
+@import "neat-helpers"; // or "neat/neat-helpers" when not in Rails
+@import "grid-settings";
+@import "neat/neat";
+
+// Bitters
+///////////////////////////////////////////////////////////////////////////////
+
+@import "bitters/variables";
+@import "bitters/extends/base";
+@import "bitters/mixins/base";
+@import "bitters/typography";
+@import "bitters/forms";
+@import "bitters/tables";
+@import "bitters/lists";
+@import "bitters/flashes";
+
+@import "navigation";
+@import "logo";
+@import "hero";
+
+@import "icons";
+
+@import "our-solution";
+@import "about-olo";
+@import "latest-tweets";
+@import "owl-carousel";
+@import "clients";
+@import "partners";
+@import "contact";
+@import "footer";
+@import "fancybox";
+
+@import "features-subpage";
+@import "about-subpage";
+@import "dev-resources-subpage";
+@import "support-subpage";
+@import "careers";
+@import "privacy";
+
+@import "mobile-partners";
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+body {
+  background-color: $base-body-color;
+  min-width: 320px;
+}
+
+.content {
+  @include outer-container;
+  @include clearfix;
+  background-color: white;
+
+  .our-solution {
+    margin-top: -57px;
+  }
+}
+
+.padded {
+  padding: $page-padding/3;
+
+  @include media($large-screen) {
+    padding: 0 $page-padding $page-padding $page-padding;
+  }
+}
+
+a.cta {
+  padding: .7em 2em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 2px solid white;
+
+  &:hover {
+    background-color: transparentize(white, 0.8);
+  }
+}
+
+#our-solution,
+#about-olo,
+.top-padded-section,
+#open-platform {
+  padding-top: $base-padding;
+  @include media($medium-screen) {
+    padding-top: 5em;
+  }
+}
+
+.section-padding {
+  padding-bottom: $section-padding;
+}
+
+.additional-text {
+  margin-bottom: 3em;
+  font-family: $serif;
+}
+
+////////////
+
+.intro {
+  text-align: center;
+  margin: 0 0 $base-padding*2 0;
+
+  h1 {
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: .5em;
+    max-width: 80%;
+    @include media($large-screen) {
+      max-width: 100%;
+    }
+
+    @include media($small-screen) {
+      margin-top: 60px;
+    }
+  }
+
+  h3 {
+    margin: auto;
+    font-family: $serif;
+    color: gray;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    max-width: 80%;
+
+    @include media($large-screen) {
+      max-width: 65%;
+    }
+  }
+  a.read-more {
+    margin-top: 2em;
+  }
+}
+
+/////////
+
+.text-left {
+  @include clearfix;
+
+  .intro {
+    @include media($large-screen) {
+      @include span-columns(5);
+    }
+
+    @include clearfix;
+    text-align: left;
+    margin-bottom: $section-padding;
+    h3 {
+      color: $base-font-color;
+    }
+  }
+
+  .image {
+    @include media($large-screen) {
+      @include span-columns(7);
+    }
+    text-align: center;
+  }
+}
+
+////////
+
+.text-right {
+  @include clearfix;
+
+  .image {
+    @include span-columns(6);
+    text-align: center;
+  }
+
+  .intro {
+    @include span-columns(6);
+    @include clearfix;
+    h4, h3, h1, p {
+      text-align: right !important;
+    }
+    h3 {
+      color: $base-font-color;
+    }
+  }
+}
+
+
+.text-left .intro,
+.text-right .intro {
+  h4 {
+    background-color: $accent-color-2;
+    color: white;
+    margin: 0 0 1em 0;
+  }
+
+  h1 {
+    text-transform: none;
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    font-family: $sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: $base-padding /2;
+
+    @include media($large-screen) {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+
+
+///////// BULLETS
+
+.three-cols {
+  @include clearfix;
+  text-align: center;
+  margin-bottom: $section-padding;
+}
+
+.three-cols-content {
+  margin: auto;
+  margin-bottom: $base-padding*2;
+  max-width: 80%;
+
+  @include media($large-screen) {
+    @include span-columns(4);
+    @include omega(4n);
+  }
+
+  img {
+    max-height: 8em;
+    margin-bottom: 2em;
+  }
+  p {
+
+  }
+}
+
+.two-col-bullet {
+  @include media($large-screen) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+.three-col-bullet {
+  @include span-columns(4);
+  @include omega(4n);
+}
+
+.bullet {
+  margin-bottom: $base-padding;
+  text-align: left;
+
+  p {
+    margin-left: 1.6em;
+  }
+
+  span {
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .wraptocenter {
+    margin-top: 0;
+    margin-right: $base-padding/2;
+    float: left;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 98px;
+    height: 98px;
+  }
+
+  .wraptocenter * {
+    vertical-align: middle;
+  }
+
+  .bullet-content {
+    margin-left: 5.5em;
+  }
+
+  a {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    &:after {
+      font-family: "fontello";
+      content: '\e81e';
+      margin-left: .5em;
+    }
+  }
+}
+
+
+////////////
+
+
+.icon-treatment {
+  font-size: 1.5em;
+  color: $icon-for-text-color;
+  border-radius: 30em;
+  border: 1px solid $icon-for-text-color;
+  padding: .7em .55em;
+}
+
+/////////
+
+ul.three-columns {
+  li {
+    @include span-columns(4);
+
+    h1, i {
+      float: left;
+    }
+
+    h2.small {
+      margin-bottom: $base-padding /3;
+    }
+
+    .getting-started-copy {
+      margin-left: $base-padding * 1.8;
+    }
+  }
+}
+
+//////////
+
+.stripe-back {
+  @include clearfix;
+  padding: $base-padding;
+  background-color: transparentize($accent-color-2, .7);
+  margin-bottom: $base-padding;
+
+  @include media($large-screen) {
+    padding: 0 $page-padding 0 $page-padding;
+    position: relative;
+    margin-bottom: $section-padding *2.5;
+  }
+
+  .intro {
+    @include clearfix;
+    text-align: left;
+    margin-bottom: $base-padding;
+
+    @include media($large-screen) {
+      margin-bottom: $section-padding;
+      padding-top: $base-padding *1.5;
+      @include span-columns(5);
+    }
+
+    h4 {
+      background-color: $accent-color-2;
+      color: white;
+      margin: 0 0 1em 0;
+    }
+
+    h3 {
+      font-family: $sans-serif;
+      font-style: normal;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-bottom: $base-padding /2;
+      color: $base-font-color;
+
+      @include media($large-screen) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .image {
+    @include media($large-screen) {
+      @include span-columns(7);
+      text-align: center;
+    }
+
+    img {
+      @include media($large-screen) {
+        position: absolute;
+        right: $base-padding *3;
+        top: -5em;
+      }
+    }
+  }
+}
+
+/////////
+
+.quote {
+  font-family: $serif;
+  padding: $page-padding;
+  margin-bottom: $section-padding;
+  .quote-box {
+    padding: $base-padding;
+    background-color: $warm-color;
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+p.sender {
+  text-align: right;
+}
+
+/////////
+
+// icon on the side of the text
+
+.icon-background {
+  background-color: $accent-color-2;
+  padding: $base-padding*2 $page-padding;
+  color: white;
+
+  .intro {
+    margin-bottom: 0;
+  }
+
+  .text-right, .text-left {
+    margin-bottom: 0;
+  }
+}
+
+//////////////////
+
+
+.icon-background-above {
+  text-align: center;
+  color: white;
+  padding: $base-padding*2 $base-padding;
+
+  @include media($large-screen) {
+    padding: $base-padding*3 $page-padding;
+  }
+
+
+  .top-icons {
+    text-align: center;
+    margin-bottom: $base-padding *1.5;
+
+    .top-icon {
+      margin: 0 1em 0 .1em;
+      display: inline;
+      font-size: 1em;
+      border: 2px solid;
+      border-radius: 20em;
+      padding: .4em;
+      @include media($large-screen) {
+        font-size: 2em;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 800;
+    margin-bottom: .5em;
+  }
+
+  h3 {
+    @include media($large-screen) {
+      max-width: 70%;
+    }
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    font-family: $sans-serif;
+  }
+}
+
+
+/////////////
+
+.image-bleed-right {
+  margin-bottom: $section-padding;
+  @include media($large-screen) {
+    padding-left: $page-padding;
+  }
+}
+
+#about-olo {
+  @include media($medium-screen) {
+
+  }
+  padding-top: 5em;
+}
+
+#clients {
+  @include media($medium-screen) {
+
+  }
+  padding-top: 5em;
+}
+
+#our-solution {
+  @include media($medium-screen) {
+
+  }
+  padding-top: 5em;
+}
+
+#video_background {
+  bottom: 0px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  @include size (100% auto);
+}
+
+#video-pattern {
+  @include media($large-screen) {
+    background-image: url(../images/pattern.png);
+    position: absolute;
+    opacity: 1.0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    height: 706px;
+    display: block;
+  }
+  display: none;
+}
+
+.tweet {
+  overflow: hidden;
+}
