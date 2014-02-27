@@ -1,7 +1,5 @@
-$center: 0 auto;
-
 .logo {
-  width: 178px;
+  @include size (178 auto);
   margin: $center;
   margin-top: 200px;
 }
