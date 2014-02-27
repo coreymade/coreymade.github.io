@@ -1,0 +1,15 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "Mossio Labs - We create mobile and web apps"
+    = stylesheet_link_tag "normalize", "all"
+    %link{href: "http://fonts.googleapis.com/css?family=Varela+Round", rel: "stylesheet", type: "text/css"}/
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    = javascript_include_tag  "all"
+  %body{:class => page_classes}
+    = yield
