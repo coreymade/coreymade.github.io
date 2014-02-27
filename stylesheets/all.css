@@ -342,3 +342,9 @@ dl {
 /* line 28, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
 body {
   background: #f1f6f8; }
+
+/* line 32, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
+.logo {
+  width: 178px;
+  height: auto;
+  margin: 0 auto; }
