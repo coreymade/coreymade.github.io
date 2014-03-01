@@ -574,8 +574,19 @@ header {
 /* line 96, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .client-area {
   background: #fafafa;
-  border-top: 1px solid #f6f6f6; }
+  border-top: 1px solid #f6f6f6;
+  *zoom: 1; }
+  /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .client-area:before, .client-area:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .client-area:after {
+    clear: both; }
   /* line 101, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .client-area.top {
+    border-bottom: 1px solid #efefef; }
+  /* line 106, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
   .client-area ul li {
     float: left;
     display: block;
@@ -587,6 +598,41 @@ header {
     /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
     .client-area ul li:last-child {
       margin-right: 0; }
-    /* line 107, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    /* line 112, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
     .client-area ul li:last-of-type {
       border-right: 0; }
+
+/* line 119, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.what-we-do {
+  background: #B93F54; }
+  /* line 122, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .what-we-do .inner-wrapper {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px; }
+    /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .what-we-do .inner-wrapper:before, .what-we-do .inner-wrapper:after {
+      content: " ";
+      display: table; }
+    /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .what-we-do .inner-wrapper:after {
+      clear: both; }
+    /* line 125, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .what-we-do .inner-wrapper h1 {
+      font-size: 38px;
+      color: #222222;
+      text-align: center;
+      padding-bottom: 60px;
+      padding-bottom: 30px;
+      color: #fff; }
+    /* line 131, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .what-we-do .inner-wrapper p {
+      padding: 0 60px;
+      font-size: 19px;
+      color: #727272;
+      line-height: 35px;
+      text-align: center;
+      padding-bottom: 120px;
+      color: #D7B4C6; }
