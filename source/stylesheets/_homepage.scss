@@ -82,6 +82,8 @@ header {
       li {
         @include span-columns (4);
         background: black;
+        opacity: 0.3;
+        min-height: 210px;
       }
     }
   }
@@ -175,6 +177,44 @@ header {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.process {
+  background: #892E3E;
+
+  .inner-wrapper {
+    @include section-area;
+    @include clearfix;
+
+    .column {
+      @include span-columns (3.3);
+      @include shift (1);
+      text-align: center;
+
+      &:first-of-type {
+        @include shift (0);
+      }
+
+      h2 {
+        font-size: 30px;
+        color: #fff;
+        font-weight: lighter;
+        padding: 100px 0 50px 0;
+
+        &.discover {
+          background: image-url('docs.png') no-repeat top;
+        }
+
+        &.build {
+          background: image-url('build.png') no-repeat top;
+        }
+
+        &.launch {
+          background: image-url('rocket.png') no-repeat top;
         }
       }
     }
