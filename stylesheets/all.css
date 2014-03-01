@@ -518,6 +518,75 @@ header {
     .main-hero .hero-wrap:after {
       clear: both; }
 
-/* line 29, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
-body {
-  background: #f1f6f8; }
+/* line 67, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.our-work {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 120px; }
+  /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .our-work:before, .our-work:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .our-work:after {
+    clear: both; }
+  /* line 70, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .our-work h1 {
+    font-size: 38px;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 60px; }
+  /* line 74, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .our-work p {
+    padding: 0 60px;
+    font-size: 19px;
+    color: #727272;
+    line-height: 35px;
+    text-align: center;
+    padding-bottom: 120px; }
+  /* line 78, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .our-work .work-top, .our-work .work-bottom {
+    *zoom: 1; }
+    /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .our-work .work-top:before, .our-work .work-bottom:before, .our-work .work-top:after, .our-work .work-bottom:after {
+      content: " ";
+      display: table; }
+    /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .our-work .work-top:after, .our-work .work-bottom:after {
+      clear: both; }
+    /* line 82, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .our-work .work-top ul li, .our-work .work-bottom ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      background: black; }
+      /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+      .our-work .work-top ul li:last-child, .our-work .work-bottom ul li:last-child {
+        margin-right: 0; }
+  /* line 89, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .our-work .work-bottom {
+    margin-top: 15px;
+    margin-bottom: 120px; }
+
+/* line 96, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.client-area {
+  background: #fafafa;
+  border-top: 1px solid #f6f6f6; }
+  /* line 101, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .client-area ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: center;
+    border-right: 1px solid #EFEFEF;
+    padding: 30px 0; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .client-area ul li:last-child {
+      margin-right: 0; }
+    /* line 107, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .client-area ul li:last-of-type {
+      border-right: 0; }
