@@ -131,7 +131,52 @@ header {
     p {
       @include paragraph;
       color: #D7B4C6;
+      padding-bottom: 40px;
     }
 
+    .toggle {
+      @include size (138 auto);
+      margin: $center;
+      border-radius: 60px;
+      background: #892E3E;
+      padding: 7px;
+      text-align: center;
+      margin-bottom: 60px;
+
+      ul {
+        @include clearfix;
+
+        li {
+          display: block;
+          float: left;
+          margin-right: 10px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          a {
+            @include transition (all 0.3s ease-in-out);
+            font-size: 15px;
+            color: #fff;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &.active {
+              border-radius: 60px;
+              background: #fff;
+              padding: 3px 10px;
+              color: #892E3E;
+
+              &:hover {
+                opacity: 1.0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
