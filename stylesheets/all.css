@@ -635,4 +635,52 @@ header {
       line-height: 35px;
       text-align: center;
       padding-bottom: 120px;
-      color: #D7B4C6; }
+      color: #D7B4C6;
+      padding-bottom: 40px; }
+    /* line 137, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .what-we-do .inner-wrapper .toggle {
+      width: 138px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 60px;
+      background: #892E3E;
+      padding: 7px;
+      text-align: center;
+      margin-bottom: 60px; }
+      /* line 146, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .what-we-do .inner-wrapper .toggle ul {
+        *zoom: 1; }
+        /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+        .what-we-do .inner-wrapper .toggle ul:before, .what-we-do .inner-wrapper .toggle ul:after {
+          content: " ";
+          display: table; }
+        /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+        .what-we-do .inner-wrapper .toggle ul:after {
+          clear: both; }
+        /* line 149, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+        .what-we-do .inner-wrapper .toggle ul li {
+          display: block;
+          float: left;
+          margin-right: 10px; }
+          /* line 154, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+          .what-we-do .inner-wrapper .toggle ul li:last-of-type {
+            margin-right: 0; }
+          /* line 158, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+          .what-we-do .inner-wrapper .toggle ul li a {
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            font-size: 15px;
+            color: #fff; }
+            /* line 163, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+            .what-we-do .inner-wrapper .toggle ul li a:hover {
+              opacity: 0.8; }
+            /* line 167, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+            .what-we-do .inner-wrapper .toggle ul li a.active {
+              border-radius: 60px;
+              background: #fff;
+              padding: 3px 10px;
+              color: #892E3E; }
+              /* line 173, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+              .what-we-do .inner-wrapper .toggle ul li a.active:hover {
+                opacity: 1.0; }
