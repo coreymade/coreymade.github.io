@@ -62,4 +62,12 @@
         %li
           %a{href: '#'} Mobile
 
+    .twentytwenty-container
+      %img{:src => "images/wire.png"}
+      %img{:src => "images/finished.png"}
+
+:javascript
+  $(window).load(function(){
+        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
+      });
 
