@@ -63,3 +63,50 @@ header {
     @include outer-container;
   }
 }
+
+.our-work {
+  @include section-area;
+
+  h1 {
+    @include section-header;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  .work-top {
+    @include clearfix;
+
+    ul {
+      li {
+        @include span-columns (4);
+        background: black;
+      }
+    }
+  }
+
+  .work-bottom {
+    @extend .work-top;
+    margin-top: 15px;
+    margin-bottom: 120px;
+  }
+}
+
+.client-area {
+  background: #fafafa;
+  border-top: 1px solid #f6f6f6;
+
+  ul {
+    li {
+      @include span-columns (3);
+      text-align: center;
+      border-right: 1px solid #EFEFEF;
+      padding: 30px 0;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
+}

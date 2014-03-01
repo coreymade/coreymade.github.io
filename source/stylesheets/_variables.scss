@@ -2,3 +2,25 @@ $center: 0 auto;
 $background-gray: #F1F6F8;
 $header-red: #DC4A55;
 $nav-color: #7E535E;
+
+
+@mixin section-area {
+  @include outer-container;
+  padding-top: 120px;
+}
+
+@mixin section-header {
+  font-size: 38px;
+  color: #222222;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+@mixin paragraph {
+  padding: 0 60px;
+  font-size: 19px;
+  color: #727272;
+  line-height: 35px;
+  text-align: center;
+  padding-bottom: 120px;
+}
