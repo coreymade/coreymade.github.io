@@ -339,21 +339,160 @@ dl {
     .success a:hover, #flash_success a:hover {
       color: black; }
 
+@-webkit-keyframes fadeIn {
+  /* line 2, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  from {
+    opacity: 0.0; }
+
+  /* line 5, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  to {
+    opacity: 1.0; } }
+
+@-moz-keyframes fadeIn {
+  /* line 2, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  from {
+    opacity: 0.0; }
+
+  /* line 5, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  to {
+    opacity: 1.0; } }
+
+@-o-keyframes fadeIn {
+  /* line 2, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  from {
+    opacity: 0.0; }
+
+  /* line 5, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  to {
+    opacity: 1.0; } }
+
+@keyframes fadeIn {
+  /* line 2, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  from {
+    opacity: 0.0; }
+
+  /* line 5, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  to {
+    opacity: 1.0; } }
+
+@-webkit-keyframes fadeIns {
+  /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  0 {
+    opacity: 0.0; }
+
+  /* line 14, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  50% {
+    opacity: 0.5; }
+
+  /* line 17, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  100% {
+    opacity: 1.0; } }
+
+@-moz-keyframes fadeIns {
+  /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  0 {
+    opacity: 0.0; }
+
+  /* line 14, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  50% {
+    opacity: 0.5; }
+
+  /* line 17, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  100% {
+    opacity: 1.0; } }
+
+@-o-keyframes fadeIns {
+  /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  0 {
+    opacity: 0.0; }
+
+  /* line 14, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  50% {
+    opacity: 0.5; }
+
+  /* line 17, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  100% {
+    opacity: 1.0; } }
+
+@keyframes fadeIns {
+  /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  0 {
+    opacity: 0.0; }
+
+  /* line 14, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  50% {
+    opacity: 0.5; }
+
+  /* line 17, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_animations.scss */
+  100% {
+    opacity: 1.0; } }
+
 /* line 1, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
-.logo {
-  width: 178px;
+header {
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 200px; }
+  box-shadow: 0 2px 2px 0 #ccc;
+  border-top: 5px solid #dc4a55;
+  background: #fff;
+  padding: 14px 0;
+  position: fixed; }
 
-/* line 7, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
-.about-us {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 28px;
-  color: #222;
-  margin-top: 40px;
-  text-align: center; }
+/* line 10, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.header-section {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .header-section:before, .header-section:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .header-section:after {
+    clear: both; }
+  /* line 13, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .header-section .logo-area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+    width: 50px;
+    height: auto; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .header-section .logo-area:last-child {
+      margin-right: 0; }
+  /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .header-section nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 42.64902%; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .header-section nav:last-child {
+      margin-right: 0; }
+    /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .header-section nav ul li {
+      display: inline;
+      margin: 0 30px; }
+      /* line 27, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .header-section nav ul li:first-of-type {
+        margin-left: 0; }
+      /* line 31, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .header-section nav ul li:last-of-type {
+        margin-right: 0; }
+      /* line 35, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .header-section nav ul li a {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #7e535e; }
+        /* line 41, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+        .header-section nav ul li a:hover {
+          color: #C4B0B5; }
 
-/* line 28, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
+/* line 29, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/all.scss */
 body {
   background: #f1f6f8; }
