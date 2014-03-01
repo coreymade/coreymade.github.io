@@ -1,10 +1,8 @@
 header {
-  @include size (100% auto);
   box-shadow: 0 2px 2px 0 #ccc;
   border-top: 5px solid $header-red;
   background: #fff;
   padding: 14px 0;
-  position: fixed;
 }
 
 .header-section {
@@ -18,6 +16,7 @@ header {
   nav {
     @include span-columns (6);
     @include shift (5);
+    margin-top: 15px;
 
     ul {
       li {
@@ -44,5 +43,23 @@ header {
         }
       }
     }
+  }
+}
+
+.main-hero {
+  background: $header-red;
+  background: image-url('app-background.png') no-repeat right $header-red;
+  min-height: 612px;
+
+  .lab-intro {
+    @include size (605 auto);
+    line-height: 50px;
+    font-size: 45px;
+    color: #fff;
+    padding: 100px 0 0 180px;
+  }
+
+  .hero-wrap {
+    @include outer-container;
   }
 }
