@@ -96,6 +96,11 @@ header {
 .client-area {
   background: #fafafa;
   border-top: 1px solid #f6f6f6;
+  @include clearfix;
+
+  &.top {
+   border-bottom: 1px solid #efefef;
+  }
 
   ul {
     li {
@@ -108,5 +113,25 @@ header {
         border-right: 0;
       }
     }
+  }
+}
+
+.what-we-do {
+  background: #B93F54;
+
+  .inner-wrapper {
+    @include section-area;
+
+    h1 {
+      @include section-header;
+      padding-bottom: 30px;
+      color: #fff;
+    }
+
+    p {
+      @include paragraph;
+      color: #D7B4C6;
+    }
+
   }
 }
