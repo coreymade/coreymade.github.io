@@ -1,13 +1,48 @@
-.logo {
-  @include size (178 auto);
-  margin: $center;
-  margin-top: 200px;
+header {
+  @include size (100% auto);
+  box-shadow: 0 2px 2px 0 #ccc;
+  border-top: 5px solid $header-red;
+  background: #fff;
+  padding: 14px 0;
+  position: fixed;
 }
 
-.about-us {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 28px;
-  color: #222;
-  margin-top: 40px;
-  text-align: center;
+.header-section {
+  @include outer-container;
+
+  .logo-area {
+    @include span-columns (1);
+    @include size (50 auto);
+  }
+
+  nav {
+    @include span-columns (6);
+    @include shift (5);
+
+    ul {
+      li {
+        display: inline;
+        margin: 0 30px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          @include transition (all 0.3s ease-in-out);
+          text-transform: uppercase;
+          font-size: 13px;
+          color: $nav-color;
+
+          &:hover {
+            color: #C4B0B5;
+          }
+        }
+      }
+    }
+  }
 }
