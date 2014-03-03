@@ -72,17 +72,35 @@
       %h2.discover
         Discovery
       %p
-        here
+        Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
     .column
       %h2.build
         Build
       %p
-        here
+        Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
     .column
       %h2.launch
         Launch
       %p
-        here
+        Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
+
+%section.contact
+  .inner-wrapper
+    %h1
+      Lets build something together
+    %p
+      The most successful projects begin with information. The below form will give us more insight to your projects needs and goals. It's pretty straightforward in its fields, and we're certain you won't get lost in filling it out.
+
+    %form
+      .service-select
+        %ul
+          %li.amPmCheckbox
+            %input#mobile.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Mobile Application"}/
+            %label{:for => "mobile"} MOBILE APP
+          %li.web-app-check
+            %input#web.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Web Application"}/
+            %label{:for => "web"} WEB APP
+
 
 :javascript
   $(window).load(function(){

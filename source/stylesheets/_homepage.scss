@@ -191,12 +191,17 @@ header {
     @include clearfix;
 
     .column {
-      @include span-columns (3.3);
-      @include shift (1);
+      @include span-columns (4.0);
       text-align: center;
 
       &:first-of-type {
         @include shift (0);
+      }
+
+      p {
+        @include paragraph;
+        color: #D7B4C6;
+        padding-bottom: 40px
       }
 
       h2 {
@@ -219,4 +224,75 @@ header {
       }
     }
   }
+}
+
+.contact {
+
+  .inner-wrapper {
+    @include section-area;
+    @include clearfix;
+  }
+
+  h1 {
+    @include section-header;
+  }
+
+  p {
+    @include paragraph;
+    padding-bottom: 40px;
+  }
+
+  .service-select {
+    @include size (30% auto);
+    border-radius: 3px;
+    float: none;
+    background: #F4F5F6;
+    margin: $center;
+    border: 1px solid #E3E4E6;
+    margin-bottom: 90px;
+
+    ul {
+      @include clearfix;
+
+      li {
+        @include span-columns (5.9);
+        text-align: center;
+        border-right: 1px solid #E3E4E6;
+
+        &:last-of-type {
+          margin: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+
+.amPmCheckbox input[type="checkbox"] {
+    display: none;
+}
+.amPmCheckbox input[type="checkbox"]+label {
+    background: image-url('mobile-app.png') no-repeat top 20px center;
+    height:70px;
+    padding-left: 18px;
+    cursor: pointer;
+    padding-top: 100px
+}
+.amPmCheckbox input[type="checkbox"]:checked + label {
+    background: image-url('mobile-checked.png')  no-repeat top 9px left 55px;
+    height:70px;
+}
+
+.web-app-check input[type="checkbox"] {
+    display: none;
+}
+.web-app-check input[type="checkbox"]+label {
+    background: url('http://renegadeox.com/img/off.png') no-repeat;
+    height:17px;
+    padding-left: 18px;
+}
+.web-app-check input[type="checkbox"]:checked + label {
+    background: url('http://renegadeox.com/img/on.png')  no-repeat;
+    height:17px;
 }
