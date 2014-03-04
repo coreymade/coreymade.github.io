@@ -66,6 +66,7 @@ header {
 
 .our-work {
   @include section-area;
+  max-width: 90em;
 
   h1 {
     @include section-header;
@@ -79,11 +80,12 @@ header {
     @include clearfix;
 
     ul {
+      max-width: 90em;
       li {
         @include span-columns (4);
         background: black;
         opacity: 0.3;
-        min-height: 210px;
+        min-height: 268px;
       }
     }
   }
