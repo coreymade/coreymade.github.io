@@ -286,47 +286,72 @@ header {
     @include shift (1);
   }
 
-  .form-item {
-    label {
-      font-size: 13px;
-      text-transform: uppercase;
-      padding-left: 15px;
-      color: #ACB0BD;
-      font-weight: bold;
-      padding-bottom: 8px;
-    }
-  }
-
-  input {
-    @include span-columns (12);
-    margin-bottom: 30px;
-    float: none;
-    border: 1px solid #D0D2DA;
-    box-shadow: none;
-    background: white;
-    font-size: 14px;
-    color: #939393;
-    padding: 10px 0 10px 15px;
-    border-radius: 3px;
-  }
-
   .styled-select select {
    background: transparent;
    @include span-columns (12);
-   margin-bottom: 20px;
+   margin-bottom: 15px;
    float: none;
    border: 1px solid #D0D2DA;
    box-shadow: none;
    font-size: 14px;
    color: #939393;
-   padding: 10px 0 10px 15px;
+   padding: 15px 0 15px 15px;
    border-radius: 3px;
    -webkit-appearance: none;
+   cursor: pointer;
   }
 
   .styled-select {
    overflow: hidden;
    background: image-url('drop-menu.png') no-repeat right 17px;
+   cursor: pointer;
+  }
+}
+
+.form-item {
+  label {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    color: #ACB0BD;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+
+  &.details {
+    @include size (89% auto);
+    margin-left: 60px;
+  }
+}
+
+input {
+  @include span-columns (12);
+  margin-bottom: 30px;
+  float: none;
+  border: 1px solid #D0D2DA;
+  box-shadow: none;
+  background: white;
+  font-size: 14px;
+  color: #939393;
+  padding: 15px 0 15px 15px;
+  border-radius: 3px;
+
+  &.submit-button {
+    @include transition (all 0.5s ease-in-out);
+    @include size (200 auto);
+    background: $header-red;
+    border: 0;
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    padding: 15px 0;
+    margin: $center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    &:hover {
+      background: #892E3E;
+    }
   }
 }
 
