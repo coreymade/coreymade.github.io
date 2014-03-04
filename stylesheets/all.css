@@ -4,45 +4,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 1, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/extends/_button.scss */
-button,
-input[type="submit"] {
-  border: 1px solid #2459a6;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #89a8d5;
-  color: white;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  background-color: #477dca;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #477dca), color-stop(100%, #2760b2));
-  background-image: -webkit-linear-gradient(#477dca, #2760b2);
-  background-image: linear-gradient(#477dca, #2760b2);
-  padding: 7px 18px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #1b4f9a;
-  background-clip: padding-box;
-  font-size: 1em; }
-  /* line 79, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_button.scss */
-  button:hover:not(:disabled),
-  input[type="submit"]:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #628cc8;
-    cursor: pointer;
-    background-color: #3c71bb;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c71bb), color-stop(100%, #255aa5));
-    background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
-    background-image: linear-gradient(#3c71bb, #255aa5); }
-  /* line 95, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_button.scss */
-  button:active:not(:disabled),
-  input[type="submit"]:active:not(:disabled) {
-    border: 1px solid #2459a6;
-    box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eeeeee; }
-  /* line 38, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_button.scss */
-  button:disabled,
-  input[type="submit"]:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
-
 /* line 3, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_typography.scss */
 body {
   color: #333333;
@@ -165,97 +126,6 @@ cite {
   /* line 123, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_typography.scss */
   cite:before {
     content: '\2014 \00A0'; }
-
-/* line 10, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-fieldset {
-  background: white;
-  border: 1px solid #f0f0f0;
-  margin: 0 0 0.75em 0;
-  padding: 1.5em; }
-
-/* line 19, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-input,
-label,
-select {
-  display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
-
-/* line 25, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-label {
-  font-weight: bold;
-  margin-bottom: 0.375em; }
-  /* line 29, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-  label.required:after {
-    content: "*"; }
-  /* line 33, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-  label abbr {
-    display: none; }
-
-/* line 39, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-textarea,
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: border-color;
-  -moz-transition: border-color;
-  transition: border-color;
-  background-color: white;
-  border-radius: 0.1875em;
-  border: 1px solid #f0f0f0;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em 0.5em;
-  resize: vertical;
-  width: 100%; }
-  /* line 53, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-  textarea:hover,
-  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
-    border-color: #d6d6d6; }
-  /* line 57, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-  textarea:focus,
-  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus {
-    border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
-    outline: none; }
-
-/* line 64, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none; }
-
-/* line 68, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-input[type="checkbox"], input[type="radio"] {
-  display: inline;
-  margin-right: 0.375em; }
-
-/* line 73, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-input[type="file"] {
-  width: 100%; }
-
-/* line 77, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-select {
-  width: auto;
-  margin-bottom: 1.5em; }
-
-/* line 83, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_forms.scss */
-button,
-input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
 
 /* line 1, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bitters/_tables.scss */
 table {
@@ -631,9 +501,7 @@ header {
 /* line 8, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .header-section {
   *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 0 30px; }
   /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
   .header-section:before, .header-section:after {
     content: " ";
@@ -641,7 +509,7 @@ header {
   /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
   .header-section:after {
     clear: both; }
-  /* line 11, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  /* line 12, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
   .header-section .logo-area {
     float: left;
     display: block;
@@ -652,17 +520,10 @@ header {
     /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
     .header-section .logo-area:last-child {
       margin-right: 0; }
-  /* line 16, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  /* line 17, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
   .header-section nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 42.64902%;
+    float: right;
     margin-top: 15px; }
-    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
-    .header-section nav:last-child {
-      margin-right: 0; }
     /* line 22, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
     .header-section nav ul li {
       display: inline;
@@ -984,7 +845,7 @@ header {
   padding-bottom: 40px; }
 /* line 245, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .contact .service-select {
-  width: 30%;
+  width: 40%;
   height: auto;
   border-radius: 3px;
   float: none;
@@ -1009,43 +870,186 @@ header {
       margin-right: 2.35765%;
       width: 47.96819%;
       text-align: center;
-      border-right: 1px solid #E3E4E6; }
+      border-right: 1px solid #E3E4E6;
+      padding: 15px; }
       /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
       .contact .service-select ul li:last-child {
         margin-right: 0; }
-      /* line 262, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      /* line 263, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
       .contact .service-select ul li:last-of-type {
         margin: 0;
         border-right: none; }
 
 /* line 272, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.form-bottom {
+  *zoom: 1;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 0 60px;
+  float: none;
+  margin: 0 auto; }
+  /* line 18, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .form-bottom:before, .form-bottom:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .form-bottom:after {
+    clear: both; }
+  /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+  .form-bottom:last-child {
+    margin-right: 0; }
+  /* line 280, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom .form-left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 44.55627%; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .form-bottom .form-left:last-child {
+      margin-right: 0; }
+  /* line 284, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom .form-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 44.55627%;
+    margin-left: 8.5298%; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .form-bottom .form-right:last-child {
+      margin-right: 0; }
+  /* line 290, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom .form-item label {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    color: #ACB0BD;
+    font-weight: bold;
+    padding-bottom: 8px; }
+  /* line 300, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom input {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 30px;
+    float: none;
+    border: 1px solid #D0D2DA;
+    box-shadow: none;
+    background: white;
+    font-size: 14px;
+    color: #939393;
+    padding: 10px 0 10px 15px;
+    border-radius: 3px; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .form-bottom input:last-child {
+      margin-right: 0; }
+  /* line 313, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom .styled-select select {
+    background: transparent;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+    border: 1px solid #D0D2DA;
+    box-shadow: none;
+    font-size: 14px;
+    color: #939393;
+    padding: 10px 0 10px 15px;
+    border-radius: 3px;
+    -webkit-appearance: none; }
+    /* line 40, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .form-bottom .styled-select select:last-child {
+      margin-right: 0; }
+  /* line 327, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-bottom .styled-select {
+    overflow: hidden;
+    background: url("../images/drop-menu.png") no-repeat right 17px; }
+
+/* line 333, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"] {
   display: none; }
 
-/* line 275, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+/* line 336, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"] + label {
-  background: url("../images/mobile-app.png") no-repeat top 20px center;
-  height: 70px;
-  padding-left: 18px;
+  background: url("../images/mobile-unchecked.png") no-repeat top center;
   cursor: pointer;
-  padding-top: 100px; }
+  font-size: 15px;
+  color: #818490;
+  padding-top: 90px;
+  font-weight: 600; }
 
-/* line 282, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+/* line 344, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"]:checked + label {
-  background: url("../images/mobile-checked.png") no-repeat top 9px left 55px;
-  height: 70px; }
+  background: url("../images/mobile-checked.png") no-repeat top center; }
 
-/* line 287, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+/* line 348, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] {
   display: none; }
 
-/* line 290, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+/* line 351, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] + label {
-  background: url("http://renegadeox.com/img/off.png") no-repeat;
-  height: 17px;
-  padding-left: 18px; }
+  background: url("../images/web-checked.png") no-repeat top center;
+  cursor: pointer;
+  font-size: 15px;
+  color: #818490;
+  padding-top: 90px;
+  font-weight: 600; }
 
-/* line 295, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+/* line 359, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"]:checked + label {
-  background: url("http://renegadeox.com/img/on.png") no-repeat;
-  height: 17px; }
+  background: url("../images/web-unchecked.png") no-repeat top center; }
+
+/* line 363, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+.form-item {
+  margin-bottom: 15px;
+  position: relative; }
+  /* line 367, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+  .form-item .status {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    -webkit-perspective: 300px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective-origin: 150% 150%;
+    -moz-perspective: 300px;
+    -moz-transform-style: preserve-3d;
+    -moz-perspective-origin: 150% 150%;
+    transform: rotateX(180deg);
+    transition: all 0.2s; }
+    /* line 382, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .form-item .status span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0; }
+    /* line 391, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .form-item .status.flip {
+      transform: rotateX(1deg); }
+      /* line 394, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .form-item .status.flip .success {
+        /*z-index: 2;*/ }
+      /* line 398, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+      .form-item .status.flip .fail {
+        /*z-index: 1;*/ }
+    /* line 403, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .form-item .status .success {
+      background: green;
+      z-index: 1;
+      transform: translateZ(1px); }
+    /* line 409, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+    .form-item .status .fail {
+      background: red;
+      z-index: 2; }
+
+/* line 416, /Users/coreyhaggard/coreymade.github.io/source/stylesheets/_homepage.scss */
+label {
+  color: #333;
+  display: block; }
