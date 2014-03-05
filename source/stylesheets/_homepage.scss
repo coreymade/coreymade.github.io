@@ -14,6 +14,20 @@ header {
     @include size (50 auto);
   }
 
+  .mobile-menu {
+    display: block;
+    @include media ($medium-screen) {
+      display: none;
+    }
+  }
+
+  .desktop-menu {
+    display: none;
+    @include media ($medium-screen) {
+      display: block;
+    }
+  }
+
   nav {
     float: right;
     margin-top: 15px;
@@ -83,9 +97,10 @@ header {
       max-width: 90em;
       li {
         @include span-columns (4);
-        background: black;
-        opacity: 0.3;
         min-height: 268px;
+        max-height: 268px;
+        overflow: hidden;
+        margin-bottom: 15px;
       }
     }
   }
@@ -98,20 +113,55 @@ header {
 }
 
 .client-area {
-  background: #fafafa;
-  border-top: 1px solid #f6f6f6;
+  background: $background-gray;
   @include clearfix;
 
   &.top {
-   border-bottom: 1px solid #efefef;
+   border-bottom: 1px solid #ebebeb;
+   border-top: 1px solid #ebebeb;
   }
 
   ul {
     li {
-      @include span-columns (3);
+      @include span-columns (3.2);
+      margin: 0;
       text-align: center;
-      border-right: 1px solid #EFEFEF;
+      border-right: 1px solid #ebebeb;
       padding: 30px 0;
+      min-height: 200px;
+      opacity: 0.8;
+
+      &.mod {
+        padding-top: 46px;
+      }
+
+      &.geek {
+        padding-top: 76px;
+      }
+
+      &.drone {
+        @extend .geek;
+      }
+
+      &.trackr {
+        padding-top: 42px;
+      }
+
+      &.spark {
+        padding-top: 70px;
+      }
+
+      &.native {
+        padding-top: 62px;
+      }
+
+      &.geosnap {
+        padding-top: 50px;
+      }
+
+      &.cinch {
+        @extend .spark;
+      }
 
       &:last-of-type {
         border-right: 0;
@@ -121,10 +171,12 @@ header {
 }
 
 .what-we-do {
-  background: #B93F54;
+  background: image-url('sketch-background.png') no-repeat #B93F54;
+  background-size: cover;
 
   .inner-wrapper {
     @include section-area;
+    padding-bottom: 70px;
 
     h1 {
       @include section-header;
@@ -134,7 +186,7 @@ header {
 
     p {
       @include paragraph;
-      color: #D7B4C6;
+      color: #fff;
       padding-bottom: 40px;
     }
 
@@ -191,6 +243,7 @@ header {
   .inner-wrapper {
     @include section-area;
     @include clearfix;
+    padding-bottom: 100px;
 
     .column {
       @include span-columns (4.0);
@@ -202,7 +255,7 @@ header {
 
       p {
         @include paragraph;
-        color: #D7B4C6;
+        color: #fff;
         padding-bottom: 40px
       }
 
@@ -210,7 +263,7 @@ header {
         font-size: 30px;
         color: #fff;
         font-weight: lighter;
-        padding: 100px 0 50px 0;
+        padding: 40px 0 50px 0;
 
         &.discover {
           background: image-url('docs.png') no-repeat top;
@@ -357,6 +410,42 @@ input {
   }
 }
 
+footer {
+  @include clearfix;
+  background: $background-gray;
+  color: #535353;
+  font-size: 14px;
+  padding: 40px 30px;
+
+  .address {
+    float: left;
+
+    ul {
+      li {
+        display: inline;
+        margin-right: 50px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          @include transition (0.5 all ease-in-out);
+          color: #CE7D8B;
+
+          &:hover {
+            color: $header-red;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    float: right;
+  }
+}
+
 .amPmCheckbox input[type="checkbox"] {
     display: none;
 }
@@ -443,4 +532,9 @@ input {
 label {
   color: #333;
   display: block;
+}
+
+.fs1 {
+  font-size: 4em;
+  color: #fff;
 }

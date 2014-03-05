@@ -2,16 +2,21 @@
   .header-section
     .logo-area
       =image_tag 'logo.png'
-    %nav
-      %ul
-        %li
-          %a{href: '#'} home
-        %li
-          %a{href: '#'} our work
-        %li
-          %a{href: '#'} what we do
-        %li
-          %a{href: '#'} lets get started
+    .mobile-menu
+      #mobilemenu
+        mobile-menu
+
+    .desktop-menu
+      %nav
+        %ul
+          %li
+            %a{href: '#'} home
+          %li
+            %a{href: '#'} our work
+          %li
+            %a{href: '#'} what we do
+          %li
+            %a{href: '#'} lets get started
 
 .main-hero
   .lab-intro
@@ -25,29 +30,43 @@
 
   .work-top
     %ul
-      %li here
-      %li here
-      %li here
+      %li
+        =image_tag 'movies.png'
+      %li
+        =image_tag 'screen.png'
+      %li
+        =image_tag 'mdt-shot.png'
   .work-bottom
     %ul
-      %li here
-      %li here
-      %li here
+      %li
+        =image_tag 'cigar.png'
+      %li
+        =image_tag 'tips-app.png'
+      %li
+        =image_tag 'planner-app.png'
 
   %h1
     Select clients
 %section.client-area.top
   %ul
-    %li client here
-    %li client here
-    %li client here
-    %li client here
-%section.client-area.top
+    %li.mod
+      =image_tag 'mdt.png'
+    %li.geek
+      =image_tag 'geeklist.png'
+    %li.drone
+      =image_tag 'drone.png'
+    %li.trackr
+      =image_tag 'trackr.png'
+%section.client-area
   %ul
-    %li client here
-    %li client here
-    %li client here
-    %li client here
+    %li.spark
+      =image_tag 'sm-logo.png'
+    %li.native
+      =image_tag 'native.png'
+    %li.geosnap
+      =image_tag 'geosnap.png'
+    %li.cinch
+      =image_tag 'cinch.png'
 
 %section.what-we-do
   .inner-wrapper
@@ -68,18 +87,21 @@
 
 %section.process
   .inner-wrapper
-    .column
-      %h2.discover
+    .column.fs1
+      %span.icon-pen
+      %h2
         Discovery
       %p
         Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
-    .column
-      %h2.build
+    .column.fs1
+      %span.icon-settings
+      %h2
         Build
       %p
         Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
-    .column
-      %h2.launch
+    .column.fs1
+      %span.icon-paperplane
+      %h2
         Launch
       %p
         Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
@@ -144,6 +166,16 @@
 
       .button
         %input.submit-button{:type => "submit", :value => "talk to us"}
+
+%footer
+  .footer-container
+    .address
+      %ul
+        %li 11276 West Hollywood Blvd, Los Angeles California 90371
+        %li
+          =link_to 'mailto:hello@mossiolab.com'
+    .copyright
+      2014 - Mossio Lab LLC - All Rights Reserved
 
 
 :javascript
