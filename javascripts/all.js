@@ -1,3 +1,6 @@
+$(document).ready( function(){
+  $('body').find('.header-section').height($(window).height());
+});
 // jquery.event.move
 //
 // 1.3.6
