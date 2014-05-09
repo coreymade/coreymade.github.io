@@ -1,24 +1,17 @@
-header {
-  box-shadow: 0 2px 2px 0 #ccc;
-  border-top: 5px solid $header-red;
-  background: #fff;
-  padding: 14px 0;
-}
-
 .header-section {
   @include clearfix;
   padding: 0 30px;
+  background: image-url('header-background.png') no-repeat;
+  background-size: cover;
 
-  .logo-area {
-    @include span-columns (1);
-    @include size (50 auto);
+  .logo {
+    @include size (75 auto);
+    float: left;
+    padding-top: 50px;
   }
 
-  .mobile-menu {
-    display: block;
-    @include media ($medium-screen) {
-      display: none;
-    }
+  .nav {
+    float: right;
   }
 
   .desktop-menu {

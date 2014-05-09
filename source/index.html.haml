@@ -1,26 +1,36 @@
+/ %header
+/   .header-section
+/     .logo-area
+/       =image_tag 'logo.png'
+/     .mobile-menu
+/       #mobilemenu
+/         mobile-menu
+
+/     .desktop-menu
+/       %nav
+/         %ul
+/           %li
+/             %a{href: '#'} home
+/           %li
+/             %a.popover{href: '#'} our work
+/           %li
+/             %a{href: '#'} what we do
+/           %li
+/             %a{href: '#'} lets get started
+
+/ .main-hero
+/   .lab-intro
+/     We build better web &amp mobile apps
+
 %header
   .header-section
-    .logo-area
+    .logo
       =image_tag 'logo.png'
-    .mobile-menu
-      #mobilemenu
-        mobile-menu
+    %nav
+      %input#sidebar.toggle{:name => "sidebar", :type => "checkbox"}/
+      %label.hamburger{:for => "sidebar"}
+        %i Show Menu
 
-    .desktop-menu
-      %nav
-        %ul
-          %li
-            %a{href: '#'} home
-          %li
-            %a.popover{href: '#'} our work
-          %li
-            %a{href: '#'} what we do
-          %li
-            %a{href: '#'} lets get started
-
-.main-hero
-  .lab-intro
-    We build better web &amp mobile apps
 
 %section#popover-content
   %a.close

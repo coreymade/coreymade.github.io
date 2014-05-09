@@ -60,9 +60,11 @@
 }
 
 .toggle:checked + .hamburger:after {
-  transform: rotate3d(0,0,1,-135deg) translate3d(-8px,4px,0);
+  transform: rotate3d(0,0,1,-135deg)
+             translate3d(-8px,4px,0);
 }
 
 .toggle:checked + .hamburger:before {
-  transform: rotate3d(0,0,1,135deg) translate3d(-8px,-4px,0);
+  transform: rotate3d(0,0,1,135deg)
+             translate3d(-8px,-4px,0);
 }
