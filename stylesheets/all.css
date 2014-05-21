@@ -562,10 +562,7 @@ dl {
 
 /* line 1, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .header-section {
-  *zoom: 1;
-  padding: 0 30px;
-  background: url("/images/header-background.png") no-repeat;
-  background-size: cover; }
+  *zoom: 1; }
   /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .header-section:before, .header-section:after {
     content: " ";
@@ -573,37 +570,37 @@ dl {
   /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .header-section:after {
     clear: both; }
-  /* line 7, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 4, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .header-section .logo {
     width: 75px;
     height: auto;
     float: left;
     padding-top: 50px; }
-  /* line 13, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 10, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .header-section .nav {
     float: right; }
-  /* line 17, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 14, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .header-section .desktop-menu {
     display: none; }
     @media screen and (min-width: 47.5em) {
-      /* line 17, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 14, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .header-section .desktop-menu {
         display: block; } }
-  /* line 24, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 21, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .header-section nav {
     float: right;
     margin-top: 15px; }
-    /* line 29, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 26, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .header-section nav ul li {
       display: inline;
       margin: 0 30px; }
-      /* line 33, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 30, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .header-section nav ul li:first-of-type {
         margin-left: 0; }
-      /* line 37, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 34, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .header-section nav ul li:last-of-type {
         margin-right: 0; }
-      /* line 41, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 38, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .header-section nav ul li a {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -611,16 +608,16 @@ dl {
         text-transform: uppercase;
         font-size: 13px;
         color: #7e535e; }
-        /* line 47, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 44, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .header-section nav ul li a:hover {
           color: #C4B0B5; }
 
-/* line 56, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 53, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .main-hero {
   background: #dc4a55;
   background: url("/images/app-background.png") no-repeat right #dc4a55;
   min-height: 612px; }
-  /* line 61, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 58, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .main-hero .lab-intro {
     width: 605px;
     height: auto;
@@ -628,7 +625,7 @@ dl {
     font-size: 45px;
     color: #fff;
     padding: 100px 0 0 180px; }
-  /* line 69, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 66, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .main-hero .hero-wrap {
     *zoom: 1;
     max-width: 87.5em;
@@ -642,14 +639,15 @@ dl {
     .main-hero .hero-wrap:after {
       clear: both; }
 
-/* line 74, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 71, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .our-work {
   *zoom: 1;
   max-width: 87.5em;
   margin-left: auto;
   margin-right: auto;
   padding-top: 120px;
-  max-width: 90em; }
+  max-width: 90em;
+  background: #fff; }
   /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .our-work:before, .our-work:after {
     content: " ";
@@ -657,13 +655,13 @@ dl {
   /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .our-work:after {
     clear: both; }
-  /* line 78, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 76, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .our-work h1 {
     font-size: 38px;
     color: #222222;
     text-align: center;
     padding-bottom: 60px; }
-  /* line 82, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 80, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .our-work p {
     padding: 0 60px;
     font-size: 19px;
@@ -671,7 +669,7 @@ dl {
     line-height: 35px;
     text-align: center;
     padding-bottom: 120px; }
-  /* line 86, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 84, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .our-work .work-top, .our-work .work-bottom {
     *zoom: 1; }
     /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
@@ -681,10 +679,10 @@ dl {
     /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
     .our-work .work-top:after, .our-work .work-bottom:after {
       clear: both; }
-    /* line 89, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 87, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .our-work .work-top ul, .our-work .work-bottom ul {
       max-width: 90em; }
-      /* line 91, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 89, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .our-work .work-top ul li, .our-work .work-bottom ul li {
         float: left;
         display: block;
@@ -698,12 +696,12 @@ dl {
         /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
         .our-work .work-top ul li:last-child, .our-work .work-bottom ul li:last-child {
           margin-right: 0; }
-  /* line 102, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 100, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .our-work .work-bottom {
     margin-top: 15px;
     margin-bottom: 120px; }
 
-/* line 109, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 107, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .client-area {
   background: #f6f6f6;
   *zoom: 1; }
@@ -714,11 +712,11 @@ dl {
   /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .client-area:after {
     clear: both; }
-  /* line 113, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 111, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .client-area.top {
     border-bottom: 1px solid #ebebeb;
     border-top: 1px solid #ebebeb; }
-  /* line 119, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 117, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .client-area ul li {
     float: left;
     display: block;
@@ -733,33 +731,33 @@ dl {
     /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
     .client-area ul li:last-child {
       margin-right: 0; }
-    /* line 128, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 126, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.mod {
       padding-top: 46px; }
-    /* line 132, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 130, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.geek, .client-area ul li.drone {
       padding-top: 76px; }
-    /* line 140, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 138, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.trackr {
       padding-top: 42px; }
-    /* line 144, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 142, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.spark, .client-area ul li.cinch {
       padding-top: 70px; }
-    /* line 148, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 146, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.native {
       padding-top: 62px; }
-    /* line 152, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 150, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li.geosnap {
       padding-top: 50px; }
-    /* line 160, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 158, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .client-area ul li:last-of-type {
       border-right: 0; }
 
-/* line 167, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 165, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .what-we-do {
   background: url("/images/sketch-background.png") no-repeat #b93f54;
   background-size: cover; }
-  /* line 171, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 169, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .what-we-do .inner-wrapper {
     *zoom: 1;
     max-width: 87.5em;
@@ -774,7 +772,7 @@ dl {
     /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
     .what-we-do .inner-wrapper:after {
       clear: both; }
-    /* line 175, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 173, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .what-we-do .inner-wrapper h1 {
       font-size: 38px;
       color: #222222;
@@ -782,7 +780,7 @@ dl {
       padding-bottom: 60px;
       padding-bottom: 30px;
       color: #fff; }
-    /* line 181, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 179, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .what-we-do .inner-wrapper p {
       padding: 0 60px;
       font-size: 19px;
@@ -792,7 +790,7 @@ dl {
       padding-bottom: 120px;
       color: #fff;
       padding-bottom: 40px; }
-    /* line 187, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 185, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .what-we-do .inner-wrapper .toggle {
       width: 138px;
       height: auto;
@@ -802,7 +800,7 @@ dl {
       padding: 7px;
       text-align: center;
       margin-bottom: 60px; }
-      /* line 196, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 194, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .what-we-do .inner-wrapper .toggle ul {
         *zoom: 1; }
         /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
@@ -812,38 +810,38 @@ dl {
         /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
         .what-we-do .inner-wrapper .toggle ul:after {
           clear: both; }
-        /* line 199, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 197, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .what-we-do .inner-wrapper .toggle ul li {
           display: block;
           float: left;
           margin-right: 10px; }
-          /* line 204, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+          /* line 202, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
           .what-we-do .inner-wrapper .toggle ul li:last-of-type {
             margin-right: 0; }
-          /* line 208, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+          /* line 206, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
           .what-we-do .inner-wrapper .toggle ul li a {
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             font-size: 15px;
             color: #fff; }
-            /* line 213, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+            /* line 211, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
             .what-we-do .inner-wrapper .toggle ul li a:hover {
               opacity: 0.8; }
-            /* line 217, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+            /* line 215, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
             .what-we-do .inner-wrapper .toggle ul li a.active {
               border-radius: 60px;
               background: #fff;
               padding: 3px 10px;
               color: #892E3E; }
-              /* line 223, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+              /* line 221, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
               .what-we-do .inner-wrapper .toggle ul li a.active:hover {
                 opacity: 1.0; }
 
-/* line 234, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 232, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .process {
   background: #892E3E; }
-  /* line 237, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 235, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .process .inner-wrapper {
     *zoom: 1;
     max-width: 87.5em;
@@ -866,7 +864,7 @@ dl {
     /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
     .process .inner-wrapper:after {
       clear: both; }
-    /* line 242, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 240, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .process .inner-wrapper .column {
       float: left;
       display: block;
@@ -876,10 +874,10 @@ dl {
       /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
       .process .inner-wrapper .column:last-child {
         margin-right: 0; }
-      /* line 246, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 244, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .process .inner-wrapper .column:first-of-type {
         margin-left: 0%; }
-      /* line 250, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 248, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .process .inner-wrapper .column p {
         padding: 0 60px;
         font-size: 19px;
@@ -889,97 +887,100 @@ dl {
         padding-bottom: 120px;
         color: #fff;
         padding-bottom: 40px; }
-      /* line 256, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 254, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .process .inner-wrapper .column h2 {
         font-size: 30px;
         color: #fff;
         font-weight: lighter;
         padding: 40px 0 50px 0; }
-        /* line 262, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 260, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.discover {
           background: url("/images/docs.png") no-repeat top; }
-        /* line 266, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 264, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.build {
           background: url("/images/build.png") no-repeat top; }
-        /* line 270, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 268, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.launch {
           background: url("/images/rocket.png") no-repeat top; }
 
-/* line 280, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-.contact .inner-wrapper {
-  *zoom: 1;
-  max-width: 87.5em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 120px;
-  *zoom: 1; }
-  /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .contact .inner-wrapper:before, .contact .inner-wrapper:after {
-    content: " ";
-    display: table; }
-  /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .contact .inner-wrapper:after {
-    clear: both; }
-  /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .contact .inner-wrapper:before, .contact .inner-wrapper:after {
-    content: " ";
-    display: table; }
-  /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .contact .inner-wrapper:after {
-    clear: both; }
-/* line 285, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-.contact h1 {
-  font-size: 38px;
-  color: #222222;
-  text-align: center;
-  padding-bottom: 60px; }
-/* line 289, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-.contact p {
-  padding: 0 60px;
-  font-size: 19px;
-  color: #727272;
-  line-height: 35px;
-  text-align: center;
-  padding-bottom: 120px;
-  padding-bottom: 40px; }
-/* line 294, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-.contact .service-select {
-  width: 40%;
-  height: auto;
-  border-radius: 3px;
-  float: none;
-  background: #F4F5F6;
-  margin: 0 auto;
-  border: 1px solid #E3E4E6;
-  margin-bottom: 90px; }
-  /* line 303, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-  .contact .service-select ul {
+/* line 276, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+.contact {
+  background: #fff; }
+  /* line 279, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  .contact .inner-wrapper {
+    *zoom: 1;
+    max-width: 87.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
     *zoom: 1; }
     /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .contact .service-select ul:before, .contact .service-select ul:after {
+    .contact .inner-wrapper:before, .contact .inner-wrapper:after {
       content: " ";
       display: table; }
     /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .contact .service-select ul:after {
+    .contact .inner-wrapper:after {
       clear: both; }
-    /* line 306, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-    .contact .service-select ul li {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 47.96819%;
-      text-align: center;
-      border-right: 1px solid #E3E4E6;
-      padding: 15px; }
-      /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
-      .contact .service-select ul li:last-child {
-        margin-right: 0; }
-      /* line 312, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
-      .contact .service-select ul li:last-of-type {
-        margin: 0;
-        border-right: none; }
+    /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .contact .inner-wrapper:before, .contact .inner-wrapper:after {
+      content: " ";
+      display: table; }
+    /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .contact .inner-wrapper:after {
+      clear: both; }
+  /* line 284, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  .contact h1 {
+    font-size: 38px;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 60px; }
+  /* line 288, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  .contact p {
+    padding: 0 60px;
+    font-size: 19px;
+    color: #727272;
+    line-height: 35px;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-bottom: 40px; }
+  /* line 293, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  .contact .service-select {
+    width: 40%;
+    height: auto;
+    border-radius: 3px;
+    float: none;
+    background: #F4F5F6;
+    margin: 0 auto;
+    border: 1px solid #E3E4E6;
+    margin-bottom: 90px; }
+    /* line 302, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    .contact .service-select ul {
+      *zoom: 1; }
+      /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
+      .contact .service-select ul:before, .contact .service-select ul:after {
+        content: " ";
+        display: table; }
+      /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
+      .contact .service-select ul:after {
+        clear: both; }
+      /* line 305, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      .contact .service-select ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 47.96819%;
+        text-align: center;
+        border-right: 1px solid #E3E4E6;
+        padding: 15px; }
+        /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
+        .contact .service-select ul li:last-child {
+          margin-right: 0; }
+        /* line 311, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        .contact .service-select ul li:last-of-type {
+          margin: 0;
+          border-right: none; }
 
-/* line 321, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 320, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .form-bottom {
   *zoom: 1;
   float: left;
@@ -999,7 +1000,7 @@ dl {
   /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
   .form-bottom:last-child {
     margin-right: 0; }
-  /* line 329, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 328, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-bottom .form-left {
     float: left;
     display: block;
@@ -1008,7 +1009,7 @@ dl {
     /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
     .form-bottom .form-left:last-child {
       margin-right: 0; }
-  /* line 333, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 332, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-bottom .form-right {
     float: left;
     display: block;
@@ -1018,7 +1019,7 @@ dl {
     /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
     .form-bottom .form-right:last-child {
       margin-right: 0; }
-  /* line 338, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 337, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-bottom .styled-select select {
     background: transparent;
     float: left;
@@ -1038,13 +1039,13 @@ dl {
     /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
     .form-bottom .styled-select select:last-child {
       margin-right: 0; }
-  /* line 353, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 352, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-bottom .styled-select {
     overflow: hidden;
     background: url("/images/drop-menu.png") no-repeat right 17px;
     cursor: pointer; }
 
-/* line 361, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 360, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .form-item label {
   font-size: 13px;
   text-transform: uppercase;
@@ -1052,13 +1053,13 @@ dl {
   color: #ACB0BD;
   font-weight: bold;
   padding-bottom: 8px; }
-/* line 370, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 369, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .form-item.details {
   width: 89%;
   height: auto;
   margin-left: 60px; }
 
-/* line 376, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 375, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 input {
   float: left;
   display: block;
@@ -1076,7 +1077,7 @@ input {
   /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/neat/grid/_span-columns.scss */
   input:last-child {
     margin-right: 0; }
-  /* line 388, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 387, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   input.submit-button {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -1092,11 +1093,11 @@ input {
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px; }
-    /* line 401, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 400, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     input.submit-button:hover {
       background: #892E3E; }
 
-/* line 407, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 406, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 footer {
   *zoom: 1;
   background: #f6f6f6;
@@ -1110,34 +1111,34 @@ footer {
   /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   footer:after {
     clear: both; }
-  /* line 414, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 413, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   footer .address {
     float: left; }
-    /* line 418, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 417, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     footer .address ul li {
       display: inline;
       margin-right: 50px; }
-      /* line 422, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 421, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       footer .address ul li:last-of-type {
         margin-right: 0; }
-      /* line 426, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 425, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       footer .address ul li a {
         -webkit-transition: 0.5 all ease-in-out;
         -moz-transition: 0.5 all ease-in-out;
         transition: 0.5 all ease-in-out;
         color: #CE7D8B; }
-        /* line 430, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+        /* line 429, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         footer .address ul li a:hover {
           color: #dc4a55; }
-  /* line 438, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 437, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   footer .copyright {
     float: right; }
 
-/* line 443, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 442, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"] {
   display: none; }
 
-/* line 446, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 445, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"] + label {
   background: url("/images/mobile-unchecked.png") no-repeat top center;
   cursor: pointer;
@@ -1146,15 +1147,15 @@ footer {
   padding-top: 90px;
   font-weight: 600; }
 
-/* line 454, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 453, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"]:checked + label {
   background: url("/images/mobile-checked.png") no-repeat top center; }
 
-/* line 458, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 457, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] {
   display: none; }
 
-/* line 461, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 460, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] + label {
   background: url("/images/web-checked.png") no-repeat top center;
   cursor: pointer;
@@ -1163,15 +1164,15 @@ footer {
   padding-top: 90px;
   font-weight: 600; }
 
-/* line 469, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 468, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"]:checked + label {
   background: url("/images/web-unchecked.png") no-repeat top center; }
 
-/* line 473, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 472, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .form-item {
   margin-bottom: 15px;
   position: relative; }
-  /* line 477, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  /* line 476, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-item .status {
     position: absolute;
     right: 0;
@@ -1186,7 +1187,7 @@ footer {
     -moz-perspective-origin: 150% 150%;
     transform: rotateX(180deg);
     transition: all 0.2s; }
-    /* line 492, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 491, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .form-item .status span {
       position: absolute;
       display: block;
@@ -1194,34 +1195,53 @@ footer {
       height: 100%;
       top: 0;
       right: 0; }
-    /* line 501, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 500, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .form-item .status.flip {
       transform: rotateX(1deg); }
-      /* line 504, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 503, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .form-item .status.flip .success {
         /*z-index: 2;*/ }
-      /* line 508, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+      /* line 507, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
       .form-item .status.flip .fail {
         /*z-index: 1;*/ }
-    /* line 513, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 512, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .form-item .status .success {
       background: green;
       z-index: 1;
       transform: translateZ(1px); }
-    /* line 519, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+    /* line 518, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
     .form-item .status .fail {
       background: red;
       z-index: 2; }
 
-/* line 526, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 525, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 label {
   color: #333;
   display: block; }
 
-/* line 531, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+/* line 530, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .fs1 {
   font-size: 4em;
   color: #fff; }
+
+/* line 535, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+.blurImg {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+  /* line 542, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+  .blurImg > div {
+    position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+
+/* line 551, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
+.blur {
+  opacity: 0; }
 
 /* line 33, /Users/coreyhaggard/mossio/source/stylesheets/all.scss */
 #popover-content {
