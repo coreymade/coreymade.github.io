@@ -1,3 +1,3 @@
 $(document).ready( function(){
-  $('body').find('.header-section').height($(window).height());
+  $('body').find('.header-section,.new,.blur').height($(window).height());
 });

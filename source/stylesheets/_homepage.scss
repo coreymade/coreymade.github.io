@@ -1,8 +1,5 @@
 .header-section {
   @include clearfix;
-  padding: 0 30px;
-  background: image-url('header-background.png') no-repeat;
-  background-size: cover;
 
   .logo {
     @include size (75 auto);
@@ -531,4 +528,24 @@ label {
 .fs1 {
   font-size: 4em;
   color: #fff;
+}
+
+.blurImg {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  & > div {
+    position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.blur {
+  opacity: 0;
 }

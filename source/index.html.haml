@@ -1,29 +1,8 @@
-/ %header
-/   .header-section
-/     .logo-area
-/       =image_tag 'logo.png'
-/     .mobile-menu
-/       #mobilemenu
-/         mobile-menu
-
-/     .desktop-menu
-/       %nav
-/         %ul
-/           %li
-/             %a{href: '#'} home
-/           %li
-/             %a.popover{href: '#'} our work
-/           %li
-/             %a{href: '#'} what we do
-/           %li
-/             %a{href: '#'} lets get started
-
-/ .main-hero
-/   .lab-intro
-/     We build better web &amp mobile apps
-
 %header
   .header-section
+    .blurImg
+      %div.new{:style => "background-image: url('images/normal-bg.png')"}
+      .blur{:style => "background-image: url('images/blurred-bg.png')"}
     .logo
       =image_tag 'logo.png'
     %nav
