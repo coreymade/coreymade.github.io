@@ -71,6 +71,7 @@
 .our-work {
   @include section-area;
   max-width: 90em;
+  background: #fff;
 
   h1 {
     @include section-header;
@@ -273,6 +274,7 @@
 }
 
 .contact {
+  background: #fff;
 
   .inner-wrapper {
     @include section-area;
