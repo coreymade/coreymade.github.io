@@ -50,6 +50,45 @@
   }
 }
 
+.header-wrap {
+  @include clearfix;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 180px;
+  font-size: 85px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  & span {
+    color: $header-red;
+
+    &.first {
+      margin-left: -20px;
+      letter-spacing: -23px
+    }
+
+    &.second {
+      margin-left: -24px;
+      letter-spacing: -16px;
+    }
+  }
+}
+
+.sub-intro {
+  font-size: 25px;
+  color: #fff;
+  width: 1060px;
+  margin: $center;
+  text-align: center;
+  border-top: 2px solid $header-red;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+
 .main-hero {
   background: $header-red;
   background: image-url('app-background.png') no-repeat right $header-red;
@@ -66,6 +105,12 @@
   .hero-wrap {
     @include outer-container;
   }
+}
+
+.our-clients {
+  @include size (1100 auto);
+  margin: $center;
+  min-height: 900px;
 }
 
 .our-work {

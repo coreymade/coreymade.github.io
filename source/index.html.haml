@@ -1,21 +1,22 @@
 %header
-  .header-section
+  .header-section.group
     .blurImg
       %div.new{:style => "background-image: url('images/normal-bg.png')"}
       .blur{:style => "background-image: url('images/blurred-bg.png')"}
-    .logo
-      =image_tag 'logo.png'
-    %nav
-      %input#sidebar.toggle{:name => "sidebar", :type => "checkbox"}/
-      %label.hamburger{:for => "sidebar"}
-        %i Show Menu
+    .header-wrap
+      .logo
+        =image_tag 'logo.png'
+      %nav
+        nav here
+    .intro
+      we
+      %span.first .
+      build
+      %span.second .
+      apps
 
-
-%section#popover-content
-  %a.close
-    close me
-  .scroll
-    scroll box
+    .sub-intro
+      We’re a full service digital agency focused on building scalable web and mobile applications.
 
 %section.our-clients
   clients list here
