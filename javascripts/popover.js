@@ -11,4 +11,16 @@ $(document).ready(function() {
 		$(this).parent().removeClass('visible');
 		$body.find('.navigation-area').addClass('visible');
 	});
+
+	var showMenuPosition = $('#show-menu').position().top
+  var opacity = 1;
+  $(window).on("scroll", function() {
+      var fromTop = $(window).scrollTop();
+      if(fromTop > showMenuPosition){
+          $("#top").fadeIn();
+      }else{
+          $("#top").fadeOut();
+      }
+  });
+
 });
