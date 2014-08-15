@@ -658,7 +658,7 @@ dl {
 /* line 92, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .main-hero {
   background: #dc4a55;
-  background: url("/images/app-background.png") no-repeat right #dc4a55;
+  background: url("../images/app-background.png") no-repeat right #dc4a55;
   min-height: 612px; }
   /* line 97, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .main-hero .lab-intro {
@@ -805,7 +805,7 @@ dl {
 
 /* line 210, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .what-we-do {
-  background: url("/images/sketch-background.png") no-repeat #b93f54;
+  background: url("../images/sketch-background.png") no-repeat #b93f54;
   background-size: cover; }
   /* line 214, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .what-we-do .inner-wrapper {
@@ -945,13 +945,13 @@ dl {
         padding: 40px 0 50px 0; }
         /* line 305, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.discover {
-          background: url("/images/docs.png") no-repeat top; }
+          background: url("../images/docs.png") no-repeat top; }
         /* line 309, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.build {
-          background: url("/images/build.png") no-repeat top; }
+          background: url("../images/build.png") no-repeat top; }
         /* line 313, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
         .process .inner-wrapper .column h2.launch {
-          background: url("/images/rocket.png") no-repeat top; }
+          background: url("../images/rocket.png") no-repeat top; }
 
 /* line 321, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .contact {
@@ -1092,7 +1092,7 @@ dl {
   /* line 397, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
   .form-bottom .styled-select {
     overflow: hidden;
-    background: url("/images/drop-menu.png") no-repeat right 17px;
+    background: url("../images/drop-menu.png") no-repeat right 17px;
     cursor: pointer; }
 
 /* line 405, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
@@ -1190,7 +1190,7 @@ footer {
 
 /* line 490, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"] + label {
-  background: url("/images/mobile-unchecked.png") no-repeat top center;
+  background: url("../images/mobile-unchecked.png") no-repeat top center;
   cursor: pointer;
   font-size: 15px;
   color: #818490;
@@ -1199,7 +1199,7 @@ footer {
 
 /* line 498, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .amPmCheckbox input[type="checkbox"]:checked + label {
-  background: url("/images/mobile-checked.png") no-repeat top center; }
+  background: url("../images/mobile-checked.png") no-repeat top center; }
 
 /* line 502, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] {
@@ -1207,7 +1207,7 @@ footer {
 
 /* line 505, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"] + label {
-  background: url("/images/web-checked.png") no-repeat top center;
+  background: url("../images/web-checked.png") no-repeat top center;
   cursor: pointer;
   font-size: 15px;
   color: #818490;
@@ -1216,7 +1216,7 @@ footer {
 
 /* line 513, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .web-app-check input[type="checkbox"]:checked + label {
-  background: url("/images/web-unchecked.png") no-repeat top center; }
+  background: url("../images/web-unchecked.png") no-repeat top center; }
 
 /* line 517, /Users/coreyhaggard/mossio/source/stylesheets/_homepage.scss */
 .form-item {

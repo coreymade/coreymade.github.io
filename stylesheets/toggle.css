@@ -1,10 +1,10 @@
-/* line 1, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 1, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .toggle {
   visibility: hidden;
   position: absolute;
   left: -9999px; }
 
-/* line 7, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 7, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .hamburger {
   top: 50%;
   left: 50%;
@@ -17,7 +17,7 @@
   transition-delay: .15s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-/* line 20, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 20, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .hamburger i {
   display: block;
   text-indent: 100%;
@@ -31,7 +31,7 @@
   transition: .3s;
   transition-delay: .2s; }
 
-/* line 34, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 34, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .hamburger:after, .hamburger:before {
   content: '';
   position: absolute;
@@ -44,25 +44,25 @@
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform-origin: left top; }
 
-/* line 47, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 47, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .hamburger:after {
   top: 100%;
   transform-origin: left bottom; }
 
-/* line 52, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 52, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .toggle:checked + .hamburger {
   transform: translate3d(16px, 0, 0);
   transition-delay: .2s; }
 
-/* line 57, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 57, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .toggle:checked + .hamburger i {
   opacity: 0;
   transition-delay: 0; }
 
-/* line 62, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 62, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .toggle:checked + .hamburger:after {
   transform: rotate3d(0, 0, 1, -135deg) translate3d(-8px, 4px, 0); }
 
-/* line 67, /Users/coreyhaggard/mossio/source/stylesheets/toggle.scss */
+/* line 67, /Users/jerettFBS/mossio/source/stylesheets/toggle.scss */
 .toggle:checked + .hamburger:before {
   transform: rotate3d(0, 0, 1, 135deg) translate3d(-8px, -4px, 0); }
