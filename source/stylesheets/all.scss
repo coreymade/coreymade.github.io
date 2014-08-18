@@ -31,6 +31,24 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+
+body {
+  background: #61ABD7;
+}
+
+.smlogo {
+  @include size (63 auto);
+  margin: $center;
+  margin-top: 15%;
+}
+
+.introlab {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+
 #popover-content {
   @include transition(visibility 0s linear 0.5s, opacity 0.3s linear);
   background-color: #fff;
