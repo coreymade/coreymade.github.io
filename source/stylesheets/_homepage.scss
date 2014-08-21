@@ -244,117 +244,6 @@
   }
 }
 
-.what-we-do {
-  background: image-url('sketch-background.png') no-repeat #B93F54;
-  background-size: cover;
-
-  .inner-wrapper {
-    @include section-area;
-    padding-bottom: 70px;
-
-    h1 {
-      @include section-header;
-      padding-bottom: 30px;
-      color: #fff;
-    }
-
-    p {
-      @include paragraph;
-      color: #fff;
-      padding-bottom: 40px;
-    }
-
-    .toggle {
-      @include size (138 auto);
-      margin: $center;
-      border-radius: 60px;
-      background: #892E3E;
-      padding: 7px;
-      text-align: center;
-      margin-bottom: 60px;
-
-      ul {
-        @include clearfix;
-
-        li {
-          display: block;
-          float: left;
-          margin-right: 10px;
-
-          &:last-of-type {
-            margin-right: 0;
-          }
-
-          a {
-            @include transition (all 0.3s ease-in-out);
-            font-size: 15px;
-            color: #fff;
-
-            &:hover {
-              opacity: 0.8;
-            }
-
-            &.active {
-              border-radius: 60px;
-              background: #fff;
-              padding: 3px 10px;
-              color: #892E3E;
-
-              &:hover {
-                opacity: 1.0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.process {
-  background: #892E3E;
-
-  .inner-wrapper {
-    @include section-area;
-    @include clearfix;
-    padding-bottom: 100px;
-
-    .column {
-      @include span-columns (4.0);
-      text-align: center;
-
-      &:first-of-type {
-        @include shift (0);
-      }
-
-      p {
-        @include paragraph;
-        color: #fff;
-        padding-bottom: 40px
-      }
-
-      h2 {
-        font-size: 30px;
-        color: #fff;
-        font-weight: lighter;
-        padding: 40px 0 50px 0;
-
-        &.discover {
-          background: image-url('docs.png') no-repeat top;
-        }
-
-        &.build {
-          background: image-url('build.png') no-repeat top;
-        }
-
-        &.launch {
-          background: image-url('rocket.png') no-repeat top;
-        }
-      }
-    }
-  }
-}
-
 .contact {
   background: #fff;
 
@@ -423,6 +312,12 @@
     background: none;
     color: #61ABD7;
     font-weight: bold;
+    @include transition (all 0.2s ease-in-out);
+
+    &:hover {
+      background: #61ABD7;
+      color: #fff;
+    }
   }
 }
 
@@ -438,22 +333,75 @@
     border-left: 1px solid #E2E3E8;
   }
 
-  &:hover {
-    background: #275776;
-    cursor: pointer;
+  .service-desc {
+    position: relative;
+    opacity: 0;
+    @include transition (all 1.0s ease-in-out);
+    font-size: 14px;
+    color: #fff;
+    padding: 0 20px;
+  }
+
+  .service-icon {
+    padding-top: 110%;
+    padding-bottom: 30px;
+    @include transition (all 0.2s ease-in-out);
   }
 
   .service-name {
     text-transform: uppercase;
     color: #275776;
     font-size: 18px;
+    @include transition (all 3.0 ease-in-out);
+  }
+
+  &:hover {
+    background: #275776;
+    cursor: pointer;
+
+    .service-icon {
+      padding-top: 20%;
+    }
+
+    .service-desc {
+      display: block;
+      top: 0;
+      opacity: 1;
+    }
   }
 }
 
+.case-studies {
+  .slide-one {
+    background: image-url('slide1.png') no-repeat top left;
+    background-size: cover;
+    height: 100%;
+    padding: 130px 0;
+    text-align: center;
+  }
 
+  .introduction {
+    font-size: 65px;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+    width: 721px;
+    margin: $center;
+    line-height: 70px;
+    margin-top: 40px;
+  }
 
-
-
+  button {
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 60px;
+    margin-top: 60px;
+  }
+}
 
 .form-bottom {
   @include clearfix;
@@ -541,41 +489,6 @@ input {
   }
 }
 
-footer {
-  @include clearfix;
-  background: $background-gray;
-  color: #535353;
-  font-size: 14px;
-  padding: 40px 30px;
-
-  .address {
-    float: left;
-
-    ul {
-      li {
-        display: inline;
-        margin-right: 50px;
-
-        &:last-of-type {
-          margin-right: 0;
-        }
-
-        a {
-          @include transition (0.5 all ease-in-out);
-          color: #CE7D8B;
-
-          &:hover {
-            color: $header-red;
-          }
-        }
-      }
-    }
-  }
-
-  .copyright {
-    float: right;
-  }
-}
 
 .amPmCheckbox input[type="checkbox"] {
     display: none;
@@ -697,11 +610,15 @@ label {
   z-index: 999;
   width: 100%;
   background-color: white;
-  line-height: 2.5em;
   padding-left: 2em;
   display: none;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid green;
-  opacity: 0.99;
+  border-bottom: 1px solid #61ABD7;
+  opacity: 0.97;
+
+  .logo {
+    padding-left: 20px;
+    padding-top: 5px;
+  }
 }
