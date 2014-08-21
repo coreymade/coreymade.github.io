@@ -10,7 +10,7 @@
         =image_tag 'white-logo.png'
       %nav
         nav here
-    .intro
+    .intro#show-menu
       Building
       %span.first .
       Better
@@ -50,11 +50,34 @@
       %li.cinch
         =image_tag 'trackr-logo.png'
 
-%section.our-work#show-menu
-  %h1
-    We build amazing experiences
-  %p
-    We're a small team of designers and developers that are passionate about building usable and beautiful software. We take absolute pride to carefully build user experiences in mobile and web applications, that make a complete difference in the lives of those that use them.
+%section.our-work
+  .column
+    %h2
+      We're a creative agency
+    %p
+      We believe in quality, perfected craftmenship in every pixel we push. Here’s how we keep it real on a daily basis.
+    %button
+      See our services
+  .service-column.first
+    .service-icon
+      =image_tag 'branding.png'
+    .service-name
+      branding
+  .service-column
+    .service-icon
+      =image_tag 'design.png'
+    .service-name
+      design / ux
+  .service-column
+    .service-icon
+      =image_tag 'development.png'
+    .service-name
+      development
+  .service-column
+    .service-icon
+      =image_tag 'consulting.png'
+    .service-name
+      consulting
 
 /   .work-top
 /     %ul
