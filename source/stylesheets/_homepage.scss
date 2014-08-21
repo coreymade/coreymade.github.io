@@ -5,6 +5,7 @@
     @include size (75 auto);
     float: left;
     padding-top: 50px;
+    margin-left: 50px;
   }
 
   .nav {
@@ -56,37 +57,50 @@
 
 .intro {
   text-align: center;
-  margin-top: 180px;
-  font-size: 85px;
-  text-transform: uppercase;
+  margin-top: 15%;
+  font-size: 72px;
   color: #fff;
   font-weight: bolder;
   font-family: 'Source Sans Pro', sans-serif;
 
   & span {
-    color: $header-red;
+    color: #D4E7F2;
 
     &.first {
-      margin-left: -20px;
-      letter-spacing: -23px
+      margin-left: -11px;
+      letter-spacing: -13px
     }
 
     &.second {
-      margin-left: -24px;
-      letter-spacing: -16px;
+      @extend .first;
     }
   }
 }
 
+.scroller-ind {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+.divider {
+  @include size (250 auto);
+  margin: $center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #fff;
+
+}
+
 .sub-intro {
-  font-size: 25px;
-  color: #fff;
-  width: 1060px;
+  @include size (700 auto);
+  font-size: 28px;
+  color: #1F3543;
   margin: $center;
   text-align: center;
-  border-top: 2px solid $header-red;
-  margin-top: 50px;
-  padding-top: 40px;
+  line-height: 42px;
 }
 
 .main-hero {
@@ -108,9 +122,18 @@
 }
 
 .our-clients {
-  @include size (1100 auto);
+  @include size (1350 auto);
   margin: $center;
-  min-height: 900px;
+  min-height: 850px;
+
+  h2 {
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    font-weight: lighter;
+  }
 }
 
 .our-work {
@@ -150,12 +173,11 @@
 }
 
 .client-area {
-  background: $background-gray;
   @include clearfix;
 
   &.top {
-   border-bottom: 1px solid #ebebeb;
-   border-top: 1px solid #ebebeb;
+   border-bottom: 1px solid rgba(255, 255, 255, .25);
+
   }
 
   ul {
@@ -163,10 +185,9 @@
       @include span-columns (3.2);
       margin: 0;
       text-align: center;
-      border-right: 1px solid #ebebeb;
+      border-right: 1px solid rgba(255, 255, 255, .25);
       padding: 30px 0;
-      min-height: 200px;
-      opacity: 0.8;
+      min-height: 300px;
 
       &.mod {
         padding-top: 46px;
@@ -177,23 +198,31 @@
       }
 
       &.drone {
-        @extend .geek;
+        padding-top: 103px;
       }
 
       &.trackr {
-        padding-top: 42px;
+        padding-top: 115px;
       }
 
       &.spark {
-        padding-top: 70px;
+        padding-top: 100px;
       }
 
       &.native {
-        padding-top: 62px;
+        padding-top: 112px;
+      }
+
+      &.cinch-loyal {
+        padding-top: 128px;
+      }
+
+      &.geek {
+        padding-top: 128px;
       }
 
       &.geosnap {
-        padding-top: 50px;
+        padding-top: 99px;
       }
 
       &.cinch {

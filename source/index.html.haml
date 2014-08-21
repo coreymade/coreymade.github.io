@@ -1,38 +1,60 @@
-.smlogo
-  =image_tag 'smlogo.png'
-.introlab
-  we're a creative agency
+#top
+  Mossio Menu 2
+%header
+  .header-section.group
+    .blurImg
+      %div.new{:style => "background-image: url('images/normal-bg.png')"}
+      .blur{:style => "background-image: url('images/blurred-bg.png')"}
+    .header-wrap
+      .logo
+        =image_tag 'white-logo.png'
+      %nav
+        nav here
+    .intro
+      Building
+      %span.first .
+      Better
+      %span.second .
+      Experiences
 
-/ #top
-/   Mossio Menu 2
-/ %header
-/   .header-section.group
-/     .blurImg
-/       %div.new{:style => "background-image: url('images/normal-bg.png')"}
-/       .blur{:style => "background-image: url('images/blurred-bg.png')"}
-/     .header-wrap
-/       .logo
-/         =image_tag 'logo.png'
-/       %nav
-/         nav here
-/     .intro
-/       we
-/       %span.first .
-/       build
-/       %span.second .
-/       apps
+    .divider
 
-/     .sub-intro
-/       We’re a full service digital agency focused on building scalable web and mobile applications.
 
-/ %section.our-clients
-/   clients list here
+    .sub-intro
+      We're a creative agency making remarkable brands, beautiful interfaces and happy clients.
 
-/ %section.our-work#show-menu
-/   %h1
-/     We build amazing experiences
-/   %p
-/     We're a small team of designers and developers that are passionate about building usable and beautiful software. We take absolute pride to carefully build user experiences in mobile and web applications, that make a complete difference in the lives of those that use them.
+    .scroller-ind
+      =image_tag 'scroll.png'
+
+%section.our-clients
+  %h2
+    Here is some of the brands we've helped
+  %section.client-area.top
+    %ul
+      %li.native
+        =image_tag 'native-logo.png'
+      %li.geosnap
+        =image_tag 'geosnap-logo.png'
+      %li.drone
+        =image_tag 'drone-logo.png'
+      %li.trackr
+        =image_tag 'tutorme-logo.png'
+  %section.client-area
+    %ul
+      %li.spark
+        =image_tag 'mdt-logo.png'
+      %li.cinch-loyal
+        =image_tag 'cinch-logo.png'
+      %li.geek
+        =image_tag 'geeklist-logo.png'
+      %li.cinch
+        =image_tag 'trackr-logo.png'
+
+%section.our-work#show-menu
+  %h1
+    We build amazing experiences
+  %p
+    We're a small team of designers and developers that are passionate about building usable and beautiful software. We take absolute pride to carefully build user experiences in mobile and web applications, that make a complete difference in the lives of those that use them.
 
 /   .work-top
 /     %ul
@@ -52,29 +74,6 @@
 /         =image_tag 'tips-app.png'
 /       %li
 /         =image_tag 'planner-app.png'
-
-/ /   %h1
-/ /     Select clients
-/ / %section.client-area.top
-/ /   %ul
-/ /     %li.mod
-/ /       =image_tag 'mdt.png'
-/ /     %li.geek
-/ /       =image_tag 'geeklist.png'
-/ /     %li.drone
-/ /       =image_tag 'drone.png'
-/ /     %li.trackr
-/ /       =image_tag 'trackr.png'
-/ / %section.client-area
-/ /   %ul
-/ /     %li.spark
-/ /       =image_tag 'sm-logo.png'
-/ /     %li.native
-/ /       =image_tag 'native.png'
-/ /     %li.geosnap
-/ /       =image_tag 'geosnap.png'
-/ /     %li.cinch
-/ /       =image_tag 'cinch.png'
 
 / %section.what-we-do
 /   .inner-wrapper
@@ -186,8 +185,8 @@
 /       2014 - Mossio Lab LLC - All Rights Reserved
 
 
-/ :javascript
-/   $(window).load(function(){
-/         $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
-/       });
+:javascript
+  $(window).load(function(){
+        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
+      });
 
