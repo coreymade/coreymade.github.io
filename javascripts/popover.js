@@ -9,7 +9,6 @@ $(document).ready(function() {
 	$('.close').on('click', function(event) {
 		event.preventDefault();
 		$(this).parent().removeClass('visible');
-		$body.find('.navigation-area').addClass('visible');
 	});
 
 	var showMenuPosition = $('#show-menu').position().top

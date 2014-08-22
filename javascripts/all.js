@@ -4,7 +4,7 @@ $(window).scroll(function() {
   return $(".blur").css("opacity", oVal);
 });
 $(document).ready( function(){
-  $('body').find('.header-section,.new,.blur').height($(window).height());
+  $('body').find('.header-section,.new,.blur,.case-studies').height($(window).height());
 });
 // jquery.event.move
 //
@@ -692,7 +692,6 @@ $(document).ready(function() {
 	$('.close').on('click', function(event) {
 		event.preventDefault();
 		$(this).parent().removeClass('visible');
-		$body.find('.navigation-area').addClass('visible');
 	});
 
 	var showMenuPosition = $('#show-menu').position().top
