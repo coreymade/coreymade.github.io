@@ -2,6 +2,10 @@
   .logo {
     @include size (200px);
     float: left;
+
+    p {
+      @include paragraph;
+    }
   }
 
   ul {
