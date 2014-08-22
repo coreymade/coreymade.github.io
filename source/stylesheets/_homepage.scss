@@ -306,7 +306,7 @@
   }
 
   button {
-    border: 1px solid #61ABD7;
+    border: 1px solid $fuckingshit;
     border-radius: 60px;
     padding: 20px 30px;
     background: none;
@@ -322,12 +322,16 @@
 }
 
 .service-column {
-  @include span-columns (2.332 of 12);
-  border-right: 1px solid #E2E3E8;
-  text-align: center;
-  margin-right: 0;
-  min-height: 700px;
-  @include transition (all 0.2s ease-in-out);
+  @include media ($medium-screen) {
+    @include span-columns (2.332 of 12);
+    border-right: 1px solid #E2E3E8;
+    text-align: center;
+    margin-right: 0;
+    min-height: 700px;
+    @include transition (all 0.2s ease-in-out);
+  }
+
+  @include size (100% auto);
 
   &.first {
     border-left: 1px solid #E2E3E8;
