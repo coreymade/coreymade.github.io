@@ -1,24 +1,20 @@
 #top {
-  padding: 20px 0;
-  border-top: 5px solid #000000;
-  border-bottom: 1px solid #000000;
-}
+  .logo {
+    @include size (200px);
+    float: left;
+  }
 
-#top .logo {
-  float: left;
-  width: 200px;
-}
+  ul {
+    float: right;
 
-#top ul {
-  float: right;
-}
+    li {
+      float: left;
+      margin-left: 40px;
+      text-transform: uppercase;
 
-#top ul li {
-  float: left;
-  margin-left: 40px;
-  text-transform: uppercase;
-}
-
-#top ul li:first-child {
-  margin-right: 0;
+      &:first-of-type {
+        margin-right: 0;
+      }
+    }
+  }
 }
