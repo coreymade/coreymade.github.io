@@ -51,17 +51,24 @@
   }
 
   button {
+    background: none;
+    border: none;
+  }
+
+
+  a {
     border: 2px solid #61ABD7;
     background: none;
     padding: 16px 45px;
     border-radius: 60px;
     font-size: 18px;
     color: #61ABD7;
+    display: block;
     @include transition (all 0.2s ease-in-out);
 
     &:hover {
-      background: #61ABD7;
       color: #fff;
+      background: #61ABD7;
     }
   }
 }

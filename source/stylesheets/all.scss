@@ -37,6 +37,10 @@
 body {
   // background: #61ABD7;
   background: #fff;
+
+  &.index {
+    background: #61ABD7;
+  }
 }
 
 .smlogo {
