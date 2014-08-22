@@ -294,7 +294,7 @@
   padding-left: 60px;
   padding-bottom: 130px;
 
-  p {
+  .div {
     color: #737A8F;
     font-size: 19px;
     line-height: 32px;
@@ -303,6 +303,11 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 40px;
+  }
+
+  .div2 {
+    @extend .div;
+    padding-bottom: 0;
   }
 
   button {
@@ -344,6 +349,12 @@
     font-size: 14px;
     color: #fff;
     padding: 0 20px;
+  }
+
+  .div3 {
+    @extend .service-desc;
+    color: green;
+    padding: 0 15px;
   }
 
   .service-icon {
@@ -625,4 +636,12 @@ label {
     padding-left: 20px;
     padding-top: 5px;
   }
+}
+
+.cta {
+  @include blue-button
+}
+
+.another {
+  @include blue-button
 }
