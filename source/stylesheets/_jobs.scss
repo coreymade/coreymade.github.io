@@ -1,5 +1,6 @@
 .wrapper {
   @include outer-container;
+  padding: 0 160px;
 
   .logo {
     @include size (187 auto);
