@@ -1454,7 +1454,8 @@ textarea {
   *zoom: 1;
   max-width: 87.5em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 160px; }
   /* line 18, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .wrapper:before, .wrapper:after {
     content: " ";
@@ -1462,20 +1463,20 @@ textarea {
   /* line 23, /Users/coreyhaggard/mossio/source/stylesheets/bourbon/addons/_clearfix.scss */
   .wrapper:after {
     clear: both; }
-  /* line 4, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 5, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper .logo {
     width: 187px;
     height: auto;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px; }
-  /* line 10, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 11, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper h2 {
     font-size: 48px;
     font-weight: lighter;
     text-align: center;
     margin-bottom: 100px; }
-    /* line 16, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+    /* line 17, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
     .wrapper h2.uppercase {
       font-size: 13px;
       color: #61ABD7;
@@ -1484,10 +1485,10 @@ textarea {
       text-align: left;
       margin-bottom: 0;
       font-weight: bold; }
-  /* line 27, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 28, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper ul {
     margin-top: 20px; }
-    /* line 30, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+    /* line 31, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
     .wrapper ul li {
       padding: 10px 0px;
       font-style: italic;
@@ -1495,22 +1496,22 @@ textarea {
       color: #737A8F;
       list-style-type: circle;
       margin-left: 20px; }
-  /* line 40, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 41, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper p {
     font-size: 19px;
     color: #737A8F;
     font-weight: normal;
     line-height: 37px;
     padding: 20px 0px; }
-  /* line 48, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 49, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper .button-wrap {
     text-align: center;
     margin-bottom: 130px; }
-  /* line 53, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 54, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper button {
     background: none;
     border: none; }
-  /* line 59, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+  /* line 60, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
   .wrapper a {
     border: 2px solid #61ABD7;
     background: none;
@@ -1522,7 +1523,7 @@ textarea {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-    /* line 69, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
+    /* line 70, /Users/coreyhaggard/mossio/source/stylesheets/_jobs.scss */
     .wrapper a:hover {
       color: #fff;
       background: #61ABD7; }
