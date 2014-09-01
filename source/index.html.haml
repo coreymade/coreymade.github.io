@@ -5,7 +5,7 @@
 
 #top
   .logo
-    =image_tag 'smlogo.png'
+    logo
   %ul
     %li
       %a{:href => 'test'} Our Values
@@ -102,14 +102,20 @@
       consulting
     .service-desc
       Consulting is the bloodline of our entire company. We work with your team to make sure what we're delievering to you as a final product is something that will exceed your expectations. We strive to educate your team on the software you're building with us, or the brand your launching to ensure optimal success.
-.case-studies
-  .slide-one.trackr
-    .trackr
-      =image_tag 'trackr-device.png'
-    .introduction
-      the path to finding your things
-    %button.popover
-      Read case study
+.case-study-columns
+  .column-bigger.trackr
+    big column
+  .column-smaller
+    .top-column.tutorme
+      here
+    .bottom-column.cinch
+      here
+  .medium-column.geosnap
+    medium column here
+
+.get-started
+  here
+
 
 /   .work-top
 /     %ul
