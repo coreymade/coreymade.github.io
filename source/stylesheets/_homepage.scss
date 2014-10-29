@@ -87,6 +87,12 @@
   border-top: 2px solid $header-red;
   margin-top: 50px;
   padding-top: 40px;
+
+  p {
+    @include size (650 auto);
+    line-height: 35px;
+    margin: $center;
+  }
 }
 
 .main-hero {
@@ -124,6 +130,8 @@
 
   p {
     @include paragraph;
+    @include size (900 auto);
+    margin: 0 auto;
   }
 
   .work-top {
@@ -603,12 +611,11 @@ label {
   left: 0;
   z-index: 999;
   width: 100%;
-  background-color: white;
+  background-color: $header-red;
   line-height: 2.5em;
   padding-left: 2em;
   display: none;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid green;
   opacity: 0.99;
 }
