@@ -4,7 +4,23 @@
     .two
     .three
   #menu
-    Hello, I'm a menu!
+    %ul
+      %li
+        %a{:href => "index.html"}
+          Home
+      %li
+        %a{:href => "about.html"}
+          About Us
+      %li
+        %a{:href => "values.html"}
+          Our Values
+      %li
+        %a{:href => "work.html"}
+          Our Work
+      %li
+        %a{:href => "project.html"}
+          Start at Project
+
 %header
   .header-section.group
     .blurImg
@@ -26,8 +42,32 @@
       %p
         We’re a full service digital agency focused on building scalable web and mobile applications.
 
-%section.our-clients
-  clients list here
+    .scrolled
+      =image_tag 'scroll-down.png'
+
+  %section.our-clients
+    %h2
+      clients we've helped
+    %ul
+      %li
+        =image_tag 'native.png'
+      %li
+        =image_tag 'geosnap.png'
+      %li.drone
+        =image_tag 'drone.png'
+      %li.tutor
+        =image_tag 'tutorme.png'
+    %ul
+      %li
+        =image_tag 'mdt.png'
+      %li.cinch
+        =image_tag 'cinch.png'
+      %li
+        =image_tag 'trackr.png'
+      %li.geek
+        =image_tag 'geeklist.png'
+
+
 
 %section.our-work#show-menu
   %h1
@@ -148,4 +188,12 @@
   $(window).load(function(){
         $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
       });
+
+:javascript
+    $(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+
 
