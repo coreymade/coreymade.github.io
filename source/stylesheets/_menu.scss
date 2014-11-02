@@ -15,7 +15,7 @@
 }
 
 #toggle.on .one {
-  transform: rotate(45deg) translate(5px, 5px);
+  @include transform(rotate(45deg) translate(5px, 5px));
 }
 
 #toggle.on .two {
@@ -23,7 +23,7 @@
 }
 
 #toggle.on .three {
-  transform: rotate(-45deg) translate(4px, -6px);
+  @include transform(rotate(-45deg) translate(4px, -6px));
 }
 
 #menu {
