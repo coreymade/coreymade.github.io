@@ -706,3 +706,25 @@ label {
     }
   }
 }
+
+.start-project {
+  background: #282828;
+  padding: 50px 0;
+  text-align: center;
+
+  button {
+    @include transition (all 0.3s ease-in-out);
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 45px;
+
+    &:hover {
+      background: #fff;
+      color: $header-red;
+    }
+  }
+}
