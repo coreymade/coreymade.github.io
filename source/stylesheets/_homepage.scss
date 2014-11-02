@@ -667,3 +667,42 @@ label {
   opacity: 0.99;
   margin: 0;
 }
+
+.work {
+  background: #fff;
+  @include clearfix;
+}
+
+.work-left {
+  @include span-columns (7 of 12);
+  margin: 0;
+
+  .left-top {
+    border: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.work-right {
+  @include span-columns (5.275 of 12);
+  margin: 0;
+
+  .top-right-work {
+    @include size (auto 50%);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bottom-right-work {
+    @include size (auto 50%);
+
+    img {
+      width: 100%;
+    }
+  }
+}
