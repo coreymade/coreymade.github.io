@@ -51,6 +51,8 @@
 }
 
 .scrolled {
+  @include animation(blink 3.0s ease-in-out);
+  @include animation-iteration-count(infinite);
   @include size (100% auto);
   position: absolute;
   bottom: 60px;
@@ -746,4 +748,13 @@ label {
       color: $header-red;
     }
   }
+}
+
+::selection {
+  background: $header-red; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: $header-red; /* Gecko Browsers */
+  color: #fff;
 }
