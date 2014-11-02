@@ -179,6 +179,7 @@
     @include paragraph;
     @include size (900 auto);
     margin: 0 auto;
+    padding: 0;
   }
 
   .work-top {
@@ -504,38 +505,57 @@ input {
 }
 
 footer {
-  @include clearfix;
-  background: $background-gray;
-  color: #535353;
-  font-size: 14px;
-  padding: 40px 30px;
+  background: #fff;
+  padding: 70px 0;
 
-  .address {
-    float: left;
+  .footer-container {
+    text-align: center;
 
     ul {
-      li {
-        display: inline;
-        margin-right: 50px;
+      display: inline-block;
 
-        &:last-of-type {
-          margin-right: 0;
-        }
+      li {
+        float: left;
+        display: block;
+        padding: 0 25px;
 
         a {
-          @include transition (0.5 all ease-in-out);
-          color: #CE7D8B;
+          @include transition (all 0.3s ease-in-out);
+          text-transform: uppercase;
+          color: #353535;
+          font-size: 12px;
+          font-weight: 600;
 
           &:hover {
             color: $header-red;
           }
         }
+
+        img {
+          width: 45%;
+          padding-left: 5px;
+        }
+
+        &.pad {
+          padding-top: 25px;
+        }
+
+        &.no-pad {
+          margin: 0;
+          padding: 0;
+
+        }
+
+        &:last-of-tpye {
+          margin-right: 0;
+        }
       }
     }
-  }
 
-  .copyright {
-    float: right;
+    .copyright {
+      font-size: 10px;
+      color: #353535;
+    }
   }
 }
 
@@ -708,7 +728,6 @@ label {
 }
 
 .start-project {
-  background: #282828;
   padding: 50px 0;
   text-align: center;
 
