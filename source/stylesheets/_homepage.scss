@@ -693,6 +693,19 @@ label {
 .work {
   background: #fff;
   @include clearfix;
+
+  button {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+  }
 }
 
 .work-left {
@@ -700,6 +713,7 @@ label {
   margin: 0;
 
   .left-top {
+    position: relative;
     background: image-url('trackr-image.png') no-repeat top center;
     background-size: cover;
     border: 0;
@@ -726,18 +740,19 @@ label {
   }
 
   .left-bottom {
+    position: relative;
     background: image-url('vertical.png') no-repeat top center;
     background-size: cover;
     height: 22em;
 
     .hover-event {
+      opacity: 0.0;
       @include transition (all 0.3s ease-in-out);
     }
 
     &:hover {
-      @include transition (all 0.3s ease-in-out);
       .hover-event {
-        display: block;
+        opacity: 1.0;
         @include size (100% 100%);
         background-color: rgba(219, 77, 87, 0.9);
       }
@@ -760,6 +775,7 @@ label {
 
   .top-right-work {
     @include transition (all 0.3s ease-in-out);
+    position: relative;
     background: image-url('wineo.png') no-repeat top center;
     background-size: cover;
     height: 17.5em;
@@ -785,6 +801,7 @@ label {
   }
 
   .bottom-right-work {
+    position: relative;
     height: 36.8em;
     background: image-url('tutorstudy.png') no-repeat top center;
     background-size: cover;
