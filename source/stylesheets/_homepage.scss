@@ -700,7 +700,53 @@ label {
   margin: 0;
 
   .left-top {
+    background: image-url('trackr-image.png') no-repeat top center;
+    background-size: cover;
     border: 0;
+    height: 32.3em;
+
+    .hover-event {
+      display: none;
+      @include transition (all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      @include transition (all 0.3s ease-in-out);
+      .hover-event {
+        display: block;
+        @include size (100% 100%);
+        background-color: rgba(219, 77, 87, 0.9);
+      }
+    }
+
+    a {
+      @include size (100% 100%);
+      display: block;
+    }
+  }
+
+  .left-bottom {
+    background: image-url('vertical.png') no-repeat top center;
+    background-size: cover;
+    height: 22em;
+
+    .hover-event {
+      @include transition (all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      @include transition (all 0.3s ease-in-out);
+      .hover-event {
+        display: block;
+        @include size (100% 100%);
+        background-color: rgba(219, 77, 87, 0.9);
+      }
+    }
+
+    a {
+      @include size (100% 100%);
+      display: block;
+    }
   }
 
   img {
@@ -713,25 +759,61 @@ label {
   margin: 0;
 
   .top-right-work {
-    @include size (auto 50%);
+    @include transition (all 0.3s ease-in-out);
+    background: image-url('wineo.png') no-repeat top center;
+    background-size: cover;
+    height: 17.5em;
 
-    img {
-      width: 100%;
+    .hover-event {
+      display: none;
+      @include transition (all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      @include transition (all 0.3s ease-in-out);
+      .hover-event {
+        display: block;
+        @include size (100% 100%);
+        background-color: rgba(219, 77, 87, 0.9);
+      }
+    }
+
+    a {
+      @include size (100% 100%);
+      display: block;
     }
   }
 
   .bottom-right-work {
-    @include size (auto 50%);
+    height: 36.8em;
+    background: image-url('tutorstudy.png') no-repeat top center;
+    background-size: cover;
 
-    img {
-      width: 100%;
+    .hover-event {
+      display: none;
+      @include transition (all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      @include transition (all 0.3s ease-in-out);
+      .hover-event {
+        display: block;
+        @include size (100% 100%);
+        background-color: rgba(219, 77, 87, 0.9);
+      }
+    }
+
+    a {
+      @include size (100% 100%);
+      display: block;
     }
   }
 }
 
 .start-project {
-  padding: 50px 0;
+  padding: 30px 0;
   text-align: center;
+  background: $header-red;
 
   button {
     @include transition (all 0.3s ease-in-out);
