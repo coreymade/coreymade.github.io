@@ -695,7 +695,7 @@ label {
   @include clearfix;
 
   button {
-    background: none;
+    background: rgba(35, 44, 53, .75);
     border: 2px solid #fff;
     border-radius: 100px;
     padding: 15px 30px;
@@ -720,16 +720,16 @@ label {
     height: 32.3em;
 
     .hover-event {
-      display: none;
+      opacity: 0.0;
       @include transition (all 0.3s ease-in-out);
     }
 
     &:hover {
       @include transition (all 0.3s ease-in-out);
       .hover-event {
-        display: block;
+        opacity: 1.0;
         @include size (100% 100%);
-        background-color: rgba(219, 77, 87, 0.9);
+        // background-color: rgba(255, 255, 255, 0.95);
       }
     }
 
@@ -754,7 +754,7 @@ label {
       .hover-event {
         opacity: 1.0;
         @include size (100% 100%);
-        background-color: rgba(219, 77, 87, 0.9);
+        // background-color: rgba(255, 255, 255, 0.95);
       }
     }
 
@@ -790,7 +790,7 @@ label {
       .hover-event {
         display: block;
         @include size (100% 100%);
-        background-color: rgba(219, 77, 87, 0.9);
+        // background-color: rgba(255, 255, 255, 0.95);
       }
     }
 
@@ -816,7 +816,7 @@ label {
       .hover-event {
         display: block;
         @include size (100% 100%);
-        background-color: rgba(219, 77, 87, 0.9);
+        // background-color: rgba(255, 255, 255, 0.95);
       }
     }
 
