@@ -4,22 +4,36 @@
     .two
     .three
   #menu
-    %ul
-      %li
-        %a{:href => "index.html"}
-          Home
-      %li
-        %a{:href => "about.html"}
-          About Us
-      %li
-        %a{:href => "our-values.html"}
-          Our Values
-      %li
-        %a{:href => "work.html"}
-          Our Work
-      %li
-        %a{:href => "start-project.html"}
-          Start a Project
+    .menu-container
+      %ul
+        %li
+          %a{:href => "index.html"}
+            Home
+        %li
+          %a{:href => "about.html"}
+            About Us
+        %li
+          %a{:href => "our-values.html"}
+            Our work
+        %li
+          %a{:href => "start-project.html"}
+            Hire us
+    .div.social
+      %h2
+        Follow us
+      %ul
+        %li
+          %a{:href => 'http://www.twitter.com/mossiolab'}
+            =image_tag 'twitter.png'
+        %li
+          %a{:href => 'http://www.dribbble.com/mossio'}
+            =image_tag 'dribbble.png'
+        %li
+          %a{:href => 'http://www.github.com/Mossio'}
+            =image_tag 'github.png'
+        %li
+          %a{:href => 'www.facebook.com/mossiolab'}
+            =image_tag 'facebook.png'
 
 %header
   .header-section.group
