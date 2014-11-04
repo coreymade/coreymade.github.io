@@ -1,39 +1,4 @@
-#top
-  #toggle
-    .one
-    .two
-    .three
-  #menu
-    .menu-container
-      %ul
-        %li
-          %a{:href => "index.html"}
-            Home
-        %li
-          %a{:href => "about.html"}
-            About Us
-        %li
-          %a{:href => "our-values.html"}
-            Our work
-        %li
-          %a{:href => "start-project.html"}
-            Hire us
-    .div.social
-      %h2
-        Follow us
-      %ul
-        %li
-          %a{:href => 'http://www.twitter.com/mossiolab'}
-            =image_tag 'twitter.png'
-        %li
-          %a{:href => 'http://www.dribbble.com/mossio'}
-            =image_tag 'dribbble.png'
-        %li
-          %a{:href => 'http://www.github.com/Mossio'}
-            =image_tag 'github.png'
-        %li
-          %a{:href => 'www.facebook.com/mossiolab'}
-            =image_tag 'facebook.png'
+= partial :menu
 
 %header
   .header-section.group
@@ -91,23 +56,23 @@
 %section.work
   .work-left
     .left-top
-      %a{:href => "#"}
+      %a{:href => "trackr.html"}
         .hover-event
           %button
             View project
     .left-bottom
-      %a{:href => "#"}
+      %a{:href => "vertical-mass.html"}
         .hover-event
           %button
             View project
   .work-right
     .top-right-work
-      %a{:href => "#"}
+      %a{:href => "wineo.html"}
         .hover-event
           %button
             View project
     .bottom-right-work
-      %a{:href => "#"}
+      %a{:href => "tutorme.html"}
         .hover-event
           %button
             View project
