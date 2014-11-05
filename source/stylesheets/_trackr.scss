@@ -17,3 +17,37 @@
     }
   }
 }
+
+.the-intro {
+  @include outer-container;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  h2 {
+    padding-bottom: 40px;
+    font-size: 25px;
+    color: #28282e;
+  }
+
+  .divider {
+    @include size (50 2);
+    background: #E9EBEC;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: #7D8692;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .the-problem {
+    @include span-columns (4);
+    @include shift (1.2);
+  }
+
+  .the-solution {
+    @include span-columns (4);
+    @include shift (1.5);
+  }
+}
