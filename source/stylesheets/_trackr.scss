@@ -1,3 +1,5 @@
+$header-color: #28282E;
+
 .trackr-header {
   background: image-url('trackr-map.png') #F3F5F6 center center;
   background-size: cover;
@@ -49,5 +51,52 @@
   .the-solution {
     @include span-columns (4);
     @include shift (1.5);
+  }
+}
+
+.mobile-experience {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  p {
+    @include paragraph;
+    @include size (820 auto);
+    margin: $center;
+  }
+}
+
+.web-experience {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  p {
+    @include paragraph;
+    @include size (820 auto);
+    margin: $center;
+  }
+
+  .browser {
+    @include size (65% auto);
+    margin: $center;
+    box-shadow: 0 1px 20px #E9E9E9;
+
+    .browser-bar {
+      height: 2.4em;
+    }
+
+    .browser-content {
+      @include size (auto 700);
+      overflow: scroll;
+    }
   }
 }
