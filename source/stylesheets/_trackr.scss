@@ -72,6 +72,14 @@ $header-color: #28282E;
   .sensor {
     background: image-url('sound.png') no-repeat top center;
     min-height: 200px;
+
+    .points-left {
+      float: left;
+    }
+
+    .points-right {
+      float: right;
+    }
   }
 
   .mobile-shots {
