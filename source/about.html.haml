@@ -58,7 +58,22 @@
       .divider4
       %p
         We now tighten the nuts and bolts, we send it off into the wild to grow into a successful product or service.
+%section.what-we-do
+  .inner-wrapper
+    %h1
+      Turning ideas into products
+    %p
+      Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
+    .toggle
+      %ul
+        %li
+          %a.active{href: '#'} Web
+        %li
+          %a{href: '#'} Mobile
 
+    .twentytwenty-container
+      %img{:src => "images/wire.png"}
+      %img{:src => "images/finished.png"}
 %section.offices
   %h2
     Where we are
@@ -109,6 +124,10 @@
     .copyright
       Copyright - Mossio LLC - All Rights Reserved.
 
+:javascript
+  $(window).load(function(){
+        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
+      });
 
 :javascript
   //

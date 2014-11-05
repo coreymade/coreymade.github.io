@@ -1,0 +1,19 @@
+.trackr-header {
+  background: image-url('trackr-map.png') #F3F5F6 center center;
+  background-size: cover;
+
+  .trackr-intro {
+    background: image-url('trackr-header-image.png') no-repeat center 20px;
+    padding-top: 400px;
+    text-align: center;
+    padding-bottom: 120px;
+
+    h2 {
+      @include size (750 auto);
+      margin: $center;
+      font-size: 70px;
+      color: #28282E;
+      font-weight: 800;
+    }
+  }
+}
