@@ -68,6 +68,17 @@ $header-color: #28282E;
     @include size (820 auto);
     margin: $center;
   }
+
+  .sensor {
+    background: image-url('sound.png') no-repeat top center;
+    min-height: 200px;
+  }
+
+  .mobile-shots {
+    background: image-url('trackr-mobile.png') no-repeat top center;
+    min-height: 693px;
+    margin-bottom: 160px;
+  }
 }
 
 .web-experience {
