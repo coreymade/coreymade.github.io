@@ -9,13 +9,14 @@
   float: right;
   display: inline;
   margin-right: 40px;
+  padding-top: 16px;
 }
 
 #toggle div {
   @include transition (all 0.3s ease-in-out);
   width: 100%;
   height: 3px;
-  background: white;
+  background: $header-red;
   margin: 4px auto;
   backface-visibility: hidden;
 }
