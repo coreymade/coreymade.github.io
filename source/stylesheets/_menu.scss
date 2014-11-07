@@ -1,8 +1,10 @@
 #toggle {
   width: 28px;
   height: 30px;
-  margin: 0 auto;
   cursor: pointer;
+  float: right;
+  display: inline;
+  margin-right: 40px;
 }
 
 #toggle div {
