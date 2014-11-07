@@ -688,6 +688,7 @@ label {
   padding-bottom: 12px;
   opacity: 0.99;
   margin: 0;
+  border-bottom: 1px solid $header-red;
 }
 
 .work {
@@ -847,6 +848,27 @@ label {
       color: $header-red;
     }
   }
+}
+
+.the-work {
+  background: #fff;
+  padding-bottom: 120px;
+
+  .inner-content {
+    @include outer-container;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    ul {
+      li {
+        @include span-columns (5.86);
+        background: black;
+        margin-bottom: 45px;
+        min-height: 31em;
+      }
+    }
+  }
+
 }
 
 ::selection {
