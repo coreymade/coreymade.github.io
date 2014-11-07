@@ -1,4 +1,8 @@
 #toggle {
+  @include media ($small-screen) {
+    display: none;
+  }
+  display: none;
   width: 28px;
   height: 30px;
   cursor: pointer;
