@@ -90,7 +90,7 @@
 .sub-intro {
   font-size: 25px;
   color: #fff;
-  width: 1060px;
+  width: 730px;
   margin: $center;
   text-align: center;
   border-top: 2px solid $header-red;
@@ -184,11 +184,44 @@
     padding: 0;
   }
 
+  ul {
+    @include size (900 auto);
+    margin: 0 auto;
+    padding-top: 100px;
+
+    li {
+      @include span-columns (3.0 of 12);
+      text-transform: uppercase;
+      padding-top: 95px;
+      font-size: 16px;
+      color: #222;
+      text-align: center;
+      font-weight: 500;
+
+      &.branding {
+        background: image-url('branding.png') no-repeat top center;
+      }
+
+      &.design-ux {
+        background: image-url('design-ux.png') no-repeat top center;
+      }
+
+      &.development {
+        background: image-url('development.png') no-repeat top center;
+      }
+
+      &.consulting {
+        background: image-url('consulting.png') no-repeat top center;
+      }
+    }
+  }
+
   .work-top {
     @include clearfix;
 
     ul {
       max-width: 90em;
+
       li {
         @include span-columns (4);
         min-height: 268px;
@@ -388,9 +421,26 @@
     @include section-header;
   }
 
+  h2 {
+    @include size (750 auto);
+    margin: $center;
+    font-size: 70px;
+    color: #28282E;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 80px;
+
+    & span {
+      background: $header-red;
+      color: #fff;
+    }
+  }
+
   p {
     @include paragraph;
-    padding-bottom: 40px;
+    width: 850px;
+    margin: 0 auto;
+    padding-bottom: 80px;
   }
 
   .service-select {
@@ -691,13 +741,28 @@ label {
 
     ul {
       @include clearfix;
+
       li {
         display: block;
         float: left;
-        margin-left: 30px;
-        padding-top: 6px;
-        opacity: 0.8;
         font-size: 14px;
+
+        a {
+          @include transition (all 0.2s ease-in-out);
+          padding: 18px 25px;
+          display: block;
+          color: #28282E;
+          opacity: 0.8;
+
+          &:first-of-type {
+            // padding-left: 30px;
+          }
+
+          &:hover {
+            background:#26262E;
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -711,7 +776,6 @@ label {
   width: 100%;
   // background-color: #28282E;
   background: rgba(255, 255, 255, 0.95);
-  line-height: 2.5em;
   display: none;
   margin: 0;
 }
@@ -886,16 +950,7 @@ label {
 
     ul {
       li {
-        @include span-columns (5.86);
-        background: red;
-        margin-bottom: 20px;
-        padding-top: 56.25%;  /* img height(450) / img width(800px) = 0.5625 */
-        max-width: 800px;
-        overflow: hidden;
-        &.rower{
-          background-image: url("http://voormedia.com/examples/north-sea-regatta.jpg");
-          background-size: cover;
-        }
+        @include span-columns (5.86);;
       }
     }
   }

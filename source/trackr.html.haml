@@ -62,6 +62,27 @@
     .browser-content
       =image_tag 'trackr-site.png'
 
+%section.start-project
+  %a{:href => "start-project.html"}
+    %button
+      Let's start a project
+
+%footer
+  .footer-container
+    %ul
+      %li.pad
+        %a{:href => "index.html"} Home
+      %li.pad
+        %a{:href => "index.html#our-work"} Our work
+      %li.no-pad
+        =image_tag "logo.png"
+      %li.pad
+        %a{:href => "our-values.html"} Our values
+      %li.pad
+        %a{:href => "contact.html"} Hire us
+    .copyright
+      Copyright - Mossio LLC - All Rights Reserved.
+
 
 :javascript
     $(window).load(function() { // makes sure the whole site is loaded

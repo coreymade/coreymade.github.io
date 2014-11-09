@@ -1,9 +1,12 @@
 = partial :menu
 
-%section.contact
+%section.contact#show-menu
   .inner-wrapper
-    %h1
-      Lets build something together
+    %h2
+      Hello! Lets
+      %span
+        build
+      something together
     %p
       The most successful projects begin with information. The below form will give us more insight to your projects needs and goals. It's pretty straightforward in its fields, and we're certain you won't get lost in filling it out.
 
@@ -50,7 +53,7 @@
                 %option{:value => "12 weeks +"} 12 weeks +
 
           .form-item
-            %label{:for => ""} do you like back to the future?
+            %label{:for => ""} do you like the movie Back to the Future?
             %input{:type => "text"}/
 
 
@@ -60,6 +63,22 @@
 
       .button
         %input.submit-button{:type => "submit", :value => "talk to us"}
+
+%footer
+  .footer-container
+    %ul
+      %li.pad
+        %a{:href => "index.html"} Home
+      %li.pad
+        %a{:href => "index.html#our-work"} Our work
+      %li.no-pad
+        =image_tag "logo.png"
+      %li.pad
+        %a{:href => "our-values.html"} Our values
+      %li.pad
+        %a{:href => "contact.html"} Hire us
+    .copyright
+      Copyright - Mossio LLC - All Rights Reserved.
 
 
 :javascript

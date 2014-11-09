@@ -26,16 +26,14 @@
     .header-wrap
       .logo
         =image_tag 'logo.png'
-      %nav
-        nav here
-    .intro.intros
+    .intro.intros#show-menu
       we
       %span.first .
-      build
+      make
       %span.second .
-      apps
+      experiences
 
-    .sub-intro#show-menu
+    .sub-intro
       %p
         We’re a full service digital agency focused on building scalable web and mobile applications.
 
@@ -70,18 +68,30 @@
   %h1
     We build amazing experiences
   %p
-    We're a small team of designers and developers that are passionate about building usable and beautiful software. We take absolute pride to carefully build user experiences in mobile and web applications, that make a complete difference in the lives of those that use them.
+    We're a small team of designers and developers. We believe in quality, perfected craftsmenship in every pixel we push. Here's how we keep it real on a daily basis.
+  %ul
+    %li.branding
+      branding
+    %li.design-ux
+      design / ux
+    %li.development
+      development
+    %li.consulting
+      consulting
 %section.the-work
   .inner-content
     %ul
       %li.vm
-        work
+        %a{:href => "tutorme.html"}
+          =image_tag 'tutor-cover.png'
       %li.rower
-        work here
+        =image_tag 'vm-cover.png'
       %li
-        work here
+        %a{:href => "trackr.html"}
+          =image_tag 'trackr-cover.png'
       %li.rower
-        work here
+        %a{:href => "wineo.html"}
+          =image_tag 'wineo-cover.png'
 %section.start-project
   %a{:href => "start-project.html"}
     %button
@@ -99,7 +109,7 @@
       %li.pad
         %a{:href => "our-values.html"} Our values
       %li.pad
-        %a{:href => "start-project.html"} Hire us
+        %a{:href => "contact.html"} Hire us
     .copyright
       Copyright - Mossio LLC - All Rights Reserved.
 
