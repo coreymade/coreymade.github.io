@@ -23,6 +23,7 @@ $header-color: #28282E;
 
 .the-intro {
   @include outer-container;
+  @include clearfix;
   padding-top: 160px;
   padding-bottom: 160px;
 
