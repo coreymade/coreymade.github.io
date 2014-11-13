@@ -1,12 +1,10 @@
 $header-color: #28282E;
 
 .trackr-header {
-  background: image-url('trackr-map.png') #F3F5F6 center center;
-  background-size: cover;
 
   .trackr-intro {
-    background: image-url('trackr-header-image.png') no-repeat center 20px;
-    padding-top: 400px;
+    background: image-url('trackr-header.png') no-repeat top center;
+    padding-top: 650px;
     text-align: center;
     padding-bottom: 120px;
 
@@ -18,6 +16,10 @@ $header-color: #28282E;
       font-weight: 800;
     }
   }
+}
+
+.trackr-logo {
+  padding-bottom: 120px;
 }
 
 .the-intro {
@@ -55,6 +57,8 @@ $header-color: #28282E;
 }
 
 .mobile-experience {
+  text-align: center;
+
   h2 {
     font-size: 25px;
     text-align: center;
@@ -83,7 +87,6 @@ $header-color: #28282E;
   }
 
   .mobile-shots {
-    background: image-url('trackr-mobile.png') no-repeat top center;
     min-height: 693px;
     margin-bottom: 160px;
   }
@@ -105,9 +108,10 @@ $header-color: #28282E;
   }
 
   .browser {
-    @include size (65% auto);
+    max-width: 37%;
     margin: $center;
     box-shadow: 0 1px 20px #E9E9E9;
+    margin-bottom: 120px;
 
     .browser-bar {
       height: 2.4em;
@@ -118,4 +122,13 @@ $header-color: #28282E;
       overflow: scroll;
     }
   }
+}
+
+.wallet {
+  background: image-url('wallet-background.png') no-repeat bottom;
+  background-size: cover;
+  min-height: 1550px;
+  padding-top: 450px;
+  text-align: left;
+  padding-left: 160px;
 }
