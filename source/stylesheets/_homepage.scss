@@ -977,50 +977,30 @@ label {
         @include span-columns (5.86);
 
         max-width: 624px;
-<<<<<<< HEAD
         padding-top: 34.85%; // image (height(435px)/width(624px)) / 2 = 0.3485576923
         
         &.tutorme{
           background: image-url('tutor-cover.png') no-repeat;
           background-size: cover;
           background-position: center;
-=======
-        padding-top: 34.85576923%;
-        background-size: cover;
-        -moz-background-size: cover;
-        background-position: center;
-        height: 120px;
-        
-        &.tutorme{
-          background: image-url('tutor-cover.png') no-repeat;
->>>>>>> added background images to work sections
         }
 
         &.vm{
           background: image-url('vm-cover.png') no-repeat;
-<<<<<<< HEAD
           background-size: cover;
           background-position: center;
-=======
->>>>>>> added background images to work sections
         }
 
         &.trackr{
           background: image-url('trackr-cover.png') no-repeat;
-<<<<<<< HEAD
           background-size: cover;
           background-position: center;
-=======
->>>>>>> added background images to work sections
         }
 
         &.wineo{
           background: image-url('wineo-cover.png') no-repeat;
-<<<<<<< HEAD
           background-size: cover;
           background-position: center;
-=======
->>>>>>> added background images to work sections
         }
       }
     }
