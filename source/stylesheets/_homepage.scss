@@ -1,12 +1,6 @@
 .header-section {
   @include clearfix;
 
-  .logo {
-    @include size (75 auto);
-    margin: $center;
-    padding-top: 12%;
-  }
-
   .nav {
     float: right;
   }
@@ -61,6 +55,12 @@
 
 .header-wrap {
   @include clearfix;
+
+  .logo {
+    @include size (75 auto);
+    margin: $center;
+    padding-top: 12%;
+  }
 }
 
 .intro {
@@ -727,9 +727,20 @@ label {
 .toggle-wrap {
   @include clearfix;
 
+  .logo {
+    @include size (60 60);
+    float: left;
+    background: $header-red;
+  }
 }
 
 .web-container {
+  .logo {
+    @include size (60 60);
+    float: left;
+    background: $header-red;
+  }
+
   @include media ($small-screen) {
     position: fixed;
     top: 0;
@@ -757,12 +768,6 @@ label {
   background: rgba(255, 255, 255, 0.95);
   display: none;
   margin: 0;
-}
-
-.logo {
-  @include size (60 60);
-  float: left;
-  background: $header-red;
 }
 
 .web-nav {
