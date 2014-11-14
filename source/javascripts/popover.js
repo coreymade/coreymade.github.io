@@ -17,9 +17,9 @@ $(document).ready(function() {
   $(window).on("scroll", function() {
       var fromTop = $(window).scrollTop();
       if(fromTop > showMenuPosition){
-          $("#top").fadeIn();
+          $("#top,.web-container").fadeIn();
       }else{
-          $("#top").fadeOut();
+          $("#top,.web-container").fadeOut();
       }
   });
 

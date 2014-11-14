@@ -42,6 +42,10 @@
   margin: auto;
   display: none;
 
+  @include media ($small-screen) {
+    display: none;
+  }
+
   .menu-container {
     ul {
       li {
