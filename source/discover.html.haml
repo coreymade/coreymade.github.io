@@ -1,0 +1,136 @@
+= partial :menu
+
+.top-area
+  .menu
+    %span.menu-item
+    %span.menu-item
+    %span.menu-item
+
+%section.about-us#show-menu
+  .sub-container
+    %h2
+      About
+    %p
+      Mossio is a full service digital agency focused on high quality craftsmenship of web and mobile applications. Our team is a group of passionate people with a focus on delievering exceptional results for clients all over the world.
+
+%section.our-process
+  %h3
+    Building things is our passion
+  %p
+    We have a high regard for building quality products that make a difference in the lives of people that use them. We work with clients to define and execute on ideas that bring a good service to the public, or a powerful product to market. We work with teams that build products that people love to use.
+
+  .circle-process
+    %ul
+      %li.discover
+        =image_tag 'lab.png'
+      %li.design
+        =image_tag 'design.png'
+      %li.build
+        =image_tag 'build.png'
+      %li.ship
+        =image_tag 'ship.png'
+
+  .process-wrap
+    .column
+      %h4
+        discovery
+      .divider
+      %p
+        We provide a discovery week to get down and dirty with your project learning about everything there is to know.
+    .column
+      %h4
+        design
+      .divider2
+      %p
+        After we have all the details from your project we start to design the user experience and user interface for the application.
+    .column
+      %h4
+        build
+      .divider3
+      %p
+        Once the design is set in stone we build out the application in the desired language. Involving the client in every turn.
+    .column
+      %h4
+        ship
+      .divider4
+      %p
+        We now tighten the nuts and bolts, we send it off into the wild to grow into a successful product or service.
+%section.what-we-do
+  .inner-wrapper
+    %h1
+      Turning ideas into products
+    %p
+      Here at Mossio we work in small collaborative teams to ensure your project has the best possible user experience from start to finish. First we discover, then we build.
+    .toggle
+      %ul
+        %li
+          %a.active{href: '#'} Web
+        %li
+          %a{href: '#'} Mobile
+
+    .twentytwenty-container
+      %img{:src => "images/wire.png"}
+      %img{:src => "images/finished.png"}
+%section.offices
+  %h2
+    Where we are
+  %p
+    We work with clients all over the world. We have locations in the following areas so no matter where you are, we are not too far away.
+  .locations
+    %ul
+      %li
+        .state
+          =image_tag 'cali.png'
+        %h2
+          LA
+        .clock
+          %canvas#clock1.CoolClock:simple:55:seconds:5
+      %li
+        .state
+          =image_tag 'texas.png'
+        %h2
+          HOU
+        .clock
+          %canvas#clock2.CoolClock:simple:55:seconds:7
+      %li
+        .state
+          =image_tag 'georgia.png'
+        %h2
+          ATL
+        .clock
+          %canvas#clock3.CoolClock:simple:55:seconds:8
+
+%section.start-project
+  %a{:href => "start-project.html"}
+    %button
+      Let's start a project
+
+%footer
+  .footer-container
+    %ul
+      %li.pad
+        %a{:href => "index.html"} Home
+      %li.pad
+        %a{:href => "index.html#our-work"} Our work
+      %li.no-pad
+        =image_tag "logo.png"
+      %li.pad
+        %a{:href => "our-values.html"} Our values
+      %li.pad
+        %a{:href => "start-project.html"} Hire us
+    .copyright
+      Copyright - Mossio LLC - All Rights Reserved.
+
+:javascript
+  $(window).load(function(){
+        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
+      });
+
+:javascript
+  //
+    $(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+  //

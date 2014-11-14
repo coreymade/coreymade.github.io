@@ -1,0 +1,75 @@
+= partial :menu
+
+%section.vertical-mass-header#show-menu
+  %h2
+    Target marketing
+    %br
+    in perfect harmony.
+
+%section.the-intro
+  .the-problem
+    %h2
+      The problem
+    .divider
+    %p
+      The Vertical Mass platform literally has tons of data to communicate to their end users. Showing so much data points to a user in a way they can easily understand was the first hurdle that we had to jump. Adding value to this, was crafting an exceptional user interface that was beautiful, and easy to manuver around.
+  .the-solution
+    %h2
+      The solution
+    .divider
+    %p
+      Clearly communicating visual data in an elegant way was our top priority. We sifted through wireframe after wireframe, moodboard after moodboard to come up with a user interface that would provide users with a visually stimulating overview of their data at every point in the UI.
+.product
+  =image_tag 'vertical-mass-product.png'
+
+%section.mobile-experience
+  %h2
+    The Brand
+  %p
+    Vertical Mass helps the top talent and companies in music, sports and entertainment manage their fan data. Making a powerful statement in this industry is absolutely vital for succeess. Although Vertical Mass, already had a powerful logo mark, Mossio improved on their color pallate and typefaces throughout their UI.
+
+.branding
+  .vm-icons
+    =image_tag 'vertical-mass-icons.png'
+  .vm-colors
+    =image_tag 'vertical-mass-colors.png'
+.type
+  .source-sans
+    =image_tag 'source-sans.png'
+  .open-sans
+    =image_tag 'open-sans.png'
+
+%section.ads
+  .inner-ads
+    %h2
+      Ad creation process
+    %p
+      Creating a valuable ad campaign is an essential operating factor in Vertical Mass. Mossio crafted an exceptionally well defined user process that visually communicated ad objectives and goals. Clarity of process was cruical to the success of this particular UI.
+%section.start-project
+  %a{:href => "start-project.html"}
+    %button
+      Let's start a project
+
+%footer
+  .footer-container
+    %ul
+      %li.pad
+        %a{:href => "index.html"} Home
+      %li.pad
+        %a{:href => "index.html#our-work"} Our work
+      %li.no-pad
+        =image_tag "logo.png"
+      %li.pad
+        %a{:href => "our-values.html"} Our values
+      %li.pad
+        %a{:href => "contact.html"} Hire us
+    .copyright
+      Copyright - Mossio LLC - All Rights Reserved.
+
+
+:javascript
+    $(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+    })

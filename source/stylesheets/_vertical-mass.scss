@@ -1,0 +1,80 @@
+.vertical-mass-header {
+  background: image-url('vm-header-background.png') no-repeat top center;
+  min-height: 1045px;
+  text-align: center;
+  padding-top: 170px;
+
+  h2 {
+    @include case-study-heading;
+  }
+}
+
+.clear {
+  @include clearfix;
+}
+
+.product {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.branding {
+  @include clearfix;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0;
+
+  .vm-icons {
+    @include span-columns (6 of 12);
+    text-align: center;
+    padding-top: 35px;
+  }
+
+  .vm-colors {
+    @include span-columns (6 of 12);
+    text-align: center;
+  }
+}
+
+.type {
+  @include clearfix;
+  border-bottom: 1px solid #e5e5e5;
+  max-height: 370px;
+  overflow: hidden;
+  margin-bottom: 120px;
+
+  .source-sans {
+    @include span-columns (6 of 12);
+    border-right: 1px solid #e5e5e5;
+    padding-top: 71px;
+
+    img {
+      width: 95%;
+    }
+  }
+
+  .open-sans {
+    @include span-columns (6 of 12);
+    text-align: right;
+    padding-top: 40px;
+  }
+}
+
+.ads {
+  background: image-url('vm-product.png') no-repeat top;
+  background-size: cover;
+  min-height: 1635px;
+
+  .inner-ads {
+    @include span-columns (3.5);
+    margin-left: 100px;
+    padding-top: 220px;
+
+    p {
+      @include paragraph;
+      text-align: left;
+      padding: 0;
+      padding-top: 30px;
+    }
+  }
+}

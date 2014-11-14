@@ -1,0 +1,68 @@
+#preloader
+  #status
+    .container
+      .wrap
+        .cube.trackr
+          .front
+            =image_tag 'sm-logo.png'
+          .back
+            =image_tag 'sm-logo.png'
+          .top
+            =image_tag 'sm-logo.png'
+          .bottom
+            =image_tag 'sm-logo.png'
+          .left
+            =image_tag 'sm-logo.png'
+          .right
+            =image_tag 'sm-logo.png'
+
+= partial :menu
+
+%section.tutorme
+  .tutor-intro
+    %h2#show-menu
+      Goodbye textbooks
+      %br
+      Hello online tutoring
+
+%section.the-intro
+  .the-problem
+    %h2
+      The problem
+    .divider
+    %p
+      TutorMe was setting out to revolutionize the online tutoring industry with impressive features like on-on-one tutoring sessions, live whiteboards and online classrooms. With such a complex system, they needed a user-friendly feel that didn't overwhelm the user with school type atomosphere.
+  .the-solution
+    %h2
+      The solution
+    .divider
+    %p
+      Mossio created an effective brand that had a focus on completion rather than an uphill battle. We carefully crafted a user experience that was easy for tutors to complete courses and fun for students to learn. The end result was an extrodinarly beautiful user interface, and an exceptional branding model.
+
+%section.start-project
+  %a{:href => "start-project.html"}
+    %button
+      Let's start a project
+
+%footer
+  .footer-container
+    %ul
+      %li.pad
+        %a{:href => "index.html"} Home
+      %li.pad
+        %a{:href => "index.html#our-work"} Our work
+      %li.no-pad
+        =image_tag "logo.png"
+      %li.pad
+        %a{:href => "our-values.html"} Our values
+      %li.pad
+        %a{:href => "contact.html"} Hire us
+    .copyright
+      Copyright - Mossio LLC - All Rights Reserved.
+
+:javascript
+    $(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+    })

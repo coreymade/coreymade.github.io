@@ -1,0 +1,133 @@
+$header-color: #28282E;
+
+.trackr-header {
+
+  .trackr-intro {
+    background: image-url('trackr-header.png') no-repeat top center;
+    padding-top: 650px;
+    text-align: center;
+
+    h2 {
+      @include size (750 auto);
+      margin: $center;
+      font-size: 70px;
+      color: #28282E;
+      font-weight: 800;
+    }
+  }
+}
+
+.trackr-logo {
+  padding-bottom: 120px;
+}
+
+.the-intro {
+  @include outer-container;
+  @include clearfix;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  h2 {
+    padding-bottom: 40px;
+    font-size: 25px;
+    color: #28282e;
+  }
+
+  .divider {
+    @include size (50 2);
+    background: #E9EBEC;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: #7D8692;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .the-problem {
+    @include span-columns (4);
+    @include shift (1.2);
+  }
+
+  .the-solution {
+    @include span-columns (4);
+    @include shift (1.5);
+  }
+}
+
+.mobile-experience {
+  text-align: center;
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  p {
+    @include paragraph;
+    @include size (820 auto);
+    margin: $center;
+  }
+
+  .sensor {
+    background: image-url('sound.png') no-repeat top center;
+    min-height: 200px;
+
+    .points-left {
+      float: left;
+    }
+
+    .points-right {
+      float: right;
+    }
+  }
+
+  .mobile-shots {
+    min-height: 693px;
+  }
+}
+
+.web-experience {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  p {
+    @include paragraph;
+    @include size (820 auto);
+    margin: $center;
+  }
+
+  .browser {
+    max-width: 37%;
+    margin: $center;
+    box-shadow: 0 1px 20px #E9E9E9;
+    margin-bottom: 120px;
+
+    .browser-bar {
+      height: 2.4em;
+    }
+
+    .browser-content {
+      @include size (auto 700);
+      overflow: scroll;
+    }
+  }
+}
+
+.wallet {
+  background: image-url('wallet-background.png') no-repeat bottom;
+  background-size: cover;
+  min-height: 1550px;
+  padding-top: 450px;
+  text-align: left;
+  padding-left: 160px;
+}

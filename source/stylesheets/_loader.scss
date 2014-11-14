@@ -1,0 +1,149 @@
+@include keyframes(spin) {
+  0% {
+    @include transform (rotateY(0deg));
+  }
+  80% {
+    @include transform (rotateY(-360deg));
+  }
+  100% {
+    @include transform (rotateY(-360deg));
+  }
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+}
+
+.cube {
+  @include transform-style(preserve-3d);
+  @include size (80 auto);
+  @include animation(spin 1.2s infinite ease-in-out);
+  @include transform (rotateY(180deg));
+  margin-left: 65px;
+
+  &.trackr {
+    .cube div {
+      @include size (80 80);
+      position: absolute;
+    }
+
+    .back {
+      @include transform(translateZ(-40px) rotateY(180deg));
+      background: #56A19D;
+      padding: 25px 25px 25px 17px;
+
+    }
+    .right {
+      @include transform(rotateY(-270deg) translateX(40px));
+      @include transform-origin(top right);
+      background: #3D7471;
+      padding: 25px 25px 25px 17px;
+    }
+    .left {
+      @include transform(rotateY(270deg) translateX(-40px));
+      @include transform-origin(center left);
+      background: #3D7471;
+      padding: 25px 25px 25px 17px;
+    }
+    .top {
+      @include transform(rotateX(-90deg) translateY(-40px));
+      @include transform-origin(top center);
+    }
+    .bottom {
+      @include transform(rotateX(90deg) translateY(40px));
+      @include transform-origin(bottom center);
+    }
+    .front {
+      @include transform(translateZ(40px));
+      background: #56A19D;
+      padding: 25px 25px 25px 17px;
+    }
+  }
+}
+
+
+.cube div {
+  @include size (80 80);
+  position: absolute;
+}
+
+.back {
+  @include transform(translateZ(-40px) rotateY(180deg));
+  background: $header-red;
+  padding: 25px 25px 25px 17px;
+
+}
+.right {
+  @include transform(rotateY(-270deg) translateX(40px));
+  @include transform-origin(top right);
+  background: #C2414B;
+  padding: 25px 25px 25px 17px;
+}
+.left {
+  @include transform(rotateY(270deg) translateX(-40px));
+  @include transform-origin(center left);
+  background: #C2414B;
+  padding: 25px 25px 25px 17px;
+}
+.top {
+  @include transform(rotateX(-90deg) translateY(-40px));
+  @include transform-origin(top center);
+}
+.bottom {
+  @include transform(rotateX(90deg) translateY(40px));
+  @include transform-origin(bottom center);
+}
+.front {
+  @include transform(translateZ(40px));
+  background: $header-red;
+  padding: 25px 25px 25px 17px;
+}
+
+.who {
+  padding-top: 100px;
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+
+    li {
+      display: inline;
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #61ABD7;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &.dot {
+        display: inline-block;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: white;
+    z-index:999999999; /* makes sure it stays on top */
+}
+
+#status {
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999999;
+}
