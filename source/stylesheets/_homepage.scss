@@ -974,7 +974,30 @@ label {
 
     ul {
       li {
-        @include span-columns (5.86);;
+        @include span-columns (5.86);
+
+        max-width: 624px;
+        padding-top: 34.85576923%;
+        background-size: cover;
+        -moz-background-size: cover;
+        background-position: center;
+        height: 120px;
+        
+        &.tutorme{
+          background: image-url('tutor-cover.png') no-repeat;
+        }
+
+        &.vm{
+          background: image-url('vm-cover.png') no-repeat;
+        }
+
+        &.trackr{
+          background: image-url('trackr-cover.png') no-repeat;
+        }
+
+        &.wineo{
+          background: image-url('wineo-cover.png') no-repeat;
+        }
       }
     }
   }
