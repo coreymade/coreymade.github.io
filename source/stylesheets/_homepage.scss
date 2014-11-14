@@ -976,7 +976,7 @@ label {
     ul {
       li {
         @include span-columns (5.86);
-
+        margin-bottom: 30px;
         max-width: 624px;
         padding-top: 34.85%; // image (height(435px)/width(624px)) / 2 = 0.3485576923
 
