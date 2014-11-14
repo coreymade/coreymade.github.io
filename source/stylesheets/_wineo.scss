@@ -1,0 +1,12 @@
+.wineo-header {
+  background: image-url('wineo-background.png') no-repeat left;
+  min-height: 848px;
+
+  h2 {
+    @include case-study-heading;
+    @include size (100% auto);
+    padding-top: 18%;
+    text-align: left;
+    padding-left: 670px;
+  }
+}
