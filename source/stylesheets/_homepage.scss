@@ -200,6 +200,7 @@
 
       &.branding {
         background: image-url('branding.png') no-repeat top center;
+        border: 0;
       }
 
       &.design-ux {
@@ -978,7 +979,7 @@ label {
 
         max-width: 624px;
         padding-top: 34.85%; // image (height(435px)/width(624px)) / 2 = 0.3485576923
-        
+
         &.tutorme{
           background: image-url('tutor-cover.png') no-repeat;
           background-size: cover;
