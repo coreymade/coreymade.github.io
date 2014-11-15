@@ -59,7 +59,8 @@
 
       .form-item.details
         %label{:for => ""} tell us about your project
-        %input{:type => "text-area"}/
+        %textarea{:form => "usrform", :name => "comment", :rows => "8"}
+          :preserve
 
       .button
         %input.submit-button{:type => "submit", :value => "talk to us"}

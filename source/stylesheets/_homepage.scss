@@ -559,8 +559,17 @@
   }
 
   &.details {
-    @include size (89% auto);
+    @include size (91.3% auto);
     margin-left: 60px;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #D0D2DA;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #939393;
+    padding: 15px;
   }
 }
 
