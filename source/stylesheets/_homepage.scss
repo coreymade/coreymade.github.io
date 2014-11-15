@@ -461,13 +461,23 @@
   }
 
   h2 {
-    @include size (750 auto);
-    margin: $center;
-    font-size: 70px;
-    color: #28282E;
-    font-weight: 800;
-    text-align: center;
-    padding-bottom: 80px;
+    @include size (100% auto);
+      margin: $center;
+      font-size: 55px;
+      color: #28282E;
+      font-weight: 800;
+      text-align: center;
+      padding-bottom: 80px;
+
+    @include media ($small-screen) {
+      @include size (750 auto);
+      margin: $center;
+      font-size: 70px;
+      color: #28282E;
+      font-weight: 800;
+      text-align: center;
+      padding-bottom: 80px;
+    }
 
     & span {
       background: $header-red;
@@ -477,13 +487,23 @@
 
   p {
     @include paragraph;
-    width: 850px;
+    @include size (100% auto);
     margin: 0 auto;
     padding-bottom: 80px;
+
+    @include media ($small-screen) {
+      @include paragraph;
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
   }
 
   .service-select {
-    @include size (40% auto);
+    @include media ($small-screen) {
+      @include size (40% auto);
+    }
+    @include size (80% auto);
     border-radius: 3px;
     float: none;
     background: #F4F5F6;
@@ -510,20 +530,31 @@
 }
 
 .form-bottom {
-  @include clearfix;
-  @include span-columns (12);
+
+  @include media ($small-screen) {
+    @include span-columns (12);
+    @include clearfix;
+  }
+
+  @include size (100% auto);
   padding: 0 60px;
   float: none;
   margin: $center;
 
 
   .form-left {
-    @include span-columns (5.5);
+    @include media ($small-screen) {
+      @include span-columns (5.5);
+    }
+    @include size (100% auto);
   }
 
   .form-right {
-    @include span-columns (5.5);
-    @include shift (1);
+    @include media ($small-screen) {
+      @include span-columns (5.5);
+      @include shift (1);
+    }
+    @include size (100% auto);
   }
 
   .styled-select select {
@@ -559,12 +590,11 @@
   }
 
   &.details {
-    @include size (91.3% auto);
-    margin-left: 60px;
+    padding: 0 60px;
   }
 
   textarea {
-    width: 100%;
+    @include size (100% auto);
     border: 1px solid #D0D2DA;
     border-radius: 3px;
     font-size: 14px;
