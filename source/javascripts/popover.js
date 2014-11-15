@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	$('.popover').on('click', function(event) {
 		event.preventDefault();
-		$body.find('#popover-content').addClass('visible');
+		$body.find('.contact').addClass('visible');
 	});
 
 	$('.close').on('click', function(event) {
