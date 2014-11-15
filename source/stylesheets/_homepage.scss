@@ -431,6 +431,9 @@
     display: block;
     float: right;
     margin: 30px 30px 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
 
     &:hover {
       cursor: pointer;
