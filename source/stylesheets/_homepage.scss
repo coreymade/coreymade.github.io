@@ -127,6 +127,10 @@
   margin: $center;
   margin-bottom: 100px;
 
+  @include media($small-screen) {
+    display: none;
+  }
+
   h2 {
     text-transform: uppercase;
     font-size: 14px;
