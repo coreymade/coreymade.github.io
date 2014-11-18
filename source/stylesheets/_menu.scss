@@ -1,7 +1,4 @@
 #toggle {
-  @include media ($small-screen) {
-    display: none;
-  }
   display: none;
   width: 28px;
   height: 25px;
@@ -40,10 +37,6 @@
   text-align: center;
   margin: auto;
   display: none;
-
-  @include media ($small-screen) {
-    display: none;
-  }
 
   .menu-container {
     ul {
@@ -100,6 +93,86 @@
 
       &:last-of-type {
         margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+.toggle-wrap {
+  @include clearfix;
+
+  .logo {
+    @include size (60 60);
+    float: left;
+    background: $header-red;
+  }
+}
+
+.web-container {
+
+  @include media ($small-screen) {
+    display: none !important;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  // background-color: #28282E;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  margin: 0;
+
+  .logo {
+    @include size (60 60);
+    float: left;
+    background: $header-red;
+  }
+}
+
+#top {
+
+  @include media ($medium-screen) {
+    display: none !important;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  // background-color: #28282E;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  margin: 0;
+}
+
+.web-nav {
+
+  ul {
+    @include clearfix;
+
+    li {
+      display: block;
+      float: left;
+      font-size: 14px;
+
+      a {
+        @include transition (all 0.2s ease-in-out);
+        padding: 18px 25px;
+        display: block;
+        color: #28282E;
+        opacity: 0.8;
+
+        &:first-of-type {
+          // padding-left: 30px;
+        }
+
+        &:hover {
+          background:#26262E;
+          color: #fff;
+        }
       }
     }
   }
