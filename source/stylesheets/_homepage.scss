@@ -17,7 +17,7 @@ header {
 
   @include media ($small-screen) {
     @include size (375 auto);
-    padding: 200px 30px 0 30px;
+    padding: 100px 30px 0 30px;
   }
 }
 
