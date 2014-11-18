@@ -37,6 +37,12 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+body {
+  &.index {
+    background: #29282B;
+  }
+}
+
 #popover-content {
   @include transition(visibility 0s linear 0.5s, opacity 0.3s linear);
   background-color: #fff;
