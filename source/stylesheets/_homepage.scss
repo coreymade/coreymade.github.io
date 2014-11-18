@@ -5,13 +5,6 @@
     float: right;
   }
 
-  .desktop-menu {
-    display: none;
-    @include media ($medium-screen) {
-      display: block;
-    }
-  }
-
   nav {
     float: right;
     margin-top: 15px;
@@ -506,9 +499,9 @@
 
   .service-select {
     @include media ($small-screen) {
-      @include size (40% auto);
+      @include size (80% auto);
     }
-    @include size (80% auto);
+    @include size (40% auto);
     border-radius: 3px;
     float: none;
     background: #F4F5F6;
