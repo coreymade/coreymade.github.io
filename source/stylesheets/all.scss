@@ -85,3 +85,43 @@ body {
     left: 0;
   }
 }
+
+.study-pagination {
+  ul {
+    @include clearfix;
+    li {
+      @include span-columns (6.138);
+      margin-bottom: 30px;
+      margin: 0;
+
+      a {
+        display: block;
+        min-height: 430px;
+      }
+
+      &.tutorme{
+        background: image-url('tutor-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.vm{
+        background: image-url('vm-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.trackr{
+        background: image-url('trackr-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.wineo{
+        background: image-url('wineo-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

@@ -162,7 +162,7 @@
         @include transition (all 0.2s ease-in-out);
         padding: 18px 25px;
         display: block;
-        color: #28282E;
+        color: #29282B;
         opacity: 0.8;
 
         &:first-of-type {
@@ -170,7 +170,7 @@
         }
 
         &:hover {
-          background:#26262E;
+          background: #29282B;
           color: #fff;
         }
       }

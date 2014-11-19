@@ -13,14 +13,15 @@ $inputH: 40px;
 
 @mixin section-header {
   font-size: 38px;
-  color: #222222;
+  color: #29282B;
   text-align: center;
   padding-bottom: 60px;
 }
 
 @mixin paragraph {
   padding: 0 60px;
-  font-size: 19px;
+  font-size: 18px;
+  font-weight: 300;
   color: #727272;
   line-height: 35px;
   text-align: center;
@@ -31,6 +32,6 @@ $inputH: 40px;
   @include size (750 auto);
   margin: $center;
   font-size: 70px;
-  color: #28282E;
+  color: #29282B;
   font-weight: 800;
 }
