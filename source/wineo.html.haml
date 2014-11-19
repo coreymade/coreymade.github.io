@@ -48,30 +48,4 @@
   %p
     After working with the Wineo team, we produced a solid OCR apps that easily allow users to take a photo of a wine menu and get reviews of wines on that list. Users can purchase, review and get ratings of wines in an elegant and user friendly fashion.
 
-%section.start-project
-  %a{:href => "start-project.html"}
-    %button
-      Let's start a project
-
-%footer
-  .footer-container
-    %ul
-      %li.pad
-        %a{:href => "index.html"} Home
-      %li.pad
-        %a{:href => "index.html#our-work"} Our work
-      %li.no-pad
-        =image_tag "logo.png"
-      %li.pad
-        %a{:href => "our-values.html"} Our values
-      %li.pad
-        %a{:href => "contact.html"} Hire us
-    .copyright
-      Copyright - Mossio LLC - All Rights Reserved.
-
-:javascript
-    $(window).load(function() { // makes sure the whole site is loaded
-      $('#status').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-      $('body').delay(350).css({'overflow':'visible'});
-    })
+= partial :footer
