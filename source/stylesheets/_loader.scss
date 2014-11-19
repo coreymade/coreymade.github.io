@@ -74,18 +74,29 @@
   background: $header-red;
   padding: 25px 25px 25px 17px;
 
+  img {
+    margin-left: 4px;
+  }
 }
 .right {
   @include transform(rotateY(-270deg) translateX(40px));
   @include transform-origin(top right);
   background: #C2414B;
   padding: 25px 25px 25px 17px;
+
+  img {
+    margin-left: 4px;
+  }
 }
 .left {
   @include transform(rotateY(270deg) translateX(-40px));
   @include transform-origin(center left);
   background: #C2414B;
   padding: 25px 25px 25px 17px;
+
+  img {
+    margin-left: 4px;
+  }
 }
 .top {
   @include transform(rotateX(-90deg) translateY(-40px));
@@ -99,6 +110,10 @@
   @include transform(translateZ(40px));
   background: $header-red;
   padding: 25px 25px 25px 17px;
+
+  img {
+    margin-left: 4px;
+  }
 }
 
 .who {
