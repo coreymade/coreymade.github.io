@@ -1,6 +1,7 @@
 .web-container
   .logo
-    =image_tag 'logo.png'
+    %a{:href => "index.html"}
+      =image_tag 'logo.png'
   .web-nav
     %ul
       %li
@@ -10,6 +11,9 @@
         %a{:href => "discover.html"}
           Discover Us
       %li
+        %a{:href => "#"}
+          Thoughts
+      %li
         %a{:href => "careers.html"}
           Careers
       %li
@@ -18,8 +22,8 @@
 #top
   .toggle-wrap
     .logo
-      =image_tag 'logo.png'
-
+      %a{:href => "index.html"}
+        =image_tag 'logo.png'
     #toggle
       .one
       .two
@@ -36,6 +40,9 @@
         %li
           %a{:href => "discover.html"}
             Discover Us
+        %li
+          %a{:href => "#"}
+            Thoughts
         %li
           %a{:href => "careers.html"}
             Careers
