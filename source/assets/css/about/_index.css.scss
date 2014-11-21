@@ -69,8 +69,17 @@
 
 .offices {
   @extend .section-wrap;
-  background: #28282E;
+  background: image-url('city-background.png') no-repeat bottom #28282E;
   background-size: cover;
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    color: #70707C;
+    font-size: 20px;
+  }
 
   .locations {
     @include clearfix;
