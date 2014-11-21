@@ -102,7 +102,7 @@
   @include clearfix;
 
   .logo {
-    @include size (60 60);
+    @include size(em(60));
     float: left;
     background: $header-red;
   }
@@ -119,13 +119,12 @@
   left: 0;
   z-index: 999;
   width: 100%;
-  // background-color: #28282E;
   background: rgba(255, 255, 255, 0.95);
   display: none;
   margin: 0;
 
   .logo {
-    @include size (60 60);
+    @include size (em(60));
     float: left;
     background: $header-red;
   }

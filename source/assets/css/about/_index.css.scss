@@ -1,156 +1,99 @@
 .about-us {
+  @extend .section-wrap;
   @include linear-gradient(#fff, #f6f6f6);
-  min-height: 1040px;
-  padding-top: 90px;
 
-  .sub-container {
-    @include outer-container;
+  h2 {
+    text-align: center;
+    margin-bottom: $base-line-height / 2;
+  }
+}
+
+.what-we-do {
+  @extend .section-wrap;
+  background: image-url('sketch-background.png') no-repeat #28282E;
+  background-size: cover;
+  color: white;
+
+  .section-header {
+    h2,
+    p {
+      color: white;
+    }
 
     h2 {
-      text-align: center;
-    }
-
-    p {
-      @include paragraph;
-      max-width: 715px;
-      margin: $center;
-      text-align: center;
+      font-weight: 300;
     }
   }
 }
 
-.our-process {
-  @include outer-container;
-  padding: 140px 0 140px 0;
-
-  h3 {
-    text-align: center;
-  }
-
-  p {
-    @include paragraph;
-    max-width: 675px;
-    margin: $center;
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
-.circle-process {
+.toggle {
+  @include size (138px auto);
+  margin: $center;
+  border-radius: 60px;
+  background: #892E3E;
+  padding: 7px;
   text-align: center;
-  margin-top: 90px;
+  margin-bottom: 60px;
 
-  li {
-    @include size (161 161);
-    border-radius: 100%;
-    display: inline-block;
-    margin-left: -20px;
-    opacity: 0.9;
-    padding: 45px;
+  ul {
+    @include clearfix;
 
-    &.first-of-type {
-      margin-left: 0;
-      opacity: 0.2;
-    }
-    &.discover {
-      background: #EF877C;
-    }
+    li {
+      display: block;
+      float: left;
+      margin-right: 10px;
 
-    &.design {
-      background: #5CAEA8;
-    }
+      &:last-of-type {
+        margin-right: 0;
+      }
 
-    &.build {
-      background: #7BC7E8;
-    }
+      a {
+        @include transition (all 0.3s ease-in-out);
+        font-size: 15px;
+        color: #fff;
 
-    &.ship {
-      background: #FFC485;
-    }
-  }
-}
+        &:hover {
+          opacity: 0.8;
+        }
 
-.process-wrap {
-  @include outer-container;
-  margin-top: 120px;
+        &.active {
+          border-radius: 60px;
+          background: #fff;
+          padding: 3px 10px;
+          color: #892E3E;
 
-  .column {
-    @include span-columns (2.2 of 12);
-    @include shift (.7);
-
-    h4 {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    p {
-      @include paragraph;
-      font-size: 15px;
-      text-align: left;
-      line-height: 31px;
-    }
-
-    .divider {
-      @include size (45 3);
-      background: #EF877C;
-      margin-bottom: 25px;
-    }
-
-    .divider2 {
-      @extend .divider;
-      background: #5CAEA8;
-    }
-
-    .divider3 {
-      @extend .divider;
-      background: #7BC7E8;
-    }
-
-    .divider4 {
-      @extend .divider;
-      background: #FFC485;
+          &:hover {
+            opacity: 1.0;
+          }
+        }
+      }
     }
   }
 }
 
 .offices {
-  min-height: 860px;
-
-  h2 {
-    font-size: 33px;
-    color: #fff;
-    font-weight: bold;
-    padding-top: 120px;
-    text-align: center;
-  }
-
-  p {
-    @include paragraph;
-    font-size: 20px;
-    max-width: 675px;
-    margin: $center;
-    text-align: center;
-    color: #70707C;
-  }
+  @extend .section-wrap;
 
   .locations {
-    @include span-columns (5);
-    margin: $center;
+    @include clearfix;
+    @include fill-parent;
+    clear: both;
     margin-top: 90px;
 
     ul {
-
       li {
-        @include span-columns (4);
+        @include fill-parent;
         @include transition (all 0.4s ease-in-out);
         border: 1px solid #393A3F;
-        margin: $center;
-        display: block;
-        margin-left: -1px;
+        margin: 0 auto $base-y * 2;
         min-height: 200px;
         text-align: center;
         padding: 20px;
+
+        @include media($medium-screen-up) {
+          @include span-columns(2.66 of 8);
+          @include omega(3n);
+        }
 
         &:hover {
           background: rgba(0, 0, 0, 0.1);

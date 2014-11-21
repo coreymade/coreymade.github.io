@@ -12,13 +12,15 @@
 @import "scaffolding/animations";
 @import "scaffolding/variables";
 
+@import 'forms/index';
+
 @import 'homepage/banner';
 @import 'homepage/clients';
 @import 'homepage/ourwork';
 @import 'homepage/contact';
 
-@import 'forms/index';
 @import "about/index";
+@import 'about/process';
 
 @import "casestudies/twentytwenty";
 @import "casestudies/trackr";

@@ -41,11 +41,12 @@ body {
   }
 
   @include media($large-screen-up) {
-    @include span-columns(6 of 12);
-    @include shift(3);
+    @include span-columns(8 of 12);
+    @include shift(2);
     margin-bottom: em(120);
   }
 
+  h2,
   h3 {
     color: #29282B;
     font-size: em(36);

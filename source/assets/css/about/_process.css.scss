@@ -1,0 +1,141 @@
+.our-process {
+  @extend .section-wrap;
+}
+
+.process-content {
+  @include clearfix;
+  @include fill-parent;
+  clear: both;
+}
+
+.process-column {
+  @include fill-parent;
+  margin-bottom: $base-y * 2;
+
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 8);
+    @include omega(2n);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(3 of 12);
+    @include omega-reset(2n);
+    @include omega(4n);
+  }
+}
+
+.circle {
+  @include size(em(100));
+  border-radius: 100%;
+  margin: 0 auto $base-y;
+  padding-top: em(30);
+  text-align: center;
+  opacity: 0.9;
+
+  @include media($medium-screen-up) {
+    @include size(em(125));
+  }
+
+  @include media($large-screen-up) {
+    @include size(em(180));
+    padding-top: em(55);
+    margin-bottom: $base-y * 4;
+  }
+
+  img {
+    max-width: 50%;
+
+    @include media($medium-screen-up) {
+      max-width: 100%;
+    }
+  }
+}
+
+.content {
+  text-align: center;
+  padding: 0 em(50);
+
+  @include media($large-screen-up) {
+    text-align: left;
+  }
+
+  h4 {
+    display: block;
+    font-size: em(14);
+    font-weight: bold;
+    margin-bottom: $base-y;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: $base-font-size;
+    line-height: 1.75em;
+  }
+
+  .divider {
+    @include size (45px 3px);
+    background: #EF877C;
+    margin: 0 auto $base-y;
+
+    @include media($large-screen-up) {
+      margin: 0 0 $base-y;
+    }
+  }
+
+  .divider2 {
+    @extend .divider;
+    background: #5CAEA8;
+  }
+
+  .divider3 {
+    @extend .divider;
+    background: #7BC7E8;
+  }
+
+  .divider4 {
+    @extend .divider;
+    background: #FFC485;
+  }
+}
+
+.process-discover {
+  @extend .process-column;
+
+  .circle {
+    background: #EF877C;
+    padding-top: em(15);
+
+    @include media($medium-screen-up) {
+      padding-top: em(25);
+    }
+
+    @include media($large-screen-up) {
+      padding-top: em(55);
+    }
+  }
+}
+
+.process-design {
+  @extend .process-column;
+
+  .circle {
+    background: #5CAEA8;
+  }
+}
+
+.process-build {
+  @extend .process-column;
+
+  .circle {
+    background: #7BC7E8;
+  }
+}
+
+.process-ship {
+  @extend .process-column;
+
+
+  .circle {
+    background: #FFC485;
+  }
+}
