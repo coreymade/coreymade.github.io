@@ -83,7 +83,7 @@ CoolClock.config.skins = {
     largeIndicator:   { lineWidth: 14, startAt: 90, endAt: 94, color: "#4A4B54", alpha: 1 },
     hourHand:         { lineWidth: 8, startAt: 0, endAt: 60, color: "#fff", alpha: 1 },
     minuteHand:       { lineWidth: 8, startAt: 0, endAt: 80, color: "#fff", alpha: 1 },
-    secondHand:       { lineWidth: 20, startAt: 80, endAt: 85, color: "#61ABD7", alpha: .85 },
+    secondHand:       { lineWidth: 20, startAt: 80, endAt: 85, color: "#dc4a55", alpha: .85 },
     secondDecoration: { lineWidth: 3, startAt: 0, radius: 4, fillColor: "black", color: "black", alpha: 1 }
   },
 
