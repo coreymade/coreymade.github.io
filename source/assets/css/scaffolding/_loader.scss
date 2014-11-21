@@ -2,9 +2,11 @@
   0% {
     @include transform (rotateY(0deg));
   }
+
   80% {
     @include transform (rotateY(-360deg));
   }
+
   100% {
     @include transform (rotateY(-360deg));
   }
@@ -18,7 +20,7 @@
 
 .cube {
   @include transform-style(preserve-3d);
-  @include size (80 auto);
+  @include size (80px auto);
   @include animation(spin 1.2s infinite ease-in-out);
   @include transform (rotateY(180deg));
   margin-left: 65px;
