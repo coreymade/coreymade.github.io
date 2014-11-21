@@ -1,15 +1,30 @@
 .main-footer {
   background: #fff;
-  padding: 70px 0;
+  padding: em(35) 0;
   text-align: center;
 
+  @include media($medium-screen-up) {
+    padding: em(70) 0;
+  }
+
   ul {
+    @include fill-parent;
     display: inline-block;
+    text-align: center;
 
     li {
-      float: left;
-      display: block;
-      padding: 0 25px;
+      @include span-columns(2 of 4);
+      @include omega(2n);
+      margin-bottom: $base-y;
+      text-align: center;
+
+      @include media($medium-screen-up) {
+        @include omega-reset(2n);
+        display: inline-block;
+        float: none;
+        margin: 0 em(20) $base-y;
+        width: auto;
+      }
 
       a {
         @include transition (all 0.3s ease-in-out);
@@ -22,30 +37,12 @@
           color: $header-red;
         }
       }
-
-      img {
-        padding-left: 5px;
-      }
-
-      &.pad {
-        padding-top: 25px;
-      }
-
-      &.no-pad {
-        margin: 0;
-        padding: 0;
-        margin-top: 15px;
-
-      }
-
-      &:last-of-tpye {
-        margin-right: 0;
-      }
     }
   }
 }
 
 .copyright {
-  font-size: 10px;
   color: #353535;
+  font-size: em(10);
+  margin-bottom: 0;
 }

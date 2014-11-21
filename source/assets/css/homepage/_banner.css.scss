@@ -36,8 +36,9 @@
 .scrolled {
   @include animation(blink 3.0s ease-in-out);
   @include animation-iteration-count(infinite);
-  @include position(absolute, 0 0 em(60) 0);
-  @include size (100% auto);
+  @include position(absolute, 0 0 em(60) 50%);
+  @include size (45px);
+  margin-left: -22.5px;
   text-align: center;
 }
 
