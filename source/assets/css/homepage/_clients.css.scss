@@ -1,0 +1,52 @@
+.our-clients {
+  display: none;
+
+  @include media($medium-screen-up) {
+    @include fill-parent;
+    display: inline-block;
+    margin: $center;
+    margin-bottom: 100px;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: em(14);
+    margin-bottom: em(80, 14);
+    opacity: 0.3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul {
+    @include clearfix;
+
+    li {
+      @include span-columns(3 of 12);
+      @include omega(4n);
+      @include transition (all 0.3s ease-in-out);
+      text-align: center;
+      padding: 55px 0;
+      opacity: 0.3;
+
+      &.drone {
+        padding-top: 65px;
+      }
+
+      &.tutor {
+        @extend .drone;
+      }
+
+      &.cinch {
+        padding-top: 85px;
+      }
+
+      &.geek {
+        @extend .cinch;
+      }
+
+      &:hover {
+        opacity: 1.0;
+      }
+    }
+  }
+}

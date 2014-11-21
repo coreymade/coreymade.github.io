@@ -1,0 +1,141 @@
+.start-project {
+  padding: 30px 0;
+  text-align: center;
+  background: $header-red;
+
+  button {
+    @include transition (all 0.3s ease-in-out);
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 45px;
+
+    &:hover {
+      background: #fff;
+      color: $header-red;
+    }
+  }
+}
+
+.contact {
+  @include transition(visibility 0.5s linear 0.5s, opacity 0.3s linear);
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999999999;
+  overflow: scroll;
+
+
+  .close {
+    @include size(40 40);
+    display: block;
+    float: right;
+    margin: 30px 30px 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.visible {
+    @include transition(visibility 0.5s linear 0.5s, opacity 0.3s linear);
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .inner-wrapper {
+    @include section-area;
+    @include clearfix;
+  }
+
+  h1 {
+    @include section-header;
+  }
+
+  h2 {
+    @include size (100% auto);
+      margin: $center;
+      font-size: 55px;
+      color: #28282E;
+      font-weight: 800;
+      text-align: center;
+      padding-bottom: 80px;
+
+    @include media ($small-screen) {
+      @include size (750 auto);
+      margin: $center;
+      font-size: 70px;
+      color: #28282E;
+      font-weight: 800;
+      text-align: center;
+      padding-bottom: 80px;
+    }
+
+    & span {
+      background: $header-red;
+      color: #fff;
+    }
+  }
+
+  p {
+    @include paragraph;
+    @include size (100% auto);
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+    @include media ($small-screen) {
+      @include paragraph;
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+  }
+
+  .service-select {
+    @include media ($small-screen) {
+      @include size (80% auto);
+    }
+    @include size (40% auto);
+    border-radius: 3px;
+    float: none;
+    background: #F4F5F6;
+    margin: $center;
+    border: 1px solid #E3E4E6;
+    margin-bottom: 90px;
+
+    ul {
+      @include clearfix;
+
+      li {
+        @include span-columns (5.9);
+        text-align: center;
+        border-right: 1px solid #E3E4E6;
+        padding: 15px;
+
+        &:last-of-type {
+          margin: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

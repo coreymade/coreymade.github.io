@@ -4,6 +4,10 @@ GEM
     activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    bitters (0.9.3)
+      bourbon (>= 3.1)
+      sass (>= 3.2)
+      thor
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -102,7 +106,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
   bourbon
+  haml
   middleman (~> 3.2.2)
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)

@@ -1,0 +1,95 @@
+.our-work {
+  @extend .section-wrap;
+  background: white;
+
+  ul {
+    @include fill-parent;
+
+    li {
+      @include span-columns(2 of 4);
+      @include omega(2n);
+      color: #222;
+      font-size: $base-font-size;
+      font-weight: 500;
+      padding-top: em(95);
+      text-align: center;
+      text-transform: uppercase;
+
+      @include media($medium-screen-up) {
+        @include span-columns(2 of 8);
+        @include omega-reset(2n);
+        @include omega(4n);
+      }
+
+      &.branding {
+        background: image-url('branding.png') no-repeat top center;
+        border: 0;
+      }
+
+      &.design-ux {
+        background: image-url('design-ux.png') no-repeat top center;
+      }
+
+      &.development {
+        background: image-url('development.png') no-repeat top center;
+      }
+
+      &.consulting {
+        background: image-url('consulting.png') no-repeat top center;
+      }
+    }
+  }
+}
+
+.the-work {
+  @include size(100%);
+  background: white;
+
+  ul {
+    @include clearfix;
+
+    li {
+      width: 100%;
+
+      @include media($medium-screen-up) {
+        display: inline-block;
+        float: left;
+        width: 50%;
+      }
+
+      @include media($large-screen-up) {
+        width: 25%;
+      }
+
+      a {
+        display: block;
+        min-height: em(430);
+        text-indent: -9999px;
+      }
+
+      &.tutorme{
+        background: image-url('tutor-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.vm{
+        background: image-url('vm-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.trackr{
+        background: image-url('trackr-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.wineo{
+        background: image-url('wineo-cover.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

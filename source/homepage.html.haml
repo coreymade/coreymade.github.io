@@ -1,63 +1,63 @@
 = partial :menu
 
-%header
-  .header-section.group
+%header.banner
+  .header-section
     .blurImg
-      %div.new{:style => "background-image: url('images/normal-bg.png')"}
-      .blur{:style => "background-image: url('images/blurred-bg.png')"}
-    .header-wrap
+      .new
+      .blur
+    .wrap
       .logo
         =image_tag 'header-logo.png'
-    .intro.intros#show-menu
-      we
-      %span.first .
-      make
-      %span.second .
-      apps
-
-    .sub-intro
-      %p
+      %h1.intro#show-menu
+        we
+        %span.first .
+        make
+        %span.second .
+        apps
+      %h2.sub-intro
         We’re a full service digital agency making remarkable brands, beautiful interfaces and happy clients.
+      .scrolled
+        =image_tag 'scroll-down.png'
 
-    .scrolled
-      =image_tag 'scroll-down.png'
-
-  %section.our-clients
-    %h2
-      clients we've helped
-    %ul
-      %li
-        =image_tag 'native.png'
-      %li
-        =image_tag 'geosnap.png'
-      %li.drone
-        =image_tag 'drone.png'
-      %li.tutor
-        =image_tag 'tutorme.png'
-    %ul
-      %li
-        =image_tag 'mdt.png'
-      %li.cinch
-        =image_tag 'cinch.png'
-      %li
-        =image_tag 'trackr.png'
-      %li.geek
-        =image_tag 'geeklist.png'
+  .wrap
+    %section.our-clients
+      %h3
+        clients we've helped
+      %ul
+        %li
+          =image_tag 'native.png'
+        %li
+          =image_tag 'geosnap.png'
+        %li.drone
+          =image_tag 'drone.png'
+        %li.tutor
+          =image_tag 'tutorme.png'
+        %li
+          =image_tag 'mdt.png'
+        %li.cinch
+          =image_tag 'cinch.png'
+        %li
+          =image_tag 'trackr.png'
+        %li.geek
+          =image_tag 'geeklist.png'
 
 %section.our-work#show-menu
-  %h1
-    We build amazing experiences
-  %p
-    We're a small team of designers and developers. We believe in quality, perfected craftsmenship in every pixel we push. Here's how we keep it real on a daily basis.
-  %ul
-    %li.branding
-      branding
-    %li.design-ux
-      design / ux
-    %li.development
-      development
-    %li.consulting
-      consulting
+  .wrap
+    %header.section-header
+      %h3
+        We build amazing experiences
+      %p
+        We're a small team of designers and developers. We believe in quality, perfected craftsmenship in every pixel we push. Here's how we keep it real on a daily basis.
+    %ul
+      %li.branding
+        branding
+      %li.design-ux
+        design / ux
+      %li.development
+        development
+      %li.consulting
+        consulting
+
 %section.the-work
   %ul
     %li.tutorme

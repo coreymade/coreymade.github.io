@@ -1,0 +1,51 @@
+.main-footer {
+  background: #fff;
+  padding: 70px 0;
+  text-align: center;
+
+  ul {
+    display: inline-block;
+
+    li {
+      float: left;
+      display: block;
+      padding: 0 25px;
+
+      a {
+        @include transition (all 0.3s ease-in-out);
+        text-transform: uppercase;
+        color: #353535;
+        font-size: 12px;
+        font-weight: 300;
+
+        &:hover {
+          color: $header-red;
+        }
+      }
+
+      img {
+        padding-left: 5px;
+      }
+
+      &.pad {
+        padding-top: 25px;
+      }
+
+      &.no-pad {
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+
+      }
+
+      &:last-of-tpye {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  color: #353535;
+}
