@@ -27,7 +27,7 @@
 
   &.trackr {
     .cube div {
-      @include size (80 80);
+      @include size(80px);
       position: absolute;
     }
 
@@ -37,26 +37,31 @@
       padding: 25px 25px 25px 17px;
 
     }
+
     .right {
       @include transform(rotateY(-270deg) translateX(40px));
       @include transform-origin(top right);
       background: #3D7471;
       padding: 25px 25px 25px 17px;
     }
+
     .left {
       @include transform(rotateY(270deg) translateX(-40px));
       @include transform-origin(center left);
       background: #3D7471;
       padding: 25px 25px 25px 17px;
     }
+
     .top {
       @include transform(rotateX(-90deg) translateY(-40px));
       @include transform-origin(top center);
     }
+
     .bottom {
       @include transform(rotateX(90deg) translateY(40px));
       @include transform-origin(bottom center);
     }
+
     .front {
       @include transform(translateZ(40px));
       background: #56A19D;
@@ -67,7 +72,7 @@
 
 
 .cube div {
-  @include size (80 80);
+  @include size(80px);
   position: absolute;
 }
 

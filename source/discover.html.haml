@@ -16,33 +16,44 @@
       %p
         We have a high regard for building quality products that make a difference in the lives of people that use them. We work with clients to define and execute on ideas that bring a good service to the public, or a powerful product to market. We work with teams that build products that people love to use.
 
+    %section.process-circles
+      .circles
+        .process-circle-discover
+          = image_tag 'lab.png'
+        .process-circle-design
+          = image_tag 'design.png'
+        .process-circle-build
+          = image_tag 'build.png'
+        .process-circle-ship
+          = image_tag 'ship.png'
+
     %section.process-content
-      .process-discover
-        .circle
+      .process-column
+        .process-circle-discover
           = image_tag 'lab.png'
         .content
           %h4 discovery
           .divider
           %p We provide a discovery week to get down and dirty with your project learning about everything there is to know.
 
-      .process-design
-        .circle
+      .process-column
+        .process-circle-design
           = image_tag 'design.png'
         .content
           %h4 design
           .divider2
           %p After we have all the details from your project we start to design the user experience and user interface for the application.
 
-      .process-build
-        .circle
+      .process-column
+        .process-circle-build
           = image_tag 'build.png'
         .content
           %h4 build
           .divider3
           %p Once the design is set in stone we build out the application in the desired language. Involving the client in every turn.
 
-      .process-ship
-        .circle
+      .process-column
+        .process-circle-ship
           = image_tag 'ship.png'
         .content
           %h4 ship

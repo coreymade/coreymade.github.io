@@ -21,6 +21,10 @@
     @include span-columns(3 of 12);
     @include omega-reset(2n);
     @include omega(4n);
+
+    [class^='process-circle-'] {
+      display: none;
+    }
   }
 }
 
@@ -49,6 +53,35 @@
       max-width: 100%;
     }
   }
+}
+
+.process-circle-discover {
+  @extend .circle;
+  background: #EF877C;
+  padding-top: em(15);
+
+  @include media($medium-screen-up) {
+    padding-top: em(25);
+  }
+
+  @include media($large-screen-up) {
+    padding-top: em(55);
+  }
+}
+
+.process-circle-design {
+  @extend .circle;
+  background: #5CAEA8;
+}
+
+.process-circle-build {
+  @extend .circle;
+  background: #7BC7E8;
+}
+
+.process-circle-ship {
+  @extend .circle;
+  background: #FFC485;
 }
 
 .content {
@@ -98,44 +131,25 @@
   }
 }
 
-.process-discover {
-  @extend .process-column;
+.process-circles {
+  display: none;
 
-  .circle {
-    background: #EF877C;
-    padding-top: em(15);
+  @include media($large-screen-up) {
+    @include clearfix;
+    @include fill-parent;
+    clear: both;
+    display: block;
 
-    @include media($medium-screen-up) {
-      padding-top: em(25);
+    [class^='process-circle-'] {
+      display: inline-block;
+      float: left;
+      margin: 0 -10px;
     }
-
-    @include media($large-screen-up) {
-      padding-top: em(55);
-    }
   }
 }
 
-.process-design {
-  @extend .process-column;
-
-  .circle {
-    background: #5CAEA8;
-  }
-}
-
-.process-build {
-  @extend .process-column;
-
-  .circle {
-    background: #7BC7E8;
-  }
-}
-
-.process-ship {
-  @extend .process-column;
-
-
-  .circle {
-    background: #FFC485;
-  }
+.circles {
+  @include clearfix;
+  margin: 0 auto $base-y * 4;
+  width: em(640);
 }
