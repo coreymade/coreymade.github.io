@@ -1,0 +1,52 @@
+.tutor-me-header {
+
+  .tutor-intro {
+    background: image-url('open-book.png') no-repeat bottom center;
+    min-height: 980px;
+
+    h2 {
+      @include size (800 auto);
+      text-align: center;
+      padding-top: 190px;
+      margin: $center;
+      font-size: 70px;
+      color: #28282E;
+      font-weight: 800;
+    }
+  }
+}
+
+.the-product {
+  @include outer-container;
+  text-align: center;
+}
+
+.tutor-session {
+  @include clearfix;
+  background: image-url('tutor-session-background.png') no-repeat bottom center;
+  background-size: cover;
+  min-height: 1050px;
+  margin-top: 200px;
+
+  .session-left {
+    @include size (800 auto);
+    padding-left: 350px;
+    float: left;
+    padding-top: 250px;
+
+    p {
+      @include paragraph;
+      text-align: left;
+      padding: 0;
+    }
+  }
+
+  .session-right {
+    float: right;
+  }
+}
+
+.interfaces {
+  background: image-url('tutor-me-slants.png') no-repeat right center;
+  min-height: 850px;
+}
