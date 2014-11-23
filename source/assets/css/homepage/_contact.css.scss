@@ -21,29 +21,20 @@
 }
 
 .contact {
+  @include position(absolute, 0px 0px 0px 0px);
+  @include size(100%);
   @include transition(visibility 0.5s linear 0.5s, opacity 0.3s linear);
   background-color: #fff;
-  height: 100%;
-  left: 0;
   opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  visibility: hidden;
-  width: 100%;
-  z-index: 999999999;
   overflow: scroll;
+  visibility: hidden;
+  z-index: 999999999;
 
 
   .close {
-    @include size(40 40);
+    @include position(fixed, 30px 30px null null);
+    @include size(em(40));
     display: block;
-    float: right;
-    margin: 30px 30px 0 0;
-    position: fixed;
-    top: 0;
-    right: 0;
 
     &:hover {
       cursor: pointer;
@@ -51,43 +42,32 @@
   }
 
   &.visible {
+    @include position(fixed, 0px 0px 0px 0px);
     @include transition(visibility 0.5s linear 0.5s, opacity 0.3s linear);
-    visibility:visible;
-    opacity:1;
+    opacity: 1;
     transition-delay:0s;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    visibility:visible;
   }
+}
 
-  .inner-wrapper {
-    @include section-area;
-    @include clearfix;
-  }
-
-  h1 {
-    @include section-header;
-  }
+.form-header {
+  @extend .section-header;
+  margin-bottom: 0;
+  padding-top: em(80);
 
   h2 {
-    @include size (100% auto);
-      margin: $center;
-      font-size: 55px;
-      color: #28282E;
-      font-weight: 800;
-      text-align: center;
-      padding-bottom: 80px;
+    color: #28282E;
+    font-size: em(36);
+    font-weight: 800;
+    padding-bottom: $base-y * 2;
+    text-align: center;
 
-    @include media ($small-screen) {
-      @include size (750 auto);
-      margin: $center;
-      font-size: 70px;
-      color: #28282E;
-      font-weight: 800;
-      text-align: center;
-      padding-bottom: 80px;
+    @include media($medium-screen-up) {
+      font-size: em(48);
+    }
+
+    @include media($large-screen-up) {
+      font-size: em(64);
     }
 
     & span {
@@ -95,46 +75,47 @@
       color: #fff;
     }
   }
+}
 
-  p {
-    @include paragraph;
-    @include size (100% auto);
-    margin: 0 auto;
-    padding-bottom: 80px;
+.form-content {
+  @extend .section-wrap;
+  clear: both;
+}
 
-    @include media ($small-screen) {
-      @include paragraph;
-      width: 850px;
-      margin: 0 auto;
-      padding-bottom: 80px;
-    }
+.service-select {
+  @include fill-parent;
+  background: #F4F5F6;
+  border-radius: $base-border-radius;
+  margin: $center;
+  border: 1px solid #E3E4E6;
+  margin-bottom: em(80);
+
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 8);
+    @include shift(2);
   }
 
-  .service-select {
-    @include media ($small-screen) {
-      @include size (80% auto);
-    }
-    @include size (40% auto);
-    border-radius: 3px;
-    float: none;
-    background: #F4F5F6;
-    margin: $center;
-    border: 1px solid #E3E4E6;
-    margin-bottom: 90px;
+  @include media($large-screen-up) {
+    @include span-columns(6 of 12);
+    @include shift(3);
+  }
 
-    ul {
-      @include clearfix;
+  ul {
+    @include clearfix;
 
-      li {
-        @include span-columns (5.9);
-        text-align: center;
-        border-right: 1px solid #E3E4E6;
-        padding: 15px;
+    li {
+      @include span-columns(2 of 4);
+      text-align: center;
+      border-right: 1px solid #E3E4E6;
+      padding: 15px;
 
-        &:last-of-type {
-          margin: 0;
-          border-right: none;
-        }
+      @include media($medium-screen-up) {
+        @include span-columns(3 of 6);
+      }
+
+      &:last-of-type {
+        margin: 0;
+        border-right: none;
       }
     }
   }

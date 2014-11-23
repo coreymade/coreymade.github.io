@@ -1,66 +1,70 @@
 .contact
   %a.close{href: "#"}
     =image_tag 'close-btn.png'
-  .inner-wrapper
-    %h2
-      Hello! Lets
-      %span
-        build
-      something together
-    %p
-      The most successful projects begin with information. The below form will give us more insight to your projects needs and goals. It's pretty straightforward in its fields, and we're certain you won't get lost in filling it out.
 
-    %form{:action => ""}
-      .service-select
-        %ul
-          %li.amPmCheckbox
-            %input#mobile.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Mobile Application"}/
-            %label{:for => "mobile"} MOBILE
-          %li.web-app-check
-            %input#web.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Web Application"}/
-            %label{:for => "web"} WEB
+  .contact-form-wrap
+    .wrap
+      %header.form-header
+        %h2
+          Hello! Lets
+          %span
+            build
+          something together
+        %p
+          The most successful projects begin with information. The below form will give us more insight to your projects needs and goals. It's pretty straightforward in its fields, and we're certain you won't get lost in filling it out.
 
-      .form-bottom
-        .form-left
-          .form-item
-            %label{:for => ""} full name
-            %input{:type => "text"}/
+      %section.form-content
+        %form{:action => ""}
+          .service-select
+            %ul
+              %li.amPmCheckbox
+                %input#mobile.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Mobile Application"}/
+                %label{:for => "mobile"} MOBILE
+              %li.web-app-check
+                %input#web.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Web Application"}/
+                %label{:for => "web"} WEB
 
-            .form-item
-            %label{:for => ""} email address
-            %input{:type => "text"}/
+          .form-wrap
+            .form-bottom
+              .form-left
+                .form-item
+                  %label{:for => ""} full name
+                  %input{:type => "text"}/
 
-            .form-item
-            %label{:for => ""} telephone number
-            %input{:type => "text"}/
+                .form-item
+                  %label{:for => ""} email address
+                  %input{:type => "text"}/
 
-        .form-right
-          .form-item
-            %label{:for => ""} project budget
-            .styled-select
-              %select
-                %option{:value => ""} Select a budget
-                %option{:value => "25K - 50K"} $25,000 to $50,000
-                %option{:value => "50K - 75K"} $50,000 to $75,000
-                %option{:value => "75K +"} $75,000 +
+                .form-item
+                  %label{:for => ""} telephone number
+                  %input{:type => "text"}/
 
-          .form-item
-            %label{:for => ""} ideal timeline
-            .styled-select
-              %select
-                %option{:value => "4 to 8 weeks"} 4 to 8 weeks
-                %option{:value => "8 to 12 weeks"} 8 to 12 weeks
-                %option{:value => "12 weeks +"} 12 weeks +
+              .form-right
+                .form-item
+                  %label{:for => ""} project budget
+                  .styled-select
+                    %select
+                      %option{:value => ""} Select a budget
+                      %option{:value => "25K - 50K"} $25,000 to $50,000
+                      %option{:value => "50K - 75K"} $50,000 to $75,000
+                      %option{:value => "75K +"} $75,000 +
 
-          .form-item
-            %label{:for => ""} do you like the movie Back to the Future?
-            %input{:type => "text"}/
+                .form-item
+                  %label{:for => ""} ideal timeline
+                  .styled-select
+                    %select
+                      %option{:value => "4 to 8 weeks"} 4 to 8 weeks
+                      %option{:value => "8 to 12 weeks"} 8 to 12 weeks
+                      %option{:value => "12 weeks +"} 12 weeks +
 
+                .form-item
+                  %label{:for => ""} do you like the movie Back to the Future?
+                  %input{:type => "text"}/
 
-      .form-item.details
-        %label{:for => ""} tell us about your project
-        %textarea{:form => "usrform", :name => "comment", :rows => "8"}
-          :preserve
+            .form-item.details
+              %label{:for => ""} tell us about your project
+              %textarea{:form => "usrform", :name => "comment", :rows => "8"}
+                :preserve
 
-      .button
-        %input.submit-button{:type => "submit", :value => "talk to us"}
+            .button
+              %input.submit-button{:type => "submit", :value => "talk to us"}

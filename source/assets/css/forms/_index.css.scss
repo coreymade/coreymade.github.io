@@ -1,43 +1,42 @@
+.form-wrap {
+  @include clearfix;
+  @include fill-parent;
+
+  @include media($medium-screen-up) {
+    @include span-columns(6 of 8);
+    @include shift(1);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(6 of 12);
+    @include shift(3);
+  }
+}
+
 .form-bottom {
-  @include media ($small-screen) {
-    @include span-columns (12);
-    @include clearfix;
-  }
+  @include clearfix;
+  @include fill-parent;
+  clear: both;
 
-  @include size (100% auto);
-  padding: 0 60px;
-  float: none;
-  margin: $center;
-
-
-  .form-left {
-    @include media ($small-screen) {
-      @include span-columns (5.5);
-    }
-    @include size (100% auto);
-  }
-
+  .form-left,
   .form-right {
-    @include media ($small-screen) {
-      @include span-columns (5.5);
-      @include shift (1);
-    }
-    @include size (100% auto);
+    @include fill-parent;
   }
 
   .styled-select select {
-   background: transparent;
-   @include span-columns (12);
-   margin-bottom: 15px;
-   float: none;
-   border: 1px solid #D0D2DA;
-   box-shadow: none;
-   font-size: 14px;
-   color: #939393;
-   padding: 15px 0 15px 15px;
-   border-radius: 3px;
-   -webkit-appearance: none;
-   cursor: pointer;
+    @include appearance(none);
+    @include fill-parent;
+    background: transparent;
+    margin-bottom: 15px;
+    float: none;
+    border: 1px solid #D0D2DA;
+    box-shadow: none;
+    font-size: 14px;
+    color: #939393;
+    margin-bottom: 0;
+    padding: 15px 0 15px 15px;
+    border-radius: 3px;
+    cursor: pointer;
   }
 
   .styled-select {
@@ -57,10 +56,6 @@
     padding-bottom: 8px;
   }
 
-  &.details {
-    padding: 0 60px;
-  }
-
   textarea {
     @include size (100% auto);
     border: 1px solid #D0D2DA;
@@ -72,12 +67,12 @@
 }
 
 input {
-  @include span-columns (12);
-  margin-bottom: 30px;
+  @include fill-parent;
   float: none;
   border: 1px solid #D0D2DA;
   box-shadow: none;
   background: white;
+  clear: both;
   font-size: 14px;
   color: #939393;
   padding: 15px 0 15px 15px;
