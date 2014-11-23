@@ -1,0 +1,17 @@
+.owl-carousel {
+  @include clearfix;
+  @include size(100%);
+  overflow: hidden;
+
+  li {
+    @include clearfix;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+
+    img {
+      float: left;
+      max-width: 100%;
+    }
+  }
+}

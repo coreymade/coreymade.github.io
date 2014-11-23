@@ -207,3 +207,9 @@ var Menu = {
 };
 
 Menu.init();
+
+$(document).ready(function() {
+  $("#about-pictures").owlCarousel({
+    pagination: false
+  });
+});

@@ -20,7 +20,12 @@
 @import 'homepage/contact';
 
 @import "about/index";
+@import "about/carousel";
 @import 'about/process';
+
+@import 'carousel/owl.carousel';
+@import 'carousel/owl.theme';
+@import 'carousel/owl.transitions';
 
 @import "casestudies/twentytwenty";
 @import "casestudies/trackr";

@@ -1,6 +1,7 @@
 .about-us {
   @extend .section-wrap;
   @include linear-gradient(#fff, #f6f6f6);
+  padding-bottom: 0;
 
   h2 {
     text-align: center;
