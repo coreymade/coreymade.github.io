@@ -1,4 +1,6 @@
 .header-section {
+  position: relative;
+
   .logo {
     @include size (em(80) auto);
     margin: $center;
@@ -36,7 +38,7 @@
 .scrolled {
   @include animation(blink 3.0s ease-in-out);
   @include animation-iteration-count(infinite);
-  @include position(absolute, 0 0 em(60) 50%);
+  @include position(absolute, null null em(60) 50%);
   @include size (45px);
   margin-left: -22.5px;
   text-align: center;

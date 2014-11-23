@@ -47,8 +47,11 @@
 
   ul {
     @include clearfix;
+    @include fill-parent;
+    overflow: hidden;
 
     li {
+      margin-bottom: -1px;
       width: 100%;
 
       @include media($medium-screen-up) {
@@ -64,28 +67,29 @@
       a {
         display: block;
         min-height: em(430);
+        overflow: hidden;
         text-indent: -9999px;
       }
 
-      &.tutorme{
+      &.tutorme a{
         background: image-url('tutor-cover.png') no-repeat;
         background-size: cover;
         background-position: center;
       }
 
-      &.vm{
+      &.vm a{
         background: image-url('vm-cover.png') no-repeat;
         background-size: cover;
         background-position: center;
       }
 
-      &.trackr{
+      &.trackr a{
         background: image-url('trackr-cover.png') no-repeat;
         background-size: cover;
         background-position: center;
       }
 
-      &.wineo{
+      &.wineo a{
         background: image-url('wineo-cover.png') no-repeat;
         background-size: cover;
         background-position: center;
