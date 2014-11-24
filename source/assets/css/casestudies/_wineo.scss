@@ -1,67 +1,148 @@
 .wineo-header {
-  background: image-url('wineo-background.png') no-repeat left;
-  min-height: 848px;
+  @extend .section-wrap;
+  background: image-url('wineo-background.png') no-repeat left -500px;
+  padding-top: em(340);
 
-  h2 {
-    @include case-study-heading;
-    @include size (100% auto);
-    padding-top: 18%;
-    text-align: left;
-    padding-left: 670px;
+  @include media($medium-screen-up) {
+    background-size: auto;
+    background-position: left -300px;
+    padding-top: em(500);
+  }
+
+  @include media($excessive-screen-up) {
+    background-size: auto;
+    background-position: left bottom;
+    padding-top: em(250);
+    padding-bottom: em(400);
+  }
+
+  .case-study-title {
+    text-align: center;
+
+    @include media($excessive-screen-up) {
+      @include span-columns(7 of 12);
+      @include shift(5);
+      text-align: left;
+    }
+  }
+}
+
+.wineo-the-intro {
+  @extend .the-intro;
+  padding-top: 0;
+}
+
+.wineo-product {
+  @extend .product;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wineo-icons {
+  @include retina-image('wineo-icons', 607px 128px, $asset-pipeline: true);
+  @include size(100% 180px);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  clear: both;
+
+  @include media($medium-screen-up) {
+    @include size(607px 128px);
+    margin: $center;
+    margin-bottom: em(120);
+  }
+
+  @include media($large-screen-up) {
+    position: relative;
+    top: - em(60);
+    margin-bottom: em(60);
   }
 }
 
 .wineo-app {
-  background: image-url('wineo-cut.png') no-repeat right;
-  min-height: 1169px;
-  margin-top: 120px;
-  padding-left: 120px;
+  .section-header {
+    p:first-of-type {
+      margin-bottom: $base-y * 2;
 
-  .app-top {
-    @include span-columns (4);
-    float: none;
-    margin-bottom: 60px;
-
-    &.above {
-      padding-top: 470px;
+      @include media($medium-screen-up) {
+        margin-bottom: $base-y * 4;
+      }
     }
 
-    h2 {
-      font-size: 32px;
-      color: #222;
-      padding-bottom: 40px;
-    }
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(0);
+      padding-top: em(200);
 
-    p {
-      @include paragraph;
-      text-align: left;
-      font-size: 19px;
-      padding: 0;
+      h2,
+      p {
+        text-align: left;
+      }
     }
   }
 }
 
-.wineo-end-result {
-  @include span-columns (8);
-  margin: 0 auto;
+.wineo-app-background {
+  @include clearfix;
+  @include fill-parent;
+  text-align: right;
   float: none;
-  background: image-url('wineo-bottom-product.png') no-repeat right;
-  min-height: 772px;
-  margin-bottom: 120px;
+  position: relative;
 
-  h2 {
-    font-size: 32px;
-    color: #222;
-    padding-bottom: 40px;
-    padding-top: 110px;
+  @include media($large-screen-up) {
+    float: right;
+    top: -1000px;
+    margin-bottom: -1100px;
+    position: relative;
+    max-width: em(700);
+
+    img {
+      max-width: 100%;
+    }
   }
 
-  p {
-    @include paragraph;
-    @include span-columns (4.8);
-    float: none;
-    text-align: left;
-    font-size: 19px;
-    padding: 0;
+  @include media($excessive-screen-up) {
+    max-width: em(900);
+  }
+}
+
+.wineo-end-result {
+  margin-bottom: em(120);
+
+  .section-header{
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(0);
+      padding-top: em(200);
+
+      h2,
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.wineo-end-result-background {
+  @include clearfix;
+  @include fill-parent;
+  text-align: right;
+  padding-left: em(60);
+  padding-right: em(60);
+
+  @include media($large-screen-up) {
+    float: right;
+    top: -600px;
+    margin-bottom: -500px;
+    position: relative;
+    max-width: em(700);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include media($excessive-screen-up) {
+    max-width: em(900);
   }
 }
