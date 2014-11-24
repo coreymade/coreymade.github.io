@@ -1,21 +1,30 @@
 .trackr-header {
-  .trackr-intro {
-    background: image-url('trackr-header.png') no-repeat top center;
-    padding-top: 650px;
-    text-align: center;
+  @extend .section-wrap;
+  background: image-url('trackr-header.png') no-repeat top center;
+  background-size: 100%;
+  margin-bottom: 0;
+  padding-top: em(240);
+  text-align: center;
 
-    h2 {
-      @include size (750 auto);
-      margin: $center;
-      font-size: 70px;
-      color: #28282E;
-      font-weight: 800;
+  @include media($medium-screen-up) {
+    background-size: auto;
+    padding-top: 660px;
+    padding-bottom: 0;
+  }
+
+  @include media($large-screen-up) {
+    .case-study-title {
+      @include span-columns(6 of 12);
+      @include shift(3);
     }
   }
 }
 
 .trackr-logo {
-  padding-bottom: 120px;
+  @include size(233px 266px);
+  @include retina-image('trackr-logo-large', 233px 266px, $asset-pipeline: true);
+  clear: both;
+  margin: em(80) auto 0;
 }
 
 .wallet {
