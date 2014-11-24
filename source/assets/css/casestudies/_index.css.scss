@@ -1,0 +1,170 @@
+$header-color: #28282E;
+
+.case-study-wrap {
+  h2 {
+    font-weight: 800;
+  }
+}
+
+.case-study-title {
+  color: #29282B;
+  font-size: em(48);
+  font-weight: 800;
+
+  @include media($medium-screen-up) {
+    font-size: em(64);
+  }
+}
+
+.the-intro {
+  @extend .section-wrap;
+
+  h2 {
+    color: #28282e;
+    font-size: em(24);
+    padding-bottom: em(40, 24);
+  }
+
+  .divider {
+    @include size (em(50) em(2));
+    background: #E9EBEC;
+    margin-bottom: em(40);
+  }
+
+  p {
+    color: #7D8692;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .the-problem,
+  .the-solution {
+    @include fill-parent;
+    margin-bottom: $base-y * 2;
+
+    @include media($medium-screen-up) {
+      @include span-columns(4 of 8);
+      @include omega(2n);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+    }
+  }
+
+  .the-problem {
+    @include media($large-screen-up) {
+      @include shift(2);
+    }
+  }
+
+  .the-solution {
+    @include media($large-screen-up) {
+      @include shift(.5);
+    }
+  }
+}
+
+.mobile-experience {
+  text-align: center;
+
+  h2 {
+    font-size: em(24);
+    padding-bottom: em(40, 24);
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  .sensor {
+    background: image-url('sound.png') no-repeat top center;
+    min-height: 200px;
+
+    .points-left {
+      float: left;
+    }
+
+    .points-right {
+      float: right;
+    }
+  }
+
+  .mobile-shots {
+    min-height: 693px;
+  }
+}
+
+.web-experience {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+
+  p {
+    @include paragraph;
+    @include size (820 auto);
+    margin: $center;
+  }
+
+  .browser {
+    max-width: 37%;
+    margin: $center;
+    box-shadow: 0 1px 20px #E9E9E9;
+    margin-bottom: 120px;
+
+    .browser-bar {
+      height: 2.4em;
+    }
+
+    .browser-content {
+      @include size (auto 700);
+      overflow: scroll;
+    }
+  }
+}
+
+.study-pagination {
+  > div {
+    @include fill-parent;
+    margin-bottom: -1px;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+      float: left;
+      width: 50%;
+    }
+
+    a {
+      display: block;
+      min-height: 430px;
+      overflow: hidden;
+      text-indent: -9999px;
+    }
+
+    &.tutorme{
+      background: image-url('tutor-cover.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &.vm{
+      background: image-url('vm-cover.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &.trackr{
+      background: image-url('trackr-cover.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &.wineo{
+      background: image-url('wineo-cover.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

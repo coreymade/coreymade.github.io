@@ -1,76 +1,150 @@
 .vertical-mass-header {
+  @extend .section-wrap;
   background: image-url('vm-header-background.png') no-repeat top center;
-  min-height: 1045px;
+  background-size: cover;
   text-align: center;
-  padding-top: 170px;
 
-  h2 {
-    @include case-study-heading;
+  @include media($medium-screen-up) {
+    min-height: 1045px;
+    padding-top: 170px;
   }
 }
 
-.clear {
-  @include clearfix;
-}
-
 .product {
+  padding: 0 flex-gutter(4);
   text-align: center;
   margin-bottom: 120px;
+
+  @include media($medium-screen-up) {
+    padding: 0 flex-gutter(8);
+  }
+
+  @include media(large-screen-up) {
+    padding: 0 flex-gutter(12);
+  }
 }
 
 .branding {
   @include clearfix;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 30px 0;
+
+  .vm-icons,
+  .vm-colors {
+    display: inline-block;
+    float: left;
+    height: em(120);
+    text-align: center;
+    width: 50%;
+
+    @include media($large-screen-up) {
+      height: em(200);
+    }
+  }
 
   .vm-icons {
-    @include span-columns (6 of 12);
-    text-align: center;
-    padding-top: 35px;
+    @include retina-image('vertical-mass-icons', 545px 50px, $asset-pipeline: true);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media($excessive-screen-up) {
+      background-size: auto;
+    }
   }
 
   .vm-colors {
-    @include span-columns (6 of 12);
-    text-align: center;
+    @include retina-image('vertical-mass-colors', 592px 112px, $asset-pipeline: true);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media($excessive-screen-up) {
+      background-size: auto;
+    }
   }
 }
 
 .type {
   @include clearfix;
   border-bottom: 1px solid #e5e5e5;
-  max-height: 370px;
   overflow: hidden;
-  margin-bottom: 120px;
+
+  .source-sans,
+  .open-sans {
+    display: inline-block;
+    float: left;
+    height: em(155);
+    width: 50%;
+
+    @include media($medium-screen-up) {
+      height: em(255);
+    }
+
+    @include media($large-screen-up) {
+      height: em(350);
+    }
+  }
 
   .source-sans {
-    @include span-columns (6 of 12);
+    @include retina-image('source-sans', 716px 340px, $asset-pipeline: true);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100%;
     border-right: 1px solid #e5e5e5;
-    padding-top: 71px;
+
+    @include media($large-screen-up) {
+      background-size: auto;
+    }
   }
 
   .open-sans {
-    @include span-columns (6 of 12);
-    text-align: right;
-    padding-top: 40px;
+    @include retina-image('open-sans', 648px 481px, $asset-pipeline: true);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include media($large-screen-up) {
+      background-size: auto;
+    }
   }
 }
 
 .ads {
-  background: image-url('vm-product.png') no-repeat top;
-  background-size: cover;
-  min-height: 1635px;
+  position: relative;
+}
 
-  .inner-ads {
-    @include span-columns (3.5);
-    margin-left: 100px;
-    padding-top: 220px;
+.inner-ads {
+  @extend .section-header;
+  @include fill-parent;
+  @include shift(0);
+  margin-top: em(120);
 
-    p {
-      @include paragraph;
+  h2, p {
+    text-align: center;
+
+    @include media($large-screen-up) {
       text-align: left;
-      padding: 0;
-      padding-top: 30px;
     }
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(4 of 12);
+  }
+}
+
+.ads-background {
+  @include clearfix;
+  @include fill-parent;
+  margin-bottom: em(120);
+
+  @include media($large-screen-up) {
+    top: -450px;
+    margin-bottom: -300px;
+    position: relative;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
