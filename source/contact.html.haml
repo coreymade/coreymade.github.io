@@ -14,14 +14,15 @@
           The most successful projects begin with information. The below form will give us more insight to your projects needs and goals. It's pretty straightforward in its fields, and we're certain you won't get lost in filling it out.
 
       %section.form-content
-        %form{:action => ""}
+        %form{"accept-charset" => "UTF-8", :action => "https://formkeep.com/f/8302c7be4166", :method => "POST"}
+          %input{:name => "utf8", :type => "hidden", :value => "✓"}/
           .service-select
             %ul
               %li.amPmCheckbox
-                %input#mobile.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Mobile Application"}/
+                %input#mobile.checkboxLabel.main_street_input{:name => "Project Type", :type => "checkbox", :value => "Mobile Application"}/
                 %label{:for => "mobile"} MOBILE
-              %li.web-app-check
-                %input#web.checkboxLabel.main_street_input{:name => "data[Child][remember_me]", :type => "checkbox", :value => "Web Application"}/
+              %li.amPmCheckbox
+                %input#web.checkboxLabel.main_street_input{:name => "Project Type", :type => "checkbox", :value => "Web Application"}/
                 %label{:for => "web"} WEB
 
           .form-wrap
@@ -29,30 +30,30 @@
               .form-left
                 .form-item
                   %label{:for => ""} full name
-                  %input{:type => "text"}/
+                  %input{:type => "text", :name => "Customer Name"}/
 
                 .form-item
                   %label{:for => ""} email address
-                  %input{:type => "text"}/
+                  %input{:type => "text", :name => "email"}/
 
                 .form-item
                   %label{:for => ""} telephone number
-                  %input{:type => "text"}/
+                  %input{:type => "text", :name => "phone"}/
 
               .form-right
                 .form-item
                   %label{:for => ""} project budget
                   .styled-select
-                    %select
+                    %select{:name => "budget"}
                       %option{:value => ""} Select a budget
-                      %option{:value => "25K - 50K"} $25,000 to $50,000
-                      %option{:value => "50K - 75K"} $50,000 to $75,000
-                      %option{:value => "75K +"} $75,000 +
+                      %option{:value => "25K - 50K", :name => "25-50K"} $25,000 to $50,000
+                      %option{:value => "50K - 75K", :name => "50-75K"} $50,000 to $75,000
+                      %option{:value => "75K +", :name => "75K-plus"} $75,000 +
 
                 .form-item
                   %label{:for => ""} ideal timeline
                   .styled-select
-                    %select
+                    %select{:name => "timeline"}
                       %option{:value => "4 to 8 weeks"} 4 to 8 weeks
                       %option{:value => "8 to 12 weeks"} 8 to 12 weeks
                       %option{:value => "12 weeks +"} 12 weeks +
@@ -63,7 +64,7 @@
 
             .form-item.details
               %label{:for => ""} tell us about your project
-              %textarea{:form => "usrform", :name => "comment", :rows => "8"}
+              %textarea{:name => "comment", :rows => "8"}
                 :preserve
 
             .button
