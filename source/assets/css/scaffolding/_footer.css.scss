@@ -13,11 +13,13 @@
     text-align: center;
 
     li {
-      @include fill-parent;
+      @include span-columns(2 of 4);
+      @include omega(2n);
       margin-bottom: $base-y;
       text-align: center;
 
       @include media($medium-screen-up) {
+        @include omega-reset(2n);
         display: inline-block;
         float: none;
         margin: 0 em(20) $base-y;

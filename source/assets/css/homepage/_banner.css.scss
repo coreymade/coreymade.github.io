@@ -37,7 +37,11 @@ header {
   .logo {
     @include size (em(80) auto);
     margin: $center;
-    padding: em(80) 0;
+    padding: em(40) 0;
+
+    @include media($medium-screen-up) {
+      padding: em(80) 0;
+    }
   }
 }
 
@@ -66,15 +70,6 @@ header {
   @include media ($small-screen) {
     display: none;
   }
-}
-
-.scrolled {
-  @include animation(blink 3.0s ease-in-out);
-  @include animation-iteration-count(infinite);
-  @include position(absolute, null null em(60) 50%);
-  @include size (45px);
-  margin-left: -22.5px;
-  text-align: center;
 }
 
 .intro {
@@ -127,8 +122,9 @@ header {
   font-weight: 300;
   font-size: em(18);
   line-height: 1.75em;
-  margin-top: $base-y;
-  padding-top: $base-y;
+  margin-top: $base-y / 2;
+  margin-bottom: em(120, 18);
+  padding-top: $base-y / 2;
   text-align: center;
 
   @include media($large-screen-up) {
@@ -136,6 +132,20 @@ header {
     @include shift(2.5);
     font-size: em(21);
     margin-top: $base-y * 2;
+    margin-bottom: 0;
     padding-top: $base-y * 2;
+  }
+}
+
+.scrolled {
+  @include animation(blink 3.0s ease-in-out);
+  @include animation-iteration-count(infinite);
+  @include size (45px);
+  margin: 0 auto;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include position(absolute, null null em(60) 50%);
+    margin-left: -22.5px;
   }
 }

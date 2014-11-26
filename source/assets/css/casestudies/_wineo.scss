@@ -1,12 +1,12 @@
 .wineo-header {
   @extend .section-wrap;
-  background: image-url('wineo-background.png') no-repeat left -500px;
-  padding-top: em(340);
+  background: image-url('wineo-background.png') no-repeat left -200px;
+  background-size: cover;
+  padding-top: em(200);
 
   @include media($medium-screen-up) {
-    background-size: auto;
     background-position: left -300px;
-    padding-top: em(500);
+    padding-top: em(350);
   }
 
   @include media($excessive-screen-up) {

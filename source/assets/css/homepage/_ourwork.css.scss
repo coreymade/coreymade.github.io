@@ -11,6 +11,7 @@
       color: #222;
       font-size: $base-font-size;
       font-weight: 500;
+      margin-bottom: $base-y * 2;
       padding-top: em(95);
       text-align: center;
       text-transform: uppercase;
@@ -19,6 +20,10 @@
         @include span-columns(2 of 8);
         @include omega-reset(2n);
         @include omega(4n);
+      }
+
+      @include media($large-screen-up) {
+        margin-bottom: 0;
       }
 
       &.branding {
@@ -51,7 +56,7 @@
     overflow: hidden;
 
     li {
-      margin-bottom: -1px;
+      margin-bottom: -2px;
       width: 100%;
 
       @include media($medium-screen-up) {
@@ -136,6 +141,7 @@
 
       a {
         display: block;
+        height: em(420);
         overflow: hidden;
         text-indent: -9999px;
       }
