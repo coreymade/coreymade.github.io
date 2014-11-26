@@ -57,31 +57,61 @@
 
 .process-circle-discover {
   @extend .circle;
-  background: #EF877C;
+  background: image-url('about/icon_discovery.svg') #EF877C no-repeat center center;
+  background-size: em(40) auto;
   padding-top: em(15);
 
   @include media($medium-screen-up) {
+    background-size: em(50) auto;
     padding-top: em(25);
   }
 
   @include media($large-screen-up) {
+    background-size: em(60) auto;
     padding-top: em(55);
   }
 }
 
 .process-circle-design {
   @extend .circle;
-  background: #5CAEA8;
+  background: image-url('about/icon_design.svg') #5CAEA8 no-repeat center center;
+  background-size: em(40) auto;
+
+  @include media($medium-screen-up) {
+    background-size: em(50) auto;
+  }
+
+  @include media($large-screen-up) {
+    background-size: em(60) auto;
+  }
 }
 
 .process-circle-build {
   @extend .circle;
-  background: #7BC7E8;
+  background: image-url('about/icon_build.svg') #7BC7E8 no-repeat center center;
+  background-size: em(40) auto;
+
+  @include media($medium-screen-up) {
+    background-size: em(50) auto;
+  }
+
+  @include media($large-screen-up) {
+    background-size: em(60) auto;
+  }
 }
 
 .process-circle-ship {
   @extend .circle;
-  background: #FFC485;
+  background: image-url('about/icon_ship.svg') #FFC485 no-repeat center center;
+  background-size: em(40) auto;
+
+  @include media($medium-screen-up) {
+    background-size: em(50) auto;
+  }
+
+  @include media($large-screen-up) {
+    background-size: em(60) auto;
+  }
 }
 
 .content {

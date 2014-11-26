@@ -40,18 +40,13 @@
     %section.process-circles
       .circles
         .process-circle-discover
-          = image_tag 'lab.png'
         .process-circle-design
-          = image_tag 'design.png'
         .process-circle-build
-          = image_tag 'build.png'
         .process-circle-ship
-          = image_tag 'ship.png'
 
     %section.process-content
       .process-column
         .process-circle-discover
-          = image_tag 'lab.png'
         .content
           %h4 discovery
           .divider
@@ -59,7 +54,6 @@
 
       .process-column
         .process-circle-design
-          = image_tag 'design.png'
         .content
           %h4 design
           .divider2
@@ -67,7 +61,6 @@
 
       .process-column
         .process-circle-build
-          = image_tag 'build.png'
         .content
           %h4 build
           .divider3
@@ -75,7 +68,6 @@
 
       .process-column
         .process-circle-ship
-          = image_tag 'ship.png'
         .content
           %h4 ship
           .divider4
@@ -91,22 +83,19 @@
     .locations
       %ul
         %li
-          .state
-            =image_tag 'cali.png'
+          .cali
           %h2
             LA
           .clock
             %canvas#clock1.CoolClock:simple:55:seconds:5
         %li
-          .state
-            =image_tag 'texas.png'
+          .texas
           %h2
             HOU
           .clock
             %canvas#clock2.CoolClock:simple:55:seconds:7
         %li
-          .state
-            =image_tag 'georgia.png'
+          .georgia
           %h2
             ATL
           .clock

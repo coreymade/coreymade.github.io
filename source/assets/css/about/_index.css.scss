@@ -70,7 +70,7 @@
 
 .offices {
   @extend .section-wrap;
-  background: image-url('city-background.png') no-repeat bottom #28282E;
+  background: image-url('about/city-background.png') no-repeat bottom #28282E;
   background-size: cover;
 
   h2 {
@@ -121,6 +121,29 @@
 
 #clock1 {
   @include size(em(80));
+}
+
+.state {
+  @include size(100% em(80));
+  display: block;
+}
+
+.cali{
+  @extend .state;
+  background: image-url('about/icon_cali.svg') no-repeat center top;
+  background-size: em(80) auto;
+}
+
+.georgia {
+  @extend .state;
+  background: image-url('about/icon_georgia.svg') no-repeat center top;
+  background-size: em(80) auto;
+}
+
+.texas {
+  @extend .state;
+  background: image-url('about/icon_texas.svg') no-repeat center top;
+  background-size: em(80) auto;
 }
 
 .project {

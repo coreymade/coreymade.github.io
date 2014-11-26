@@ -98,33 +98,41 @@ input {
 }
 
 .amPmCheckbox input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 .amPmCheckbox input[type="checkbox"]+label {
-    background: image-url('mobile-unchecked.png') no-repeat top center;
-    cursor: pointer;
-    font-size: 15px;
-    color: #818490;
-    padding-top: 90px;
-    font-weight: 600;
+  @include retina-image('contact/mobile-unchecked', 57px 81px, $asset-pipeline: true);
+  background-position: top center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 15px;
+  color: #818490;
+  padding-top: 90px;
+  font-weight: 600;
 }
 .amPmCheckbox input[type="checkbox"]:checked + label {
-    background: image-url('mobile-checked.png')  no-repeat top center;
+  @include retina-image('contact/mobile-checked', 57px 81px, $asset-pipeline: true);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .web-app-check input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 .web-app-check input[type="checkbox"]+label {
-    background: image-url('web-checked.png')  no-repeat top center;;
-    cursor: pointer;
-    font-size: 15px;
-    color: #818490;
-    padding-top: 90px;
-    font-weight: 600;
+  @include retina-image('contact/web-checked', 87px 80px, $asset-pipeline: true);
+  background-position: top center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 15px;
+  color: #818490;
+  padding-top: 90px;
+  font-weight: 600;
 }
 .web-app-check input[type="checkbox"]:checked + label {
-    background: image-url('web-unchecked.png')  no-repeat top center;
+  @include retina-image('contact/web-unchecked', 87px 80px, $asset-pipeline: true);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .form-item {

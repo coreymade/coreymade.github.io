@@ -33,6 +33,7 @@
 
 
   .close {
+    @include retina-image('contact/close-btn', 40px 40px, $asset-pipeline: true);
     @include position(fixed, 30px 30px null null);
     @include size(em(40));
     display: block;

@@ -27,20 +27,25 @@
       }
 
       &.branding {
-        background: image-url('branding.png') no-repeat top center;
+        background: image-url('homepage/icon_branding.svg') no-repeat top center;
+        background-size: em(60) auto;
+
         border: 0;
       }
 
       &.design-ux {
-        background: image-url('design-ux.png') no-repeat top center;
+        background: image-url('homepage/icon_design.svg') no-repeat top center;
+        background-size: em(60) auto;
       }
 
       &.development {
-        background: image-url('development.png') no-repeat top center;
+        background: image-url('homepage/icon_development.svg') no-repeat top center;
+        background-size: em(60) auto;
       }
 
       &.consulting {
-        background: image-url('consulting.png') no-repeat top center;
+        background: image-url('homepage/icon_consulting.svg') no-repeat top center;
+        background-size: em(60) auto;
       }
     }
   }

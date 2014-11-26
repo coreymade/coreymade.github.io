@@ -14,13 +14,6 @@
   }
 }
 
-header {
-  &.logo {
-    @include size (em(80) auto);
-    margin: $center;
-  }
-}
-
 .our-site {
   font-size: 16px;
   font-family: Georgia, sans-serif;
@@ -35,7 +28,11 @@ header {
   position: relative;
 
   .logo {
-    @include size (em(80) auto);
+    @include retina-image('homepage/header-logo', 80px 80px, $asset-pipeline: true);
+    @include size (80px 80px);
+    @include box-sizing(content-box);
+    background-position: center center;
+    background-repeat: no-repeat;
     margin: $center;
     padding: em(40) 0;
 
@@ -60,11 +57,11 @@ header {
 }
 
 .new {
-  background-image: image-url('normal-bg.png');
+  background-image: image-url('homepage/normal-bg.png');
 }
 
 .blur {
-  background-image: image-url('blurred-bg.png');
+  background-image: image-url('homepage/blurred-bg.png');
   opacity: 0;
 
   @include media ($small-screen) {
