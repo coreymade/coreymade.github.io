@@ -210,6 +210,7 @@ Menu.init();
 
 $(document).ready(function() {
   $("#about-pictures").owlCarousel({
-    pagination: false
+    pagination: false,
+    navigation: true
   });
 });

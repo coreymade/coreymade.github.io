@@ -15,3 +15,21 @@
     }
   }
 }
+
+.owl-theme .owl-controls {
+  margin-top: 0 !important;
+}
+
+.owl-prev,
+.owl-next {
+  @include size(40px);
+  @include transition;
+  @include position(absolute, 50% null null 40px);
+  margin-top: -20px;
+  text-indent: -9999px;
+}
+
+.owl-next {
+  left: auto;
+  right: 40px;
+}
