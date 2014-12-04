@@ -20,20 +20,6 @@
   }
 }
 
-.product {
-  padding: 0 flex-gutter(4);
-  text-align: center;
-  margin-bottom: 120px;
-
-  @include media($medium-screen-up) {
-    padding: 0 flex-gutter(8);
-  }
-
-  @include media(large-screen-up) {
-    padding: 0 flex-gutter(12);
-  }
-}
-
 .branding {
   @include clearfix;
   border-top: 1px solid #e5e5e5;

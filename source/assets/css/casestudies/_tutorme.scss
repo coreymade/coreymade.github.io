@@ -1,52 +1,83 @@
 .tutor-me-header {
-
-  .tutor-intro {
-    background: image-url('open-book.png') no-repeat bottom center;
-    min-height: 980px;
-
-    h2 {
-      @include size (800 auto);
-      text-align: center;
-      padding-top: 190px;
-      margin: $center;
-      font-size: 70px;
-      color: #28282E;
-      font-weight: 800;
-    }
-  }
-}
-
-.the-product {
-  @include outer-container;
+  background: image-url('open-book.png') no-repeat bottom center;
+  background-size: 100%;
   text-align: center;
+  padding: em(50) 0 em(150);
+
+  @include media($medium-screen-up) {
+    padding: em(100) 0 em(300);
+  }
+
+  @include media($large-screen-up) {
+    padding: em(150) 0 em(600);
+  }
 }
 
 .tutor-session {
   @include clearfix;
   background: image-url('tutor-session-background.png') no-repeat bottom center;
   background-size: cover;
-  min-height: 1050px;
-  margin-top: 200px;
+  padding: 120px 0;
 
-  .session-left {
-    @include size (800 auto);
-    padding-left: 350px;
-    float: left;
-    padding-top: 250px;
+  .section-header {
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(0);
 
-    p {
-      @include paragraph;
-      text-align: left;
-      padding: 0;
+      h2, p {
+        text-align: left;
+      }
     }
   }
 
-  .session-right {
-    float: right;
+  .session-background {
+    @include media($large-screen-up) {
+      @include span-columns(7 of 12);
+      @include shift(1);
+      @include omega;
+      float: right;
+      position: relative;
+      top: -500px;
+      margin-bottom: -500px;
+    }
   }
 }
 
-.interfaces {
-  background: image-url('tutor-me-slants.png') no-repeat right center;
-  min-height: 850px;
+.tutor-interfaces {
+  padding: 120px 0;
+
+  .section-header {
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(0);
+
+      h2, p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.tutor-interfaces-background {
+  @include clearfix;
+  @include fill-parent;
+  text-align: right;
+  float: none;
+  position: relative;
+
+  @include media($large-screen-up) {
+    float: right;
+    top: -400px;
+    margin-bottom: -400px;
+    position: relative;
+    max-width: em(700);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include media($excessive-screen-up) {
+    max-width: em(900);
+  }
 }
