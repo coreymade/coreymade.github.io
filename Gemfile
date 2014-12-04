@@ -4,7 +4,7 @@ gem 'bitters'
 gem 'bourbon'
 gem 'haml'
 gem 'middleman', '~>3.2.2'
-gem 'middleman-gh-pages'
+gem 'middleman-deploy'
 gem 'neat'
 
 # Live-reloading plugin
