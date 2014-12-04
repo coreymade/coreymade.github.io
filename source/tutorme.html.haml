@@ -1,66 +1,69 @@
 = partial :menu
 
-%section.tutor-me-header
-  .tutor-intro
-    %h2#show-menu
+.case-study-wrap
+  %section.tutor-me-header#show-menu
+    %h2.case-study-title
       Goodbye textbooks.
       %br
       Hello online tutoring.
 
-%section.the-intro
-  .the-problem
-    %h2
-      The problem
-    .divider
-    %p
-      TutorMe was setting out to revolutionize the online tutoring industry with impressive features like on-on-one tutoring sessions, live whiteboards and online classrooms. With such a complex system, they needed a user-friendly feel that didn't overwhelm the user with school type atomosphere.
-  .the-solution
-    %h2
-      The solution
-    .divider
-    %p
-      Mossio created an effective brand that had a focus on completion rather than an uphill battle. We carefully crafted a user experience that was easy for tutors to complete courses and fun for students to learn. The end result was an extrodinarly beautiful user interface, and an exceptional branding model.
+  %section.the-intro
+    .wrap
+      .the-problem
+        %h2
+          The problem
+        .divider
+        %p
+          TutorMe was setting out to revolutionize the online tutoring industry with impressive features like on-on-one tutoring sessions, live whiteboards and online classrooms. With such a complex system, they needed a user-friendly feel that didn't overwhelm the user with school type atomosphere.
+      .the-solution
+        %h2
+          The solution
+        .divider
+        %p
+          Mossio created an effective brand that had a focus on completion rather than an uphill battle. We carefully crafted a user experience that was easy for tutors to complete courses and fun for students to learn. The end result was an extrodinarly beautiful user interface, and an exceptional branding model.
 
-%section.the-product
-  =image_tag 'tutor-me-product.png'
+  .product
+    =image_tag 'tutor-me-product.png'
 
-%section.mobile-experience
-  %h2
-    Chat Experience
-  %p
-    The chat system is a complex one. Having an easy way for students to commicated with not only tutors but other students had to be well planned. Viewing online students, and online tutors for on-demand sessions, as well as visual graphs for tutor sessions for both user base.
-  .chat
-    =image_tag 'chat-window.png'
+  %section.mobile-experience
+    .wrap
+      %header.section-header
+        %h2
+          Chat Experience
+        %p
+          The chat system is a complex one. Having an easy way for students to commicated with not only tutors but other students had to be well planned. Viewing online students, and online tutors for on-demand sessions, as well as visual graphs for tutor sessions for both user base.
+    .chat
+      =image_tag 'chat-window.png'
 
-%section.tutor-session
-  .session-left
-    %h2
-      Tutor Session
-    %p
-      The tutor session was the most complex piece of the puzzle. Keeping ease of use in mind, we crafted a user experience that is not only exceptional, it’s a pleasure to use. Students and tutors have similiar experiences keeping inline with consistency.
-  .session-right
-    =image_tag 'tutor-session.png'
+  %section.tutor-session
+    .wrap
+      %header.section-header
+        %h2
+          Tutor Session
+        %p
+          The tutor session was the most complex piece of the puzzle. Keeping ease of use in mind, we crafted a user experience that is not only exceptional, it’s a pleasure to use. Students and tutors have similiar experiences keeping inline with consistency.
+    .session-background
+      =image_tag 'tutor-session.png'
 
-%section.interfaces
-  .column
-    %h2
-      Student Interface
-    %p
-      hdre
-  .column
-    %h2
-      Tutor Interface
-    %p
-      here
+  %section.interfaces
+    .wrap
+      %header.section-header
+        %h2
+          Student Interface
+        %p
+          hdre
+        %h2
+          Tutor Interface
+        %p
+          here
 
-%section.study-pagination
-  %ul
-    %li.trackr
+  %section.study-pagination
+    .trackr
       %a{:href => "trackr.html"}
-        tutor me
-    %li.wineo
+        trackr
+    .wineo
       %a{:href => "wineo.html"}
-        verical mass
+        wineo
 
 = partial :contact
 

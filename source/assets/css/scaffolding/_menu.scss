@@ -106,6 +106,7 @@
     @include retina-image('logo', 60px 60px, $asset-pipeline: true);
     @include size (60px 60px);
     @include box-sizing(content-box);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
@@ -132,6 +133,7 @@
     @include retina-image('logo', 60px 60px, $asset-pipeline: true);
     @include size (60px 60px);
     @include box-sizing(content-box);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
