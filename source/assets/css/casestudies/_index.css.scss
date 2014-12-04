@@ -60,13 +60,13 @@ $header-color: #28282E;
 
   .the-problem {
     @include media($large-screen-up) {
-      @include shift(2);
+      @include shift(1.5);
     }
   }
 
   .the-solution {
     @include media($large-screen-up) {
-      @include shift(.5);
+      @include shift(1.5);
     }
   }
 }

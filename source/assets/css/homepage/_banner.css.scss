@@ -1,3 +1,12 @@
+.splash-logo {
+  @include retina-image('homepage/header-logo', 80px 80px, $asset-pipeline: true);
+  @include size (80px 80px);
+  @include box-sizing(content-box);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: $center;
+}
+
 .site-intro {
   @include size (em(450) auto);
   margin: $center;

@@ -32,7 +32,6 @@
   @include size(em(100));
   border-radius: 100%;
   margin: 0 auto $base-y;
-  padding-top: em(30);
   text-align: center;
   opacity: 0.9;
 
@@ -59,30 +58,30 @@
   @extend .circle;
   background: image-url('about/icon_discovery.svg') #EF877C no-repeat center center;
   background-size: em(40) auto;
-  padding-top: em(15);
 
   @include media($medium-screen-up) {
     background-size: em(50) auto;
-    padding-top: em(25);
   }
 
   @include media($large-screen-up) {
     background-size: em(60) auto;
-    padding-top: em(55);
   }
 }
 
 .process-circle-design {
   @extend .circle;
-  background: image-url('about/icon_design.svg') #5CAEA8 no-repeat center center;
+  background: image-url('about/icon_design.svg') #5CAEA8 no-repeat center 25px;
   background-size: em(40) auto;
+  padding-top: em(10);
 
   @include media($medium-screen-up) {
     background-size: em(50) auto;
+    background-position: center 30px;
   }
 
   @include media($large-screen-up) {
     background-size: em(60) auto;
+    background-position: center 45px;
   }
 }
 
