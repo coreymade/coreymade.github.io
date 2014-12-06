@@ -166,11 +166,10 @@
       font-size: 14px;
 
       a {
-        @include transition (all 0.2s ease-in-out);
+        @include transition (all 0.1s ease-in-out);
         padding: 18px 25px;
         display: block;
         color: #29282B;
-        opacity: 0.8;
 
         &:first-of-type {
           // padding-left: 30px;
