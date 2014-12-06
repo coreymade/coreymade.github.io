@@ -46,7 +46,7 @@
     padding: em(40) 0;
 
     @include media($medium-screen-up) {
-      padding: em(80) 0;
+      padding: em(120) 0;
     }
   }
 }
@@ -85,6 +85,7 @@
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  line-height: 0.55em;
 
   @include media($medium-screen-up) {
     font-size: em(64);
@@ -136,10 +137,10 @@
   @include media($large-screen-up) {
     @include span-columns (7 of 12);
     @include shift(2.5);
-    font-size: em(21);
+    font-size: em(25);
     margin-top: $base-y * 2;
     margin-bottom: 0;
-    padding-top: $base-y * 2;
+    padding-top: $base-y * 1;
   }
 }
 
