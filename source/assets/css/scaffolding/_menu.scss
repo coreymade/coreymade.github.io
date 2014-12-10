@@ -141,7 +141,6 @@
 }
 
 #top {
-
   @include media ($medium-screen) {
     display: none !important;
   }
@@ -168,8 +167,9 @@
       font-size: 14px;
 
       a {
-        @include transition (all 0.5s ease-in-out);
-        padding: 16px 25px;
+        @include transition (all 0.3s ease-out);
+        line-height: 60px;
+        padding: 0 20px;
         display: block;
         color: $header-black;
 
@@ -179,6 +179,7 @@
 
         &:hover {
           color: $header-red;
+          background-color: $header-black;
         }
       }
     }

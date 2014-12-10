@@ -8,8 +8,8 @@
     padding: em(100) 0 em(300);
   }
 
-  @include media($large-screen-up) {
-    padding: em(150) 0 em(600);
+  @include media($excessive-screen) {
+    background-size: 1200px;
   }
 }
 

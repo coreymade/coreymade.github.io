@@ -19,10 +19,14 @@
   .case-study-title {
     text-align: center;
 
-    @include media($excessive-screen-up) {
+    @include media($large-screen-up) {
       @include span-columns(7 of 12);
       @include shift(5);
       text-align: left;
+    }
+
+    @include media($excessive-screen) {
+      @include shift(2);
     }
   }
 }
@@ -103,6 +107,7 @@
 
   @include media($excessive-screen-up) {
     max-width: em(900);
+    margin-right: 300px;
   }
 }
 
@@ -144,5 +149,6 @@
 
   @include media($excessive-screen-up) {
     max-width: em(900);
+    margin-right: 300px;
   }
 }

@@ -1,23 +1,24 @@
 .vertical-mass-header {
   @extend .section-wrap;
   background: image-url('vm-header-background.png') no-repeat top center;
-  background-size: 100%;
-  padding-top: em(200);
+  background-size: contain;
+  padding: em(60) 0 em(120);
   text-align: center;
 
   @include media($medium-screen-up) {
-    padding-top: em(450);
-  }
-
-  @include media($large-screen-up) {
     background-size: cover;
-    min-height: 1045px;
-    padding-top: em(100);
+    padding-top: em(120);
+    padding-bottom: em(480);
   }
 
-  h2 {
-    margin-top: 50px;
+  @include media($excessive-screen) {
+    background-size: contain;
   }
+}
+
+.vm-the-intro {
+  @extend .the-intro;
+  padding-top: em(30);
 }
 
 .branding {
@@ -40,23 +41,23 @@
 
   .vm-icons {
     @include retina-image('vertical-mass-icons', 545px 50px, $asset-pipeline: true);
-    background-size: 90% !important;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 
     @include media($excessive-screen-up) {
-      background-size: auto;
+      background-size: 65%;
     }
   }
 
   .vm-colors {
     @include retina-image('vertical-mass-colors', 592px 112px, $asset-pipeline: true);
-    background-size: 90% !important;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 
     @include media($excessive-screen-up) {
-      background-size: auto;
+      background-size: 65%;
     }
   }
 }

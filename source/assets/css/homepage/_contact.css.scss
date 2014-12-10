@@ -82,6 +82,7 @@
 
 .form-content {
   @extend .section-wrap;
+  @include clearfix;
   clear: both;
 }
 
@@ -107,14 +108,12 @@
     @include clearfix;
 
     li {
-      @include span-columns(2 of 4);
+      display: inline-block;
+      float: left;
       text-align: center;
       border-right: 1px solid #E3E4E6;
       padding: 15px;
-
-      @include media($medium-screen-up) {
-        @include span-columns(3 of 6);
-      }
+      width: 50%;
 
       &:last-of-type {
         margin: 0;
