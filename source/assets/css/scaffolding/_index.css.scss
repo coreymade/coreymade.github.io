@@ -1,6 +1,6 @@
 body {
   &.index {
-    background: #29282B;
+    background: $header-black;
   }
 }
 
@@ -48,7 +48,7 @@ body {
 
   h2,
   h3 {
-    color: #29282B;
+    color: $header-black;
     font-size: em(36);
     padding-bottom: em(60, 36);
     text-align: center;

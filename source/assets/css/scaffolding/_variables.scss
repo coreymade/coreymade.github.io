@@ -10,7 +10,7 @@
 
 @mixin section-header {
   font-size: 38px;
-  color: #29282B;
+  color: $header-black;
   text-align: center;
   padding-bottom: 60px;
 }
@@ -29,6 +29,6 @@
   @include size (750 auto);
   margin: $center;
   font-size: 70px;
-  color: #29282B;
+  color: $header-black;
   font-weight: 800;
 }
