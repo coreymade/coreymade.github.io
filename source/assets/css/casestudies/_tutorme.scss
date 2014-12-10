@@ -17,7 +17,7 @@
   @include clearfix;
   background: image-url('tutor-session-background.png') no-repeat bottom center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 10em 0;
 
   .section-header {
     @include media($large-screen-up) {
@@ -49,7 +49,7 @@
 }
 
 .tutor-interfaces {
-  padding: 120px 0;
+  padding: 4em 0;
 
   .section-header {
     @include media($large-screen-up) {
