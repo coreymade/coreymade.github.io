@@ -1,0 +1,52 @@
+.our-work {
+  @extend .section-wrap;
+  background: white;
+
+  ul {
+    @include fill-parent;
+
+    li {
+      @include span-columns(2 of 4);
+      @include omega(2n);
+      color: #222;
+      font-size: $base-font-size;
+      font-weight: 500;
+      margin-bottom: $base-y * 2;
+      padding-top: em(95);
+      text-align: center;
+      text-transform: uppercase;
+
+      @include media($medium-screen-up) {
+        @include span-columns(2 of 8);
+        @include omega-reset(2n);
+        @include omega(4n);
+      }
+
+      @include media($large-screen-up) {
+        margin-bottom: 0;
+      }
+
+      &.branding {
+        background: image-url('homepage/icon_branding.svg') no-repeat top center;
+        background-size: em(60) auto;
+
+        border: 0;
+      }
+
+      &.design-ux {
+        background: image-url('homepage/icon_design.svg') no-repeat top center;
+        background-size: em(60) auto;
+      }
+
+      &.development {
+        background: image-url('homepage/icon_development.svg') no-repeat top center;
+        background-size: em(60) auto;
+      }
+
+      &.consulting {
+        background: image-url('homepage/icon_consulting.svg') no-repeat top center;
+        background-size: em(60) auto;
+      }
+    }
+  }
+}
