@@ -7,24 +7,23 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $open-sans;
+  font-family: $base-font-family;
   line-height: 1.25em;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
 h1 {
-  font-size: $base-font-size * 2.75; // 16 * 2.25 = 36px
+  font-size: $base-font-size * 1.90; // 16 * 2.25 = 36px
   font-weight: 300;
   display: block;
 }
 
 h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
+  font-size: $base-font-size * 1.90; // 16 * 2 = 32px
   font-weight: 300;
 
   &.small {
-    text-transform: uppercase;
     font-size: 1em;
     font-weight: 800;
     margin-bottom: 1em;
@@ -38,7 +37,6 @@ h3 {
 }
 
 h4 {
-  text-transform: uppercase;
   color: black;
   font-weight: 800;
   font-size: 0.7em;

@@ -168,8 +168,8 @@
       font-size: 14px;
 
       a {
-        @include transition (all 0.1s ease-in-out);
-        padding: 18px 25px;
+        @include transition (all 0.5s ease-in-out);
+        padding: 16px 25px;
         display: block;
         color: #29282B;
 
@@ -178,8 +178,7 @@
         }
 
         &:hover {
-          background: #29282B;
-          color: #fff;
+          color: $header-red;
         }
       }
     }
