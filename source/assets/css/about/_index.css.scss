@@ -82,6 +82,7 @@
 
   h2 {
     color: #fff;
+    margin: $base-y / 2 0;
   }
 
   p {
@@ -93,21 +94,37 @@
     @include clearfix;
     @include fill-parent;
     clear: both;
-    margin-top: 90px;
+
+    @include media($large-screen-up) {
+      @include span-columns(6 of 12);
+      @include shift(3);
+    }
 
     ul {
       li {
         @include fill-parent;
         @include transition (all 0.4s ease-in-out);
         border: 1px solid #393A3F;
-        margin: 0 auto $base-y * 2;
+        margin: 0 auto;
         min-height: 200px;
         text-align: center;
-        padding: 20px;
+        padding: $base-y * 2 0;
+
+        &:nth-child(2n) {
+          border-top: none;
+          border-bottom: none;
+        }
 
         @include media($medium-screen-up) {
-          @include span-columns(2.66 of 8);
-          @include omega(3n);
+          display: inline-block;
+          float: left;
+          width: 33%;
+
+          &:nth-child(2n) {
+            border: solid 1px #393A3F;
+            border-left: none;
+            border-right: none;
+          }
         }
 
         &:hover {

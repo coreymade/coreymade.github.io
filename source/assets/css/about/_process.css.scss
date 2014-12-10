@@ -21,6 +21,7 @@
     @include span-columns(3 of 12);
     @include omega-reset(2n);
     @include omega(4n);
+    margin-bottom: 0;
 
     [class^='process-circle-'] {
       display: none;
