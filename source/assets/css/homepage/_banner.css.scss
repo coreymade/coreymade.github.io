@@ -36,6 +36,11 @@
 .header-section {
   position: relative;
 
+  .wrap {
+    @include size(100%);
+    position: relative;
+  }
+
   .logo {
     @include retina-image('homepage/header-logo', 80px 80px, $asset-pipeline: true);
     @include size (80px 80px);
@@ -52,7 +57,7 @@
 }
 
 .blurImg {
-  @include position(relative, 0px 0 0 0px);
+  @include position(absolute, 0px 0 0 0px);
   width: 100%;
   z-index: -1;
 
@@ -78,69 +83,79 @@
   }
 }
 
-.intro {
-  color: #fff;
-  font-family: $open-sans;
-  font-size: em(36);
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 0.55em;
+.banner-copy {
+  overflow: hidden;
+  width: 100%;
 
-  @include media($medium-screen-up) {
-    font-size: em(64);
+  @media screen and (min-height: 750px ){
+    @include position(absolute, 50% null null 0px);
+    margin-top: -122px;
   }
 
-  @include media($large-screen-up) {
-    font-size: em(85);
-  }
+  h1 {
+    color: #fff;
+    font-family: $open-sans;
+    font-size: em(36);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
 
-  span {
-    color: $header-red;
-
-    &.first {
-      margin-left: -7px;
-      letter-spacing: -9px;
-
-      @include media($large-screen-up) {
-        margin-left: -17px;
-        letter-spacing: -19px;
-      }
+    @include media($medium-screen-up) {
+      font-size: em(64);
     }
 
-    &.second {
-      margin-left: -7px;
-      letter-spacing: -6px;
+    @include media($large-screen-up) {
+      font-size: em(85);
+    }
 
-      @include media($large-screen-up) {
-        margin-left: -17px;
-        letter-spacing: -16px;
+    span {
+      color: $header-red;
+
+      &.first {
+        margin-left: -7px;
+        letter-spacing: -9px;
+
+        @include media($large-screen-up) {
+          margin-left: -17px;
+          letter-spacing: -19px;
+        }
+      }
+
+      &.second {
+        margin-left: -7px;
+        letter-spacing: -6px;
+
+        @include media($large-screen-up) {
+          margin-left: -17px;
+          letter-spacing: -16px;
+        }
       }
     }
   }
-}
 
-.sub-intro {
-  @include span-columns(3 of 4);
-  @include shift(.5);
-  border-top: 2px solid $header-red;
-  color: #fff;
-  font-family: $whitney;
-  font-weight: 300;
-  font-size: em(18);
-  line-height: 1.75em;
-  margin-top: $base-y / 2;
-  margin-bottom: em(120, 18);
-  padding-top: $base-y / 2;
-  text-align: center;
+  h2 {
+    @include span-columns(3 of 4);
+    @include shift(.5);
+    border-top: 2px solid $header-red;
+    color: #fff;
+    font-family: $whitney;
+    font-weight: 300;
+    font-size: em(18);
+    line-height: 1.75em;
+    margin-top: $base-y / 2;
+    margin-bottom: em(40, 18);
+    padding-top: $base-y / 2;
+    text-align: center;
 
-  @include media($large-screen-up) {
-    @include span-columns (7 of 12);
-    @include shift(2.5);
-    font-size: em(25);
-    margin-top: $base-y * 2;
-    margin-bottom: 0;
-    padding-top: $base-y * 1;
+    @include media($large-screen-up) {
+      @include span-columns (7 of 12);
+      @include shift(2.5);
+      font-size: em(25);
+      margin-top: $base-y * 2;
+      margin-bottom: 0;
+      padding-top: $base-y * 1;
+    }
   }
 }
 
@@ -149,6 +164,7 @@
   @include animation-iteration-count(infinite);
   @include size(40px);
   background: image-url('arrow-down.svg') no-repeat center;
+  clear: both;
   margin: 0 auto;
   text-align: center;
 
