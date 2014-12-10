@@ -33,3 +33,11 @@
   left: auto;
   right: 40px;
 }
+
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  background: image-url('arrow-right.svg') no-repeat center;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+  background: image-url('arrow-left.svg') no-repeat center;
+}

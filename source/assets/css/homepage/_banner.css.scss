@@ -144,15 +144,16 @@
   }
 }
 
-.scrolled {
+.scroll-arrow {
   @include animation(blink 3.0s ease-in-out);
   @include animation-iteration-count(infinite);
-  @include size (45px);
+  @include size(40px);
+  background: image-url('arrow-down.svg') no-repeat center;
   margin: 0 auto;
   text-align: center;
 
   @include media($medium-screen-up) {
     @include position(absolute, null null em(60) 50%);
-    margin-left: -22.5px;
+    margin-left: -20px;
   }
 }
