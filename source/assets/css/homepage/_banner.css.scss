@@ -10,6 +10,7 @@
 .site-intro {
   @include size (em(450) auto);
   margin: $center;
+  font-family: $open-sans;
   font-size: 32px;
   color: #fff;
   font-weight: 100;
