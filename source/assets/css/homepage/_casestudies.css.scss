@@ -17,14 +17,14 @@
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: white;
-  $grid-item-height: 14em;
+  $grid-item-height: 35em;
+  background: #fff;
 
   @include clearfix;
 
   .grid-item {
     @include transition (all 0.2s ease-in-out);
     height: $grid-item-height;
-    background: $grid-item-background;
     width: 100%;
     overflow: hidden;
     float: left;
@@ -35,16 +35,40 @@
       @include grid-item-columns($grid-item-columns);
     }
 
+    &.vertical-mass-case {
+      @include transition (all 0.3s ease-in-out);
+      background: image-url('vm-cover.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    &.trackr-case {
+      @include transition (all 0.3s ease-in-out);
+      background: image-url('trackr-cover.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    &.tutor-me-case {
+      @include transition (all 0.3s ease-in-out);
+      background: image-url('tutor-cover.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    &.show-case {
+      @include transition (all 0.3s ease-in-out);
+      background: image-url('sideline-cover.png') no-repeat center center;
+      background-size: cover;
+    }
+
     @for $i from 1 through length($grid-item-colors) {
 // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
         $background-from-list: nth($grid-item-colors, $i);
         background-color: $background-from-list;
         &:hover {
-          background-color: darken($background-from-list, 10);
+          background-color: darken($background-from-list, 25);
           background-repeat: no-repeat;
-          background-position: top;
           background-size: cover;
+          background-color: #fff;
 
           .grid-item-copy {
             @include transform(translateY(35%));
@@ -73,14 +97,21 @@
   .grid-item h4 {
     color: $grid-item-color;
     display: block;
-    font-size: 1.3em;
+    font-size: 2.125em;
     margin-bottom: .4em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    & span {
+      font-weight: 100;
+    }
   }
 
   .grid-item p {
       display: block;
+      font-size: 1.25em;
       margin: auto;
-      color: transparentize($grid-item-color, .3);
+      color: transparentize($grid-item-color, .1);
       @include media($medium-screen) {
         max-width: 70%;
       }

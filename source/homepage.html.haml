@@ -8,18 +8,14 @@
     .wrap
       .logo
       .banner-copy
-        %h1#show-menu
-          we
-          %span.first .
-          make
-          %span.second .
-          apps
+        %h1
+          We craft experiences
         %h2 We’re a full service digital agency making remarkable brands, beautiful interfaces and happy clients.
-    .scroll-arrow
+    .scroll-arrow#show-menu
 
   %section.our-clients
     %h3
-      clients we've helped
+      brands we've helped
     %ul
       %li
         =image_tag 'native.png'
@@ -38,7 +34,7 @@
       %li.geek
         =image_tag 'geeklist.png'
 
-%section.our-work#show-menu
+%section.our-work
   .wrap
     %header.section-header
       %h3
@@ -56,48 +52,60 @@
         consulting
 
 %section.case-studies
-  %a.grid-item.grid-item-big(href="javascript:void(0)")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item(href="javascript:void(0)")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item(href="javascript:void(0)")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item.grid-item-big(href="javascript:void(0)")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item(href="javascript:void(0)" style="display:none")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item(href="javascript:void(0)" style="display:none")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
-  %a.grid-item(href="javascript:void(0)" style="display:none")
-    .grid-item-copy
-      %h4
-        Project Title
-      %p
-        Lorem ipsum dolor sit amet non consectetur
+  .cs-wrap
+    %a.grid-item.grid-item-big.vertical-mass-case(href="javascript:void(0)")
+      .grid-item-copy
+        %h4
+          vertical
+          %span
+            mass
+        %p
+          A world wide leader in fan data for companies in music, sports and entertainment.
+        %ul
+          %li
+            Web
+          %li
+            Branding
+    %a.grid-item.trackr-case(href="javascript:void(0)")
+      .grid-item-copy
+        %h4
+          Trackr
+        %p
+          A small sized device that helps you find your most prized possessions.
+    %a.grid-item.show-case(href="javascript:void(0)")
+      .grid-item-copy
+        %h4
+          sideline
+          %span
+            swap
+        %p
+          A community geared toward selling, buying and swapping sports gear and apparel.
+    %a.grid-item.grid-item-big.tutor-me-case(href="javascript:void(0)")
+      .grid-item-copy
+        %h4
+          tutor
+          %span
+            me
+        %p
+          An online community where tutors can teach anything from development to english.
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
 
 = partial :contact
 
