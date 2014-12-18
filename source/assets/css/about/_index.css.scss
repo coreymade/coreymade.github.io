@@ -2,6 +2,7 @@
   @extend .section-wrap;
   @include linear-gradient(#fff, #f6f6f6);
   padding-bottom: 0;
+  padding-top: 7em;
 
   h2 {
     color: $header-black;

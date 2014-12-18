@@ -1,38 +1,72 @@
-.web-container
-  .logo
-    %a{:href => "index.html"}
-  .web-nav
-    %ul
-      %li
-        %a{:href => "work.html"}
-          Our Work
-      %li
-        %a{:href => "discover.html"}
-          Discover Us
-      %li
-        %a{:href => "#"}
-          Thoughts
-      %li
-        %a{:href => "careers.html"}
-          Careers
-      %li
-        %a.popover{:href => "contact.html"}
-          Contact
-%section.the-work
+.logo
+  %a{:href => "index.html"}
+.web-nav
   %ul
-    %li.tutorme
-      %a{:href => "tutorme.html"}
-        tutor me
-    %li.vm
-      %a{:href => "vertical-mass.html"}
-        verical mass
-    %li.trackr
-      %a{:href => "trackr.html"}
-        trackr
-    %li.wineo
-      %a{:href => "wineo.html"}
-        wineo
-
+    %li
+      %a{:href => "work.html"}
+        Our Work
+    %li
+      %a{:href => "discover.html"}
+        Discover Us
+    %li
+      %a{:href => "#"}
+        Thoughts
+    %li
+      %a{:href => "careers.html"}
+        Careers
+    %li
+      %a.popover{:href => "contact.html"}
+        Contact
+%section.case-studies
+  .cs-wrap
+    %a.grid-item.grid-item-big.vertical-mass-case{:href => "vertical-mass.html"}
+      .grid-item-copy
+        %h4
+          vertical
+          %span
+            mass
+        %p
+          A world wide leader in fan data for companies in music, sports and entertainment.
+    %a.grid-item.trackr-case{:href => "trackr.html"}
+      .grid-item-copy
+        %h4
+          Trackr
+        %p
+          A small sized device that helps you find your most prized possessions.
+    %a.grid-item.show-case{:href => "sideline.html"}
+      .grid-item-copy
+        %h4
+          sideline
+          %span
+            swap
+        %p
+          A community geared toward selling, buying and swapping sports gear and apparel.
+    %a.grid-item.grid-item-big.tutor-me-case{:href => "tutorme.html"}
+      .grid-item-copy
+        %h4
+          tutor
+          %span
+            me
+        %p
+          An online community where tutors can teach anything from development to english.
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
+    %a.grid-item(href="javascript:void(0)" style="display:none")
+      .grid-item-copy
+        %h4
+          Project Title
+        %p
+          Lorem ipsum dolor sit amet non consectetur
 = partial :contact
 
 = partial :footer
