@@ -60,7 +60,7 @@ h2.case-study-title {
 
   .the-problem {
     @include media($large-screen-up) {
-      @include shift(1.5);
+      @include shift(1.3);
     }
   }
 
