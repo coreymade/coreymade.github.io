@@ -19,6 +19,7 @@ h2.case-study-title {
 
   h2 {
     color: $header-black;
+    font-weight: 100;
     font-size: em(24);
     padding-bottom: em(40, 24);
   }
@@ -99,6 +100,7 @@ h2.case-study-title {
   h2 {
     font-size: em(24);
     padding-bottom: em(40, 24);
+    font-weight: 100;
     color: $header-black;
   }
 
@@ -125,6 +127,7 @@ h2.case-study-title {
     font-size: em(24);
     padding-bottom: em(40, 24);
     color: $header-black;
+    font-weight: 100;
   }
 
   .browser {
