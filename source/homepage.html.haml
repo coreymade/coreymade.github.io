@@ -2,9 +2,6 @@
 
 %header.banner
   .header-section
-    .blurImg
-      .new
-      .blur
     .wrap
       .logo
       .banner-copy
@@ -13,33 +10,13 @@
         %h2 We’re a full service digital agency making remarkable brands, beautiful interfaces and happy clients.
     .scroll-arrow#show-menu
 
-  %section.our-clients
-    %h3
-      brands we've helped
-    %ul
-      %li
-        =image_tag 'native.png'
-      %li
-        =image_tag 'geosnap.png'
-      %li.drone
-        =image_tag 'drone.png'
-      %li.tutor
-        =image_tag 'tutorme.png'
-      %li
-        =image_tag 'mdt.png'
-      %li.cinch
-        =image_tag 'cinch.png'
-      %li
-        =image_tag 'trackr.png'
-      %li.geek
-        =image_tag 'geeklist.png'
-
 %section.our-work
   .wrap
     %header.section-header
-      %h3
-        We build amazing experiences
-      %p
+      %h3.dark-bg
+        what we do
+      .divider
+      %p.dark-bg
         We're a small team of designers and developers. We believe in quality, perfected craftsmenship in every pixel we push. Here's how we keep it real on a daily basis.
     %ul
       %li.branding
@@ -50,57 +27,6 @@
         development
       %li.consulting
         consulting
-
-%section.case-studies
-  .cs-wrap
-    %a.grid-item.grid-item-big.vertical-mass-case{:href => "vertical-mass.html"}
-      .grid-item-copy
-        %h4
-          vertical
-          %span
-            mass
-        %p
-          A world wide leader in fan data for companies in music, sports and entertainment.
-    %a.grid-item.trackr-case{:href => "trackr.html"}
-      .grid-item-copy
-        %h4
-          Trackr
-        %p
-          A small sized device that helps you find your most prized possessions.
-    %a.grid-item.show-case{:href => "sideline.html"}
-      .grid-item-copy
-        %h4
-          sideline
-          %span
-            swap
-        %p
-          A community geared toward selling, buying and swapping sports gear and apparel.
-    %a.grid-item.grid-item-big.tutor-me-case{:href => "tutorme.html"}
-      .grid-item-copy
-        %h4
-          tutor
-          %span
-            me
-        %p
-          An online community where tutors can teach anything from development to english.
-    %a.grid-item(href="javascript:void(0)" style="display:none")
-      .grid-item-copy
-        %h4
-          Project Title
-        %p
-          Lorem ipsum dolor sit amet non consectetur
-    %a.grid-item(href="javascript:void(0)" style="display:none")
-      .grid-item-copy
-        %h4
-          Project Title
-        %p
-          Lorem ipsum dolor sit amet non consectetur
-    %a.grid-item(href="javascript:void(0)" style="display:none")
-      .grid-item-copy
-        %h4
-          Project Title
-        %p
-          Lorem ipsum dolor sit amet non consectetur
 
 = partial :contact
 

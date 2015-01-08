@@ -52,14 +52,25 @@ body {
     font-size: em(36);
     padding-bottom: em(60, 36);
     text-align: center;
+
+    &.dark-bg {
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
   }
 
   p {
-    color: #727272;
-    font-size: em(18);
+    color: #757581;
+    font-size: em(21);
     font-weight: 300;
     line-height: em(35, 18);
     text-align: center;
+
+    &.dark-bg {
+      color: #757581;
+    }
   }
 }
 
