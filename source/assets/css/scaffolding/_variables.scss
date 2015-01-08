@@ -36,3 +36,17 @@ $menu: #BE3F48;
   color: $header-black;
   font-weight: 800;
 }
+
+@mixin button {
+  @include transition(all 0.3s ease-in-out);
+  background: none;
+  border: 2px solid $header-red;
+  color: $header-red;
+  font-size: em(18);
+  padding: 20px 50px;
+
+  &:hover {
+    background: $header-red;
+    color: #fff;
+  }
+}
