@@ -1,0 +1,78 @@
+.menu {
+  @include size(60px 60px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $menu;
+  z-index: 999;
+}
+
+.logo {
+  @include size(60px 60px);
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background: $header-red;
+  padding: 13px 7px;
+  z-index: 100;
+}
+
+.menu-toggle {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 29px;
+    cursor: pointer;
+    margin: 16px 15px;
+}
+.menu-toggle span {
+    position: relative;
+    top: 12px;
+    margin: 0 auto;
+    -webkit-transition-duration: 0s;
+    -webkit-transition-delay: 250ms;
+}
+.menu-toggle.active span {
+    background-color: transparent;
+    -webkit-transition-delay: 250ms;
+}
+.menu-toggle span:before,
+.menu-toggle span:after {
+    position: absolute;
+    content: '';
+}
+.menu-toggle span,
+.menu-toggle span:before,
+.menu-toggle span:after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.menu-toggle span:before {
+    margin-top: -10px;
+    -webkit-transition-property: margin, -webkit-transform, color;
+    -webkit-transition-duration: 250ms;
+    -webkit-transition-delay: 150ms, 0;
+}
+.menu-toggle span:after {
+    margin-top: 10px;
+    -webkit-transition-property: margin, -webkit-transform, color;
+    -webkit-transition-duration: 250ms;
+    -webkit-transition-delay: 150ms, 0;
+}
+.menu-toggle.active span:before {
+    margin-top: 0;
+    background-color: #fff;
+    -webkit-transition-delay: 0, 150ms;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.menu-toggle.active span:after {
+    margin-top: 0;
+    background-color: #fff;
+    -webkit-transition-delay: 0, 150ms;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

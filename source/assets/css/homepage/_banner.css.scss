@@ -45,20 +45,6 @@
     @include size(100%);
     position: relative;
   }
-
-  .logo {
-    @include retina-image('homepage/header-logo', 80px 80px, $asset-pipeline: true);
-    @include size (80px 80px);
-    @include box-sizing(content-box);
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: $center;
-    padding: em(40) 0;
-
-    @include media($medium-screen-up) {
-      padding: em(120) 0;
-    }
-  }
 }
 
 .blurImg {
@@ -89,13 +75,7 @@
 }
 
 .banner-copy {
-  overflow: hidden;
-  width: 100%;
-
-  @media screen and (min-height: 750px ){
-    @include position(absolute, 50% null null 0px);
-    margin-top: -197px;
-  }
+  padding-top: em(400);
 
   h1 {
     color: $dark-color;
@@ -140,6 +120,7 @@
   h2 {
     @include span-columns(3 of 4);
     @include shift(.5);
+    float: none;
     border-top: 2px solid $header-red;
     color: $dark-color;
     font-family: $whitney;
@@ -154,6 +135,7 @@
     @include media($large-screen-up) {
       @include span-columns (7 of 12);
       @include shift(2.5);
+      float: none;
       font-size: em(25);
       margin-top: $base-y * 2;
       margin-bottom: 0;
