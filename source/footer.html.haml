@@ -1,6 +1,6 @@
 %section.start-project
   %a{:href => "contact.html"}
-    %button.popover
+    %button.popover.wow.fadeIn
       Let's start a project
 
 %footer.main-footer
@@ -25,6 +25,9 @@
   $(window).load(function(){
         $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
       });
+
+:javascript
+  new WOW().init();
 
 :javascript
     $(window).load(function() { // makes sure the whole site is loaded

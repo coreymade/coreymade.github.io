@@ -1,3 +1,7 @@
+.banner {
+  background: image-url('app-background.png') no-repeat bottom right;
+}
+
 .splash-logo {
   @include retina-image('homepage/header-logo', 80px 80px, $asset-pipeline: true);
   @include size (80px 80px);
@@ -90,11 +94,11 @@
 
   @media screen and (min-height: 750px ){
     @include position(absolute, 50% null null 0px);
-    margin-top: -122px;
+    margin-top: -197px;
   }
 
   h1 {
-    color: #fff;
+    color: $dark-color;
     font-size: em(36);
     font-weight: 900;
     text-align: center;
@@ -137,7 +141,7 @@
     @include span-columns(3 of 4);
     @include shift(.5);
     border-top: 2px solid $header-red;
-    color: #fff;
+    color: $dark-color;
     font-family: $whitney;
     font-weight: 300;
     font-size: em(18);

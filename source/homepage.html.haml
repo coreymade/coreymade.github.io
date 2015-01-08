@@ -1,32 +1,61 @@
 = partial :menu
 
-%header.banner
+%header.banner.wow.fadeIn
   .header-section
     .wrap
-      .logo
       .banner-copy
-        %h1
+        %h1.wow.fadeInUp
           We craft experiences
-        %h2 We’re a full service digital agency making remarkable brands, beautiful interfaces and happy clients.
+        %h2.wow.fadeInUp We’re a full service digital agency making remarkable brands, beautiful interfaces and happy clients.
     .scroll-arrow#show-menu
 
 %section.our-work
   .wrap
-    %header.section-header
-      %h3.dark-bg
+    %header.section-header.wow.fadeIn
+      %h3.dark-bg.wow.fadeInUp
         what we do
-      .divider
-      %p.dark-bg
+      .divider.wow.fadeInUp
+      %p.dark-bg.wow.fadeInUp
         We're a small team of designers and developers. We believe in quality, perfected craftsmenship in every pixel we push. Here's how we keep it real on a daily basis.
     %ul
-      %li.branding
+      %li.branding.wow.fadeInUp
         branding
-      %li.design-ux
+      %li.design-ux.wow.fadeInUp
         design / ux
-      %li.development
+      %li.development.wow.fadeInUp
         development
-      %li.consulting
-        consulting
+
+%section.clients
+  .wrap
+    %header.section-header.wow.fadeIn
+      %h3.dark-bg
+        brands we've helped
+      .divider
+    .grid-items-lines
+      %a.grid-item.geo.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "geosnap-logo.png"
+      %a.grid-item.native.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "native.png"
+      %a.grid-item.show.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "show.png"
+      %a.grid-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "geeklist.png"
+      %a.grid-item.grid-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "trackr.png"
+      %a.grid-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "drone.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "sony.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "pbg.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "shady.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "mdt.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "wineo.png"
+      %a.grid-item.bottom-item.wow.fadeInUp{:href => "javascript:void(0)"}
+        =image_tag "nike.png"
 
 = partial :contact
 
